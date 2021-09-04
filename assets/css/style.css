@@ -251,7 +251,7 @@ a.button-link {
     flex-direction: row;
 }
 
-.slide-title {
+.title {
     margin-bottom: 33px;
     color: #7030a0;
     font-style: normal;
@@ -280,29 +280,97 @@ a.button-link {
     font-size: 1.8rem;
 }
 
+#types-of {
+    padding-top: 50px;
+}
+
+.card-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-block {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    justify-content: center;
+    transition: transform 0.5s;
+}
+
+.card-block:hover {
+    transform: scale(0.95);
+}
+
+.card-content {
+    position: relative;
+    width: 100%;
+    padding: 20px 44px 25px;
+    background-color: #ffffff;
+    transition: all .3s ease;
+}
+
+.card-content:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .1;
+    z-index: 1;
+}
+
+.card-block .card-content::before {
+    background-color: #7030a0;
+}
+
+.card-image {
+    display: flex;
+    height: 190px;
+    justify-content: center;
+    position: relative;
+    z-index: 5;
+    margin-bottom: 10px;
+}
+
+.card-info {
+    text-align: center;
+}
+
+.card-title {
+    color: #7030a0;
+    margin-bottom: 7px;
+    font-weight: 600;
+    position: relative;
+    z-index: 5;
+}
+
+.empty-block {
+    display: none;
+}
+
 @media (max-width: 1440px) {
-    .slide-title {
+    .title {
         font-size: 5rem;
         line-height: 1.14;
     }
 }
 
 @media (max-width: 1280px) {
-    .slide-title {
+    .title {
         font-size: 2.8rem;
         line-height: 1.15;
     }
 }
-
-@media (min-width: 992px) {
-    .slide-content {
-        margin-left: 8.3%;
-    }
-}
-
 @media (min-width: 992px) {
     .container-fluid {
         padding-left: 50px !important;
         padding-right: 50px !important;
+    }
+    .slide-content {
+        margin-left: 8.3%;
+    }
+    .empty-block {
+        display: block !important;
     }
 }
