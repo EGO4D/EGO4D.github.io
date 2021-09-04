@@ -16,7 +16,7 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: Oswald, 'Times New Roman', 'sans-serif';
+    font-family: Oswald, 'Times New Roman', 'sans-serif' !important;
 }
 
 header {
@@ -137,7 +137,6 @@ a.button-link {
     text-align: center;
     min-width: 170px;
     text-decoration: none;
-    height: 47px;
 }
 
 .button-outline {
@@ -145,4 +144,43 @@ a.button-link {
     border-color: #7030a0;
     color: #7030a0;
     border: 1px solid #7030a0;
+}
+
+#parallax-image {
+    height: 550px;
+    width: 100%;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background: url('/assets/images/tourism.jpg') 50% 50%/cover no-repeat border-box fixed;
+    overflow: hidden;
+    color: white;
+}
+
+#parallax-title {
+    margin-bottom: 35px;
+}
+
+.large-text {
+    font-size: 3.125rem;
+    line-height: 1.14;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.large-button {
+    width: 220px;
+    height: 70px;
+    padding: 25px 10px !important;
+    border-radius: 4px;
 }
