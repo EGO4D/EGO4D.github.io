@@ -52,7 +52,7 @@ header {
     z-index: 1;
 }
 
-#nav-bar a {
+#nav-bar a, .link a {
     color: #7030a0;
     text-decoration: none;
 }
@@ -151,7 +151,7 @@ a.button-link {
     width: 100%;
     padding-top: 8rem;
     padding-bottom: 8rem;
-    background: url('/assets/images/tourism.jpg') 50% 50%/cover no-repeat border-box fixed;
+    background: url('/assets/images/tourism.jpg') 50% 50%/cover no-repeat border-box;
     overflow: hidden;
     color: white;
 }
@@ -187,7 +187,7 @@ a.button-link {
 
 
 #carousel {
-    display: relative;
+    position: relative;
     padding-top: 5rem;
     padding-bottom: 5rem;
     background-color: white;
@@ -358,6 +358,10 @@ a.button-link {
     width: 100%;
 }
 
+.card-image img {
+    max-width: 145px;
+}
+
 .tab-image {
     justify-content: center;
     position: relative;
@@ -414,11 +418,69 @@ a.button-link {
 }
 
 .container {
-    width: 100%;
+    width: 100% !important;
+    padding-left: 115px !important;
+    padding-right: 115px !important;
+    max-width: 100%;
 }
 
 #tabbed-content {
     margin: 0 10%;
+}
+
+.image-block {
+    margin-bottom: -144px;
+    padding-top: 121px;
+    position: relative;
+}
+
+.image {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+#article .image:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 575px;
+    background-color: #ececec;
+}
+
+#article .image img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 1;
+    height: 100%;
+    transform: translatex(-50%);
+}
+
+.full-max-width {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.title-block {
+    background-color: white;
+    align-items: center;
+    flex: 0 0 83%;
+    margin-left: 8%;
+    position: relative;
+    z-index: 1;
+    padding-top: 40px;
+    padding-bottom: 91px;
+}
+
+.link a {
+    font-weight: 700;
+}
+
+.link span {
+    display: inline-block !important;
+    transition: all 0.3s ease;
+    margin-left: 13px;
 }
 
 @media (max-width: 1440px) {
@@ -434,6 +496,21 @@ a.button-link {
         line-height: 1.15;
     }
 }
+
+@media (min-width: 1200px) {
+    .empty-block {
+        display: block !important;
+    }
+}
+
+@media (min-width: 1025px) {
+    .container {
+        padding-left: 115px !important;
+        padding-right: 115px !important;
+        max-width: 100%;
+    }
+}
+
 @media (min-width: 992px) {
     .container-fluid {
         padding-left: 50px !important;
@@ -441,8 +518,5 @@ a.button-link {
     }
     .slide-content {
         margin-left: 8.3%;
-    }
-    .empty-block {
-        display: block !important;
     }
 }
