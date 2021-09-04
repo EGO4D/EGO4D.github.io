@@ -349,6 +349,78 @@ a.button-link {
     display: none;
 }
 
+.no-margin {
+    margin: 0;
+}
+
+.tab-card-content {
+    display: block;
+    width: 100%;
+}
+
+.tab-image {
+    justify-content: center;
+    position: relative;
+}
+
+.tab-image img {
+    width: 45%;
+}
+
+.tab-text {
+    margin-bottom: 0;
+    color: #4c4c4c;
+}
+
+.tab-wrap {
+    margin-bottom: 60px;
+    display: flex;
+}
+
+#tabs {
+    margin-top: 125px;
+}
+
+#tab-header {
+    margin-bottom: 65px;
+    width: 100%;
+}
+
+.nav-tabs {
+    margin-bottom: 105px !important;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.nav-tabs > li.active > a {
+    border: none !important;
+}
+
+.nav-tabs > li a:hover {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.nav-tabs .nav-link.active {
+    font-weight: 700;
+    border: none;
+    background-color: transparent;
+    border-bottom: 11px solid #7030a0;
+}
+
+.nav-tab-image {
+    height: 160px;
+}
+
+.container {
+    width: 100%;
+}
+
+#tabbed-content {
+    margin: 0 10%;
+}
+
 @media (max-width: 1440px) {
     .title {
         font-size: 5rem;
