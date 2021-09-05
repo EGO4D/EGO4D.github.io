@@ -51,7 +51,10 @@ header {
     z-index: 1;
 }
 
-#nav-bar a, .link a {
+#nav-bar a,
+.link a,
+.nav-link a
+ {
     color: #7030a0;
     text-decoration: none;
 }
@@ -661,6 +664,8 @@ a.button-link {
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
 }
+
+
 
 @media (max-width: 1440px) {
     .title {
