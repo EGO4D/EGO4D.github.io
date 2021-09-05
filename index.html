@@ -20,6 +20,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <!-- Latest compiled JavaScript for BS3 -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <script src="assets/scripts/form-submission.js"></script>
     </head>
     <body>
         <header>
@@ -589,7 +591,34 @@
             </div>
         </section>
 
-        <section id="subscribe"></section>
+        <section id="subscribe">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                        <h4 class="title form-title">SHARING THE BEST</h4>
+                    </div>
+                    <div class="col-lg-4 col-md-3 col-sm-6 col-xs-6">
+                        <p>Top 5 Travels once a month in your inbox</p>
+                    </div>
+                    <div class="col-lg-5 col-md-4">
+                        <div class="subscribe__form">
+                            <form>
+                                <div class="row">
+                                    <div id="form-response" hidden="hidden" class="alert"></div>
+                                    </div>
+                                </div>
+                                <div class="dragArea row">
+                                    <div class="form-group col-md-9 col-lg-7" data-for="email">
+                                        <input type="email" id="email" name="email" placeholder="Your Email" required="required" class="subscription-form-control" id="subscription-form">
+                                        <button id="submit-btn" class="btn large-button btn-warning">Subscribe</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <footer></footer>
     </body>

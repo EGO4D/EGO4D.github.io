@@ -549,6 +549,10 @@ a.button-link {
     max-height: 245px;
 }
 
+#qa {
+    padding: 75px 0;
+}
+
 .timeline-element {
     margin-top: 20px;
     position: relative;
@@ -630,6 +634,34 @@ a.button-link {
     border-radius: 50%;
 }
 
+#subscribe {
+    padding: 6rem 0;
+}
+
+.form-title {
+    padding: 7px 7px 7px 0;
+    margin-bottom: 0;
+    border-right: 1px solid #7030a0;
+    text-align: center;
+    color: #7030a0;
+}
+
+.form-group {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.subscription-form-control {
+    background-color: #ffffff !important;
+    color: #7030a0;
+    border: 1px solid #7030a0;
+    padding: 21px 18px;
+    border-radius: 0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
 @media (max-width: 1440px) {
     .title {
         font-size: 5rem;
@@ -647,6 +679,19 @@ a.button-link {
 @media (min-width: 1200px) {
     .empty-block {
         display: block !important;
+    }
+}
+
+@media (max-width: 1199px) {
+    .subscription-form {
+        margin-top: 30px;
+    }
+}
+
+@media (min-width: 1199px) {
+    .form-title {
+        padding: 5px 0;
+        border: none;
     }
 }
 
@@ -695,5 +740,9 @@ a.button-link {
 
     .timeline-text-content {
         margin-left: 50px !important;
+    }
+
+    .dragArea {
+        margin: 0;
     }
 }
