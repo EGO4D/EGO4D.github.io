@@ -234,6 +234,7 @@ a.button-link {
     transition: all .3s;
     font-size: 18px;
     transform: scaleX(1.2) scaleY(1.2);
+    opacity: 1;
 }
 
 #left-control {
