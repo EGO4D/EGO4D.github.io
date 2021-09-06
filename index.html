@@ -2,11 +2,14 @@
 <html lang="en">
     <head>
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="A large-scale first-person video dataset, supporting research in multi-modal machine perception for daily life activity">
         <meta name="keywords" content="video dataset, machine perception, machine-learning, research">
 
         <title>Egocentric 4D Perception (EGO4D)</title>
+
+        <link rel="stylesheet" href="assets/css/style.css">
 
         <!-- Latest font-awesome css for icons -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
@@ -17,21 +20,653 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <!-- Latest compiled JavaScript for BS3 -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <script src="assets/scripts/form-submission.js"></script>
     </head>
     <body>
         <header>
-            <nav></nav>
+            <nav id="nav-bar" class="nav-dropdown">
+                <div id="nav-links" class="container-fluid">
+                    <div id="nav-logo">
+                        <img id="logo" src="assets/images/travel-logo.png" alt="Logo">
+                    </div>
+                    <div id="nav-menu">
+                        <ul id="nav-menu-list">
+                            <li>
+                                <a href="index.html" class="nav-link">Home</a>
+                            </li>
+                            <li>
+                                <a href="#challenges" class="nav-link">Challenges</a>
+                            </li>
+                            <li>
+                                <a href="#benchmarks" class="nav-link">Benchmarks</a>
+                            </li>
+                            <li>
+                                <a href="#consortium" class="nav-link">Consortium</a>
+                            </li>
+                            <li>
+                                <a href="#qa" class="nav-link">Questions/Answers</a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link">Contacts</a>
+                            </li>
+                        </ul>
+                        <div id="social-links">
+                            <a href="#" class="icon-wrap">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="icon-wrap">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="discover">
+                        <a href="#" class="button-link button-outline nav-link">Discover</a>
+                    </div>
+                </div>
+            </nav>
         </header>
 
-        <section id="welcome-image"></section>
-        <section id="carousel"></section>
-        <section id="types-of"></section>
-        <section id="what-suits-you"></section>
-        <section id="article"></section>
-        <section id="instructors"></section>
-        <section id="qa"></section>
-        <section id="subscribe"></section>
+        <section id="parallax-image">
+            <div class="container">
+                <div class="row justify-center">
+                    <div class="col-lg-6 align-center">
+                        <h1 id="parallax-title" class="large-text">ALL TRAVEL FROM DIRECT ORGANIZERS!<br>WE INVITE YOU TO TRAVEL!&nbsp;</h1>
+                        <div>
+                            <a class="btn large-button button-link btn-warning" href="#">Discover</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <footer></footer>
+        <section id="carousel" class="carousel slide pointer-event" role="listbox" data-pause="true" data-keyboard="false" data-ride="carousel" data-interval="5000">
+            <div id="carousel-bg"></div>
+
+            <div class="container-fluid">
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="slide">
+                            <div class="col-sm-3 col-md-6 col-lg-5 slide-content">
+                                <h2 class="title">HEADING 1</h2>
+                                <p class="slide-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur quidem cupiditate, possimus suscipit minima harum perspiciatis odio laborum beatae cum saepe distinctio, totam soluta non asperiores. Atque voluptate sint quos repellat, vero dolor minus mollitia error officiis soluta!
+                                </p>
+                            </div>
+                            <div class="col-sm-9 col-md-6 col-lg-7">
+                                <div class="slide-image-wrap">
+                                    <img class="slide-image" src="assets/images/tourism-2.jpg" alt="Placeholder image 3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="slide">
+                            <div class="col-sm-3 col-md-6 col-lg-5 slide-content">
+                                <h2 class="title">HEADING 2</h2>
+                                <p class="slide-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur quidem cupiditate, possimus suscipit minima harum perspiciatis odio laborum beatae cum saepe distinctio, totam soluta non asperiores laboriosam, recusandae, dignissimos tenetur ratione. Atque voluptate sint quos repellat, vero dolor minus mollitia error officiis soluta! Enim assumenda, eveniet recusandae sapiente consectetur, sint.
+                                </p>
+                            </div>
+                            <div class="col-sm-9 col-md-6 col-lg-7">
+                                <div class="slide-image-wrap">
+                                    <img class="slide-image" src="assets/images/tourism-3.jpg" alt="Placeholder image 3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="slide">
+                            <div class="col-sm-3 col-md-6 col-lg-5 slide-content">
+                                <h2 class="title">HEADING 3</h2>
+                                <p class="slide-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur quidem cupiditate, possimus suscipit minima harum perspiciatis odio laborum beatae cum saepe distinctio, totam soluta non asperiores laboriosam, recusandae, dignissimos tenetur ratione. Atque voluptate sint quos repellat, vero dolor minus mollitia error officiis soluta! Enim assumenda, eveniet recusandae sapiente consectetur, sint.
+                                </p>
+                            </div>
+                            <div clas="col-sm-9 col-md-6 col-lg-7">
+                                <div class="slide-image-wrap">
+                                    <img class="slide-image" src="assets/images/tourism-4.jpg" alt="Placeholder image 3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <div id="carousel-controls">
+                    <a href="#carousel" data-slide="prev">
+                        <span id="left-control" class="carousel-control" aria-hidden="true">&larr;</span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a href="#carousel" data-slide="next">
+                        <span id="right-control" class="carousel-control" aria-hidden="true">&rarr;</span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="challenges">
+            <div class="container">
+                <div class="row card-row">
+                    <div class="col-xs-6 col-sm-6 col-lg-3 title">
+                        <h2 class="title">Challenges</h2>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-lg-3 card-block">
+                        <div class="card-content">
+                            <div class="card-image">
+                                <img src="assets/images/hiking.png" alt="Placeholder image 3">
+                            </div>
+                            <div class="card-info">
+                                <h3 class="card-title">Hand-Object Interactions</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-lg-3 card-block">
+                        <div class="card-content">
+                            <div class="card-image">
+                                <img src="assets/images/rafting.png" alt="Placeholder image 4">
+                            </div>
+                            <div class="card-info">
+                                <h3 class="card-title">Forecasting</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-lg-3 card-block">
+                        <div class="card-content">
+                            <div class="card-image">
+                                <img src="assets/images/winter-hiking.png" alt="Placeholder image 5">
+                            </div>
+                            <div class="card-info">
+                                <h3 class="card-title">Moment Retrieval</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-lg-3 card-block empty-block"></div>
+                    <div class="col-xs-6 col-sm-6 col-lg-3 card-block">
+                        <div class="card-content">
+                            <div class="card-image">
+                                <img src="assets/images/e-and-e.png" alt="Placeholder image 6">
+                            </div>
+                            <div class="card-info">
+                                <h3 class="card-title">AV Diarization</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-lg-3 card-block">
+                        <div class="card-content">
+                            <div class="card-image">
+                                <img src="assets/images/other.png" alt="Placeholder image 7">
+                            </div>
+                            <div class="card-info">
+                                <h3 class="card-title">Social</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="benchmarks">
+            <div class="container">
+                <div class="row">
+                    <div id="tab-header" class="align-center">
+                        <h3 class="title no-margin">Benchmarks</h3>
+                    </div>
+                </div>
+                <div class="content-row">
+                    <div id="tabbed-content">
+                        <ul class="nav nav-tabs">
+                            <li class="nav-link active">
+                                <a data-toggle="tab" href="#menu1">HOI</a>
+                            </li>
+                            <li class="nav-link">
+                                <a data-toggle="tab" href="#menu2">Foreacsting</a>
+                            </li>
+                            <li class="nav-link">
+                                <a data-toggle="tab" href="#menu3">Moment Retrieval</a>
+                            </li>
+                            <li class="nav-link">
+                                <a data-toggle="tab" href="#menu4">AV Diarization</a>
+                            </li>
+                            <li class="nav-link">
+                                <a data-toggle="tab" href="#menu5">Social</a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content">
+                            <div id="menu1" class="tab-pane fade in active">
+                                <div class="row">
+                                    <div class="col-lg-6 tab-wrap">
+                                        <div class="tab-image nav-tab-image">
+                                            <img src="assets/images/compass.png" alt="" title="">
+                                        </div>
+                                        <div class="tab-card-content">
+                                            <h5 class="card-title">Title 1</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ratione fuga dignissimos impedit nihil tempora maxime in a, sequi adipisci reprehenderit nemo et nostrum debitis aut omnis, dolor sit, explicabo.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 tab-wrap">
+                                        <div class="tab-image nav-tab-image">
+                                            <img src="assets/images/compass.png" alt="" title="">
+                                        </div>
+                                        <div class="tab-card-content">
+                                            <h5 class="card-title">Title 2</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae mollitia sed molestiae nihil fuga, ea quaerat placeat et saepe asperiores ut eum dolore, obcaecati cumque voluptate rerum velit vero a!</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 tab-wrap">
+                                        <div class="tab-image nav-tab-image">
+                                            <img src="assets/images/compass.png" alt="" title="">
+                                        </div>
+                                        <div class="tab-card-content">
+                                            <h5 class="card-title">Title 3</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis veniam, excepturi numquam provident ad ipsa, atque tempore, maiores iure omnis quasi soluta, fugiat ut mollitia cumque voluptate dolor quisquam. Saepe.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 tab-wrap">
+                                        <div class="tab-image nav-tab-image">
+                                            <img src="assets/images/compass.png" alt="" title="">
+                                        </div>
+                                        <div class="tab-card-content">
+                                            <h5 class="card-title">Title 4</h5>
+                                            <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id doloremque blanditiis magnam provident inventore ipsam qui consectetur adipisci, reprehenderit officiis labore voluptas atque saepe! Distinctio nihil voluptates commodi, iste nulla.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="menu2" class="tab-pane fade">
+                                <div class="row">
+                                    <div class="col-lg-6 tab-wrap">
+                                        <div class="tab-image nav-tab-image">
+                                            <img src="assets/images/compass.png" alt="" title="">
+                                        </div>
+                                        <div class="tab-card-content">
+                                            <h5 class="card-title">Title 5</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ratione fuga dignissimos impedit nihil tempora maxime in a, sequi adipisci reprehenderit nemo et nostrum debitis aut omnis, dolor sit, explicabo.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 tab-wrap">
+                                        <div class="tab-image nav-tab-image">
+                                            <img src="assets/images/compass.png" alt="" title="">
+                                        </div>
+                                        <div class="tab-card-content">
+                                            <h5 class="card-title">Title 6</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae mollitia sed molestiae nihil fuga, ea quaerat placeat et saepe asperiores ut eum dolore, obcaecati cumque voluptate rerum velit vero a!</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 tab-wrap">
+                                        <div class="tab-image nav-tab-image">
+                                            <img src="assets/images/compass.png" alt="" title="">
+                                        </div>
+                                        <div class="tab-card-content">
+                                            <h5 class="card-title">Title 7</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis veniam, excepturi numquam provident ad ipsa, atque tempore, maiores iure omnis quasi soluta, fugiat ut mollitia cumque voluptate dolor quisquam. Saepe.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 tab-wrap">
+                                        <div class="tab-image nav-tab-image">
+                                            <img src="assets/images/compass.png" alt="" title="">
+                                        </div>
+                                        <div class="tab-card-content">
+                                            <h5 class="card-title">Title 8</h5>
+                                            <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id doloremque blanditiis magnam provident inventore ipsam qui consectetur adipisci, reprehenderit officiis labore voluptas atque saepe! Distinctio nihil voluptates commodi, iste nulla.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="menu3" class="tab-pane fade">
+                                <div class="row">
+                                    <div class="col-lg-6 tab-wrap">
+                                        <div class="tab-image nav-tab-image">
+                                            <img src="assets/images/compass.png" alt="" title="">
+                                        </div>
+                                        <div class="tab-card-content">
+                                            <h5 class="card-title">Title 9</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ratione fuga dignissimos impedit nihil tempora maxime in a, sequi adipisci reprehenderit nemo et nostrum debitis aut omnis, dolor sit, explicabo.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 tab-wrap">
+                                        <div class="tab-image nav-tab-image">
+                                            <img src="assets/images/compass.png" alt="" title="">
+                                        </div>
+                                        <div class="tab-card-content">
+                                            <h5 class="card-title">Title 10</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae mollitia sed molestiae nihil fuga, ea quaerat placeat et saepe asperiores ut eum dolore, obcaecati cumque voluptate rerum velit vero a!</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 tab-wrap">
+                                        <div class="tab-image nav-tab-image">
+                                            <img src="assets/images/compass.png" alt="" title="">
+                                        </div>
+                                        <div class="tab-card-content">
+                                            <h5 class="card-title">Title 11</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis veniam, excepturi numquam provident ad ipsa, atque tempore, maiores iure omnis quasi soluta, fugiat ut mollitia cumque voluptate dolor quisquam. Saepe.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 tab-wrap">
+                                        <div class="tab-image nav-tab-image">
+                                            <img src="assets/images/compass.png" alt="" title="">
+                                        </div>
+                                        <div class="tab-card-content">
+                                            <h5 class="card-title">Title 12</h5>
+                                            <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id doloremque blanditiis magnam provident inventore ipsam qui consectetur adipisci, reprehenderit officiis labore voluptas atque saepe! Distinctio nihil voluptates commodi, iste nulla.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="menu4" class="tab-pane fade">
+                                <div class="row">
+                                    <div class="col-lg-6 tab-wrap">
+                                        <div class="tab-image nav-tab-image">
+                                            <img src="assets/images/compass.png" alt="" title="">
+                                        </div>
+                                        <div class="tab-card-content">
+                                            <h5 class="card-title">Title 13</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ratione fuga dignissimos impedit nihil tempora maxime in a, sequi adipisci reprehenderit nemo et nostrum debitis aut omnis, dolor sit, explicabo.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 tab-wrap">
+                                        <div class="tab-image nav-tab-image">
+                                            <img src="assets/images/compass.png" alt="" title="">
+                                        </div>
+                                        <div class="tab-card-content">
+                                            <h5 class="card-title">Title 14</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae mollitia sed molestiae nihil fuga, ea quaerat placeat et saepe asperiores ut eum dolore, obcaecati cumque voluptate rerum velit vero a!</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 tab-wrap">
+                                        <div class="tab-image nav-tab-image">
+                                            <img src="assets/images/compass.png" alt="" title="">
+                                        </div>
+                                        <div class="tab-card-content">
+                                            <h5 class="card-title">Title 15</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis veniam, excepturi numquam provident ad ipsa, atque tempore, maiores iure omnis quasi soluta, fugiat ut mollitia cumque voluptate dolor quisquam. Saepe.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 tab-wrap">
+                                        <div class="tab-image nav-tab-image">
+                                            <img src="assets/images/compass.png" alt="" title="">
+                                        </div>
+                                        <div class="tab-card-content">
+                                            <h5 class="card-title">Title 16</h5>
+                                            <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id doloremque blanditiis magnam provident inventore ipsam qui consectetur adipisci, reprehenderit officiis labore voluptas atque saepe! Distinctio nihil voluptates commodi, iste nulla.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="menu5" class="tab-pane fade">
+                                <div class="row">
+                                    <div class="col-lg-6 tab-wrap">
+                                        <div class="tab-image nav-tab-image">
+                                            <img src="assets/images/compass.png" alt="" title="">
+                                        </div>
+                                        <div class="tab-card-content">
+                                            <h5 class="card-title">Title 13</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ratione fuga dignissimos impedit nihil tempora maxime in a, sequi adipisci reprehenderit nemo et nostrum debitis aut omnis, dolor sit, explicabo.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 tab-wrap">
+                                        <div class="tab-image nav-tab-image">
+                                            <img src="assets/images/compass.png" alt="" title="">
+                                        </div>
+                                        <div class="tab-card-content">
+                                            <h5 class="card-title">Title 14</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae mollitia sed molestiae nihil fuga, ea quaerat placeat et saepe asperiores ut eum dolore, obcaecati cumque voluptate rerum velit vero a!</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 tab-wrap">
+                                        <div class="tab-image nav-tab-image">
+                                            <img src="assets/images/compass.png" alt="" title="">
+                                        </div>
+                                        <div class="tab-card-content">
+                                            <h5 class="card-title">Title 15</h5>
+                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis veniam, excepturi numquam provident ad ipsa, atque tempore, maiores iure omnis quasi soluta, fugiat ut mollitia cumque voluptate dolor quisquam. Saepe.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 tab-wrap">
+                                        <div class="tab-image nav-tab-image">
+                                            <img src="assets/images/compass.png" alt="" title="">
+                                        </div>
+                                        <div class="tab-card-content">
+                                            <h5 class="card-title">Title 16</h5>
+                                            <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id doloremque blanditiis magnam provident inventore ipsam qui consectetur adipisci, reprehenderit officiis labore voluptas atque saepe! Distinctio nihil voluptates commodi, iste nulla.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                      
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="article">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="image-block">
+                            <div class="image">
+                                <img src="assets/images/tourism-5.jpg" alt="" title="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-xs-12 col-lg-offset-2 content-wrap">
+                        <div class="row">
+                            <div class="col-lg-10 col-xs-12 article-title-block align-center">
+                                <h3 class="title">THIS INFORMATION CAN BE USEFUL WHEN TRAVELING</h3>
+                                <p class="display-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, ea.</p>
+                                <p class="link">
+                                    <a href="#">
+                                        Read Article<span class="fa-long-arrow-alt-right fa"></span>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="consortium">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-8 col-lg-7">
+                        <div class="row">
+                            <div class="row-image">
+                                <div class="image">
+                                    <img src="assets/images/face1.jpg" alt="" title="">
+                                </div><div class="image">
+                                    <img src="assets/images/face2.jpg" alt="" title="">
+                                </div><div class="image">
+                                    <img src="assets/images/face3.jpg" alt="" title="">
+                                </div><div class="image">
+                                    <img src="assets/images/face4.jpg" alt="" title="">
+                                </div><div class="image">
+                                    <img src="assets/images/face5.jpg" alt="" title="">
+                                </div>
+                            </div>
+                            <div class="row-image">
+                                <div class="image">
+                                    <img src="assets/images/face6.jpg" alt="" title="">
+                                </div>
+                                <div class="image">
+                                    <img src="assets/images/face7.jpg" alt="" title="">
+                                </div>
+                                <div class="image">
+                                    <img src="assets/images/face8.jpg" alt="" title="">
+                                </div>
+                                <div class="image">
+                                    <img src="assets/images/face9.jpg" alt="" title="">
+                                </div>
+                                <div class="image">
+                                    <img src="assets/images/face10.jpg" alt="" title="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="consortium-text" class="col-md-4 col-lg-3">
+                       <h3 class="title"><strong>EGO4D Consortium</strong></h3>
+                       <p>EGO4D was collected by a consortium of ? universities and Facebook AI Research. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="qa">
+            <div class="container">
+                <div class="row">
+                    <div class="title-block align-center">
+                        <h3 class="title large-text">QUESTIONS / ANSWERS</h3>
+                    </div>
+                </div>
+                <div class="timelines-container">
+                    <div class="row timeline-element divider-line">
+                        <div class="col-md-6 col-lg-6">
+                            <div class="timeline-text-content">
+                                <h4 class="small-title">Where can I find more details?</h4>
+                                <p>
+                                    The dataset collection and challenges are described in this ArXiv paper (Oct 2021) 
+                                </p>
+                            </div>
+                        </div>
+                        <span class="timeline-point"></span>
+                        <div class="timeline-data-panel col-md-6 col-lg-6">
+                        </div>
+                    </div>
+                    <div class="row timeline-element divider-line">
+                        <div class="timeline-data-panel col-md-6 col-lg-6"></div>
+                        <span class="timeline-point"></span>
+                        <div class="col-md-6 col-lg-6">
+                            <div class="timeline-text-content">
+                                <h4 class="small-title">What MetaData is available?</h4>
+                                <p>
+                                    For each video, we provide information about the collecting partner/university, date of recording, recording equipment, as well as video parts when the video is made up of smaller chunks. Information about the avalability of IMU, Audio and whether videos have been redacted are also included. Refer to README for formats of metadata.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row timeline-element divider-line">
+                        <div class="col-md-6 col-lg-6">
+                            <div class="timeline-text-content">
+                                <h4 class="small-title">Does the data contain identifying information of individuals?</h4>
+                                <p>
+                                    Only when consent has been collected from participants, the data will contain faces and other identifying information. The collecting partner holds consent forms in this case. For all other videos, data has been de-identified pre-release. Original footage has been deleted and are no longer accessible. Refer to ArXiv (Sec ?) for details of our de-identification pipeline.
+                                </p>
+                            </div>
+                        </div>
+                        <span class="timeline-point"></span>
+                        <div class="timeline-data-panel col-md-6 col-lg-6"></div>
+                    </div>
+                    <div class="row timeline-element divider-line">
+                        <div class="timeline-data-panel col-md-6 col-lg-6"></div>
+                        <span class="timeline-point"></span>
+                        <div class="col-md-6 col-lg-6">
+                            <div class="timeline-text-content">
+                                <h4 class="small-title">What resolution and framerate are available?</h4>
+                                <p>
+                                    This depends on equipment. We release all footage using the native resolution, but also offer a standardised frame-rate version of 30fps for ease of use. All benchmark results use the standardised version.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row timeline-element divider-line">
+                        <div class="col-md-6 col-lg-6">
+                            <div class="timeline-text-content">
+                                <h4 class="small-title">How can I participate in the benchmarks?</h4>
+                                <p>
+                                    Training and validatioon annotations are now publicly available. Test servers will be opened early next year for the first round of benchmarks. Results are expected to be announced in CVPR 2022. Revisit this webpage for further information.
+                                </p>
+                            </div>
+                        </div>
+                        <span class="timeline-point"></span>
+                        <div class="timeline-data-panel col-md-6 col-lg-6"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="subscribe">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                        <h4 class="title form-title">DOWNLOAD EGO4D</h4>
+                    </div>
+                    <div class="col-lg-4 col-md-3 col-sm-6 col-xs-6">
+                        <p>License forms (for all partners) should be signed to access videos, metadata and annotations. Enter your email. You will receive instructions shortly.</p>
+                    </div>
+                    <div class="col-lg-5 col-md-4">
+                        <div class="subscribe__form">
+                            <form>
+                                <div class="row">
+                                    <div id="form-response" hidden="hidden" class="alert"></div>
+                                </div>
+                                <div class="dragArea row">
+                                    <div class="form-group col-md-9 col-lg-7" data-for="email">
+                                        <input type="email" id="email" name="email" placeholder="Your Email" required="required" class="subscription-form-control" id="subscription-form">
+                                        <button id="submit-btn" class="btn large-button btn-warning">Subscribe</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-9 col-lg-8 col-md-7 col-sm-12 nav-footer">
+                        <ul class="menu-footer">
+                            <li class="menu-item">
+                                <a href="index.html">About Us</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="index.html">Careers</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="index.html">News</a>
+                            </li>
+                        </ul>
+    
+                        <ul class="menu-footer">
+                            <li class="menu-item">
+                                <a href="index.html">Hand-Object Interactions</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="index.html">Forecasting</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="index.html">Moment Retrieval</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="index.html">AV Diarization</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="col-xl-3 col-lg-4 col-md-5 col-xs-12 widget">
+                        <h6 class="widget-title title">Discover</h6>
+                        <div class="widget-feed">
+                            <a href="#" class="widget-item">
+                                <img src="assets/images/tourism-3.jpg" alt="" title="">
+                            </a>
+                            <a href="#" class="widget-item">
+                                <img src="assets/images/tourism-4.jpg" alt="" title="">
+                            </a>
+                            <a href="#" class="widget-item">
+                                <img src="assets/images/tourism-5.jpg" alt="" title="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
