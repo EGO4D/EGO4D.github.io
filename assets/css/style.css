@@ -53,7 +53,8 @@ header {
 
 #nav-bar a,
 .link a,
-.nav-link a
+.nav-link a,
+.menu-item a
  {
     color: #7030a0;
     text-decoration: none;
@@ -111,18 +112,21 @@ header {
 
 ul {
     list-style: none;
-    display: flex;
-    flex: 1;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
     font-size: 1.7rem;
     font-weight: bold;
     height: auto !important;
     margin: 0 !important;
 }
 
-li {
+#nav-menu-list {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#nav-menu-list li {
     padding: 10px;
 }
 
@@ -469,11 +473,6 @@ a.button-link {
     transform: translatex(-50%);
 }
 
-.full-max-width {
-    flex: 0 0 100%;
-    max-width: 100%;
-}
-
 .title-block {
     background-color: white;
     align-items: center;
@@ -665,7 +664,55 @@ a.button-link {
     border-bottom-left-radius: 4px;
 }
 
+footer {
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    background-color: #ececec;
+}
 
+.nav-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 7px;
+}
+
+.menu-footer {
+    width: 50%;
+    padding-right: 40px;
+    margin-bottom: 30px;
+}
+
+.menu-item {
+    margin-bottom: 20px;
+}
+
+.widget-title {
+    line-height: 1.17;
+    margin-bottom: 20px;
+    color: #7030a0;
+}
+
+.widget-feed {
+    max-width: 305px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.widget-item {
+    display: block;
+    width: 92px;
+    height: 92px;
+    margin-bottom: 13px;
+}
+
+.widget-item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
 
 @media (max-width: 1440px) {
     .title {
@@ -719,6 +766,10 @@ a.button-link {
 }
 
 @media (max-width: 991px) {
+    #article .image:before {
+        padding-top: 375px;
+    }
+
     #instructor-text {
         margin-top: 60px;
         padding-left: 0;
@@ -749,5 +800,16 @@ a.button-link {
 
     .dragArea {
         margin: 0;
+    }
+
+    .menu-item {
+        text-align: center;
+    }
+    
+    .widget {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
