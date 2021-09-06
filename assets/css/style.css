@@ -23,7 +23,7 @@ h3 {
 }
 
 header {
-    min-height: 114px;
+    height: auto;
     position: relative;
     background: #ffffff;
     word-wrap: normal;
@@ -39,12 +39,12 @@ header {
 
 #nav-bar > .container-fluid {
     align-items: center;
-    padding: 0 15px;
+    padding: 0 !important;
 }
 
 #logo {
     margin-right: 12px;
-    height: 100px;
+    height: 4.3rem;
 }
 
 #nav-links {
@@ -116,7 +116,7 @@ header {
 
 ul {
     list-style: none;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     font-weight: bold;
     height: auto !important;
     margin: 0 !important;
