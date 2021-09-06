@@ -767,6 +767,9 @@ footer {
     .slide-content {
         margin-left: 8.3%;
     }
+    .slide {
+        flex-wrap: nowrap;
+    }
 }
 
 @media (max-width: 991px) {
