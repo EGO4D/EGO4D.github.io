@@ -6,6 +6,10 @@
     border: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Roboto, Arial, 'sans-serif' !important;
     font-weight: 400;
