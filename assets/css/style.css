@@ -259,6 +259,7 @@ a.button-link {
     justify-content: center;
     align-items: flex-start;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .title,
@@ -284,7 +285,6 @@ a.button-link {
 .slide-content {
     text-align: left;
     padding-top: 50px;
-    max-width: 33%;
 }
 
 .slide-image-wrap {
@@ -770,6 +770,23 @@ footer {
 }
 
 @media (max-width: 991px) {
+    .carousel-inner {
+        margin-bottom: 0;
+    }
+
+    #carousel .title {
+        margin-bottom: 18px;
+    }
+
+    .slide-content {
+        padding-top: 0;
+        margin-bottom: 72px;
+    }
+
+    .img-wrap {
+        width: 100%;
+    }
+
     #article .image:before {
         padding-top: 375px;
     }
