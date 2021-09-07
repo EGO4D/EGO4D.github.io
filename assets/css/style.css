@@ -445,6 +445,9 @@ a.button-link {
 
 .nav-tab-image {
     height: 160px;
+    max-width: 150px;
+    width: 100%;
+    text-align: center;
 }
 
 .container {
