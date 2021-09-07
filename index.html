@@ -2,11 +2,14 @@
 <html lang="en">
     <head>
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="A large-scale first-person video dataset, supporting research in multi-modal machine perception for daily life activity">
         <meta name="keywords" content="video dataset, machine perception, machine-learning, research">
 
         <title>Egocentric 4D Perception (EGO4D)</title>
+
+        <link rel="stylesheet" href="assets/css/style.css">
 
         <!-- Latest font-awesome css for icons -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
@@ -17,10 +20,51 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <!-- Latest compiled JavaScript for BS3 -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <script src="assets/scripts/form-submission.js"></script>
     </head>
     <body>
         <header>
-            <nav></nav>
+            <nav id="nav-bar" class="nav-dropdown">
+                <div id="nav-links" class="container-fluid">
+                    <div id="nav-logo">
+                        <img id="logo" src="assets/images/ego-4d-01.png" alt="Logo">
+                    </div>
+                    <div id="nav-menu">
+                        <ul id="nav-menu-list">
+                            <li>
+                                <a href="index.html" class="nav-link">Home</a>
+                            </li>
+                            <li>
+                                <a href="#challenges" class="nav-link">Challenges</a>
+                            </li>
+                            <li>
+                                <a href="#benchmarks" class="nav-link">Benchmarks</a>
+                            </li>
+                            <li>
+                                <a href="#consortium" class="nav-link">Consortium</a>
+                            </li>
+                            <li>
+                                <a href="#qa" class="nav-link">Questions/Answers</a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link">Contacts</a>
+                            </li>
+                        </ul>
+                        <div id="social-links">
+                            <a href="#" class="icon-wrap">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="icon-wrap">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="discover">
+                        <a href="#" class="button-link button-outline nav-link">Discover</a>
+                    </div>
+                </div>
+            </nav>
         </header>
 
         <section id="parallax-image">
