@@ -553,6 +553,7 @@ a.button-link {
     display: flex;
     justify-content: space-between;
     margin-bottom: 12px;
+    max-height: 67px;
 }
 
 .row-image:nth-child(1) {
