@@ -203,8 +203,17 @@ a.button-link {
     background-color: white;
 }
 
+.item {
+    position: relative;
+    display: none;
+    float: left;
+    width: 100%;
+    margin-right: -100%;
+}
+
 .carousel-inner {
     margin-bottom: 70px;
+    overflow: hidden;
 }
 
 #carousel-bg {
@@ -294,6 +303,7 @@ a.button-link {
 
 .slide-image {
     width: 100%;
+    object-fit: cover;
 }
 
 .slide-text {
@@ -766,6 +776,10 @@ footer {
     }
     .slide-content {
         margin-left: 8.3%;
+    }
+    
+    .slide {
+        flex-wrap: nowrap;
     }
 }
 
