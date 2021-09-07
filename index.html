@@ -23,15 +23,590 @@
             <nav></nav>
         </header>
 
-        <section id="welcome-image"></section>
-        <section id="carousel"></section>
-        <section id="types-of"></section>
-        <section id="what-suits-you"></section>
-        <section id="article"></section>
-        <section id="instructors"></section>
-        <section id="qa"></section>
-        <section id="subscribe"></section>
+        <section id="parallax-image">
+            <div class="container">
+                <div class="row justify-center">
+                    <div class="col-lg-6 align-center">
+                        <h1 id="parallax-title" class="large-text">ALL TRAVEL FROM DIRECT ORGANIZERS!<br>WE INVITE YOU TO TRAVEL!&nbsp;</h1>
+                        <div>
+                            <a class="btn large-button button-link btn-warning" href="#">Discover</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <footer></footer>
+        <section id="carousel" class="carousel slide pointer-event" role="listbox" data-pause="true" data-keyboard="false" data-ride="carousel" data-interval="5000">
+            <div id="carousel-bg"></div>
+
+            <div class="container-fluid">
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="slide">
+                            <div class="col-sm-3 col-md-6 col-lg-5 slide-content">
+                                <h2 class="title">MASSIVE SCALE</h2>
+                                <p class="slide-text">
+                                    Ego4D is a massive-scale Egocentric dataset containing over 2,644 hours of unscripted, daily-life videos shot from a first person perspective. To ensure its realism, the dataset was collected from 13 worldwide locations in 7 different countries by wearers of all ages and disciplines - not just grad students! Ego4D is a diverse and challenging dataset that will push the frontier of first-person vision.
+                                </p>
+                            </div>
+                            <div class="col-sm-9 col-md-6 col-lg-7">
+                                <div class="slide-image-wrap">
+                                    <img class="slide-image" src="assets/images/tourism-2.jpg" alt="Placeholder image 3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="slide">
+                            <div class="col-sm-3 col-md-6 col-lg-5 slide-content">
+                                <h2 class="title">5 BENCHMARKS</h2>
+                                <p class="slide-text">
+                                    With its release, Ego4D contains 5 benchmark challenges which explore the unique and interesting aspects of a massive-scale first-person dataset: Episodic Memory, Hands & Objects, Forecasting, Audio-Visual Diarization, and Social Interaction. Each benchmark focuses on the 3 main types of interactions within egocentric video: <em>Places</em>, <em>Objects</em>, and <em>People</em>, with each benchmark task including its own set of unique annotations.
+                                </p>
+                            </div>
+                            <div class="col-sm-9 col-md-6 col-lg-7">
+                                <div class="slide-image-wrap">
+                                    <img class="slide-image" src="assets/images/tourism-2.jpg" alt="Placeholder image 3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="slide">
+                            <div class="col-sm-3 col-md-6 col-lg-5 slide-content">
+                                <h2 class="title">PRIVACY/ETHICS</h2>
+                                <p class="slide-text">
+                                    From its inception, high standards of privacy and ethics were paramount for the Ego4D project. Each partner ensured that all collected video and audio met University and consortium requirements. These include (but are not limited to): Complying with laws and regulations within country of collection; Respecting the right of others; and De-identify identifiable information using robust manual and automatic processes.
+                                </p>
+                            </div>
+                            <div clas="col-sm-9 col-md-6 col-lg-7">
+                                <div class="slide-image-wrap">
+                                    <img class="slide-image" src="assets/images/tourism-2.jpg" alt="Placeholder image 3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <div id="carousel-controls">
+                    <a href="#carousel" data-slide="prev">
+                        <span id="left-control" class="carousel-control" aria-hidden="true">&larr;</span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a href="#carousel" data-slide="next">
+                        <span id="right-control" class="carousel-control" aria-hidden="true">&rarr;</span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="challenges">
+            <div class="container">
+                <div class="row card-row">
+                    <div class="col-xs-6 col-sm-6 col-lg-3 title">
+                        <h2 class="title">Challenges</h2>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-lg-3 card-block">
+                        <div class="card-content">
+                            <div class="card-image">
+                                <img src="assets/images/h+o.png" alt="Placeholder image 3">
+                            </div>
+                            <div class="card-info">
+                                <h3 class="card-title">Hand-Object Interactions</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-lg-3 card-block">
+                        <div class="card-content">
+                            <div class="card-image">
+                                <img src="assets/images/forecasting.png" alt="Placeholder image 4">
+                            </div>
+                            <div class="card-info">
+                                <h3 class="card-title">Forecasting</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-lg-3 card-block">
+                        <div class="card-content">
+                            <div class="card-image">
+                                <img src="assets/images/episodic.png" alt="Placeholder image 5">
+                            </div>
+                            <div class="card-info">
+                                <h3 class="card-title">Episodic Memory</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-lg-3 card-block empty-block"></div>
+                    <div class="col-xs-6 col-sm-6 col-lg-3 card-block">
+                        <div class="card-content">
+                            <div class="card-image">
+                                <img src="assets/images/a-vD.png" alt="Placeholder image 6">
+                            </div>
+                            <div class="card-info">
+                                <h3 class="card-title">AV Diarization</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-lg-3 card-block">
+                        <div class="card-content">
+                            <div class="card-image">
+                                <img src="assets/images/social.png" alt="Placeholder image 7">
+                            </div>
+                            <div class="card-info">
+                                <h3 class="card-title">Social</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="benchmarks">
+            <div class="container">
+                <div class="row">
+                    <div id="tab-header" class="align-center">
+                        <h3 class="title no-margin">Benchmarks</h3>
+                    </div>
+                </div>
+                <div class="content-row">
+                    <div id="tabbed-content">
+                        <ul class="nav nav-tabs">
+                            <li class="nav-link active">
+                                <a data-toggle="tab" href="#menu1">HOI</a>
+                            </li>
+                            <li class="nav-link">
+                                <a data-toggle="tab" href="#menu2">Forecasting</a>
+                            </li>
+                            <li class="nav-link">
+                                <a data-toggle="tab" href="#menu3">Episodic Memory</a>
+                            </li>
+                            <li class="nav-link">
+                                <a data-toggle="tab" href="#menu4">AV Diarization</a>
+                            </li>
+                            <li class="nav-link">
+                                <a data-toggle="tab" href="#menu5">Social</a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content">
+                            <div id="menu1" class="tab-pane fade in active">
+                                <div class="row">
+                                    <div class="col-lg-6 tab-wrap">
+                                        <div class="tab-image nav-tab-image">
+                                            <img src="assets/images/h+o.png" alt="" title="">
+                                        </div>
+                                        <div class="tab-card-content">
+                                            <h5 class="card-title">Hand + Object Interaction</h5>
+                                            <p class="card-text"><em>What am I doing and how?</em><br> Going beyond Action Recognition, this benchmark follows when and how an object is changed during its interaction - only possible through a first person Viewpoint.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 tab-wrap">
+                                        <div class="tab-image nav-tab-image">
+                                            <img src="assets/images/h+o.png" alt="" title="">
+                                        </div>
+                                        <div class="tab-card-content">
+                                            <h5 class="card-title">Changes of State</h5>
+                                            <p class="card-text">Objects can change Temporally, Spatially and Semantically - an onion might be minced. These are represented by three different tasks in the benchmark: Key Frame Detection, Active Object Detection and State-Change Classification.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 tab-wrap">
+                                        <div class="tab-image nav-tab-image">
+                                            <img src="assets/images/h+o.png" alt="" title="">
+                                        </div>
+                                        <div class="tab-card-content">
+                                            <h5 class="card-title">Pre/Post Conditions</h5>
+                                            <p class="card-text">Each annotation has been labelled with prior states (i.e. the prior condition) and posterior states as well as the point of no return (PNR) in which the state change is triggered.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 tab-wrap">
+                                        <div class="tab-image nav-tab-image">
+                                            <img src="assets/images/h+o.png" alt="" title="">
+                                        </div>
+                                        <div class="tab-card-content">
+                                            <h5 class="card-title">World of Interactions</h5>
+                                            <p class="card__text">The data for this challenge has been selected from activities with a high level of hand-object interactions such as knitting, capentry and baking.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="menu2" class="tab-pane fade">
+                                <div class="row">
+                                    <div class="col-lg-6 tab-wrap">
+                                        <div class="tab-image nav-tab-image">
+                                            <img src="assets/images/forecasting.png" alt="" title="">
+                                        </div>
+                                        <div class="tab-card-content">
+                                            <h5 class="card-title">Forecasting</h5>
+                                            <p class="card-text"><em>What will I do next?</em><br> Predicting the future is a critical skill for systems to provide timely assistance for users. With a myriad of long-form, unscripted videos, Ego4D provides an interesting challenge for this task.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 tab-wrap">
+                                        <div class="tab-image nav-tab-image">
+                                            <img src="assets/images/forecasting.png" alt="" title="">
+                                        </div>
+                                        <div class="tab-card-content">
+                                            <h5 class="card-title">Where Will They Go?</h5>
+                                            <p class="card-text">Two tasks each consider where the camera wearer will go within the scene (if they picked up an empty kettle it is likely they will go to the sink) and the wearer's hands (picking up a knife will lead to a chopping motion).</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 tab-wrap">
+                                        <div class="tab-image nav-tab-image">
+                                            <img src="assets/images/forecasting.png" alt="" title="">
+                                        </div>
+                                        <div class="tab-card-content">
+                                            <h5 class="card-title">Short and Long Term</h5>
+                                            <p class="card-text">The other two tasks consider the short term future as the next object interaction that will take place and a countdown towards it taking place as well as the long term - what are the next possible sequence of actions?</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 tab-wrap">
+                                        <div class="tab-image nav-tab-image">
+                                            <img src="assets/images/forecasting.png" alt="" title="">
+                                        </div>
+                                        <div class="tab-card-content">
+                                            <h5 class="card-title">Data for Prophets</h5>
+                                            <p class="card__text">The data for this challenge has been selected from a diverse set of activities containing many human-object interactions and movements such as brick making, cooking or carpentry.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="menu3" class="tab-pane fade">
+                                <div class="row">
+                                    <div class="col-lg-6 tab-wrap">
+                                        <div class="tab-image nav-tab-image">
+                                            <img src="assets/images/episodic.png" alt="" title="">
+                                        </div>
+                                        <div class="tab-card-content">
+                                            <h5 class="card-title">Episodic Memory</h5>
+                                            <p class="card-text"><em>Where is my X?</em><br> Egocentric video gives a recording of a wearer's daily life, and can be used augment human memory on demand. Such a system might be able to remind a user where they left their keys, if they added salt to a recipe, or recall events they attended.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 tab-wrap">
+                                        <div class="tab-image nav-tab-image">
+                                            <img src="assets/images/episodic.png" alt="" title="">
+                                        </div>
+                                        <div class="tab-card-content">
+                                            <h5 class="card-title">Querying Memory</h5>
+                                            <p class="card-text">There are three different tasks within this benchmark based on the input type used to query the memory: visual query (i.e. find the location given an image of keys), textual query ("how many cups of sugar did I add?"), and a moment query (find all instances of "When did I play with the dog").</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 tab-wrap">
+                                        <div class="tab-image nav-tab-image">
+                                            <img src="assets/images/episodic.png" alt="" title="">
+                                        </div>
+                                        <div class="tab-card-content">
+                                            <h5 class="card-title">Construction of Queries</h5>
+                                            <p class="card-text">For the language queries, a set of templates were designed which annotators used to write questions for the task. Examples include "what is the state of object X?" or "where is object X after event Y"? These were then re-written for variety.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 tab-wrap">
+                                        <div class="tab-image nav-tab-image">
+                                            <img src="assets/images/episodic.png" alt="" title="">
+                                        </div>
+                                        <div class="tab-card-content">
+                                            <h5 class="card-title">Recalling Lives</h5>
+                                            <p class="card__text">Given the broad nature of this benchmark, there isn't a subset of activities that were focused on within this task, leading to a realistic and challenging benchmark.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="menu4" class="tab-pane fade">
+                                <div class="row">
+                                    <div class="col-lg-6 tab-wrap">
+                                        <div class="tab-image nav-tab-image">
+                                            <img src="assets/images/a-vD.png" alt="" title="">
+                                        </div>
+                                        <div class="tab-card-content">
+                                            <h5 class="card-title">Audio-Visual Diarization</h5>
+                                            <p class="card-text"><em>Who said what when?</em><br> Conversations are egocentric in nature, and a human-in-the-loop AI requires skills such as detecting speakers and recognition in order to communicate effectively.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 tab-wrap">
+                                        <div class="tab-image nav-tab-image">
+                                            <img src="assets/images/a-vD.png" alt="" title="">
+                                        </div>
+                                        <div class="tab-card-content">
+                                            <h5 class="card-title">Looking for Conversation</h5>
+                                            <p class="card-text">This benchmark contains 2 different tasks focused on visual data: detection of the speaker and recognition of the speaker. Note that identities are anonymized to match consortium guidelines.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 tab-wrap">
+                                        <div class="tab-image nav-tab-image">
+                                            <img src="assets/images/a-vD.png" alt="" title="">
+                                        </div>
+                                        <div class="tab-card-content">
+                                            <h5 class="card-title">Hearing the Words</h5>
+                                            <p class="card-text">The benchmark also includes 2 tasks for the audio modality: diaraization/temporal extent of the sentences spoken and the transcription of the coversation.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 tab-wrap">
+                                        <div class="tab-image nav-tab-image">
+                                            <img src="assets/images/a-vD.png" alt="" title="">
+                                        </div>
+                                        <div class="tab-card-content">
+                                            <h5 class="card-title">Much Ado About Talking</h5>
+                                            <p class="card__text">With this task focused on conversations, scenarios were chosen which included multiple participants interacting together, such as eating, playing games or setting up tents.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="menu5" class="tab-pane fade">
+                                <div class="row">
+                                    <div class="col-lg-6 tab-wrap">
+                                        <div class="tab-image nav-tab-image">
+                                            <img src="assets/images/social.png" alt="" title="">
+                                        </div>
+                                        <div class="tab-card-content">
+                                            <h5 class="card-title">Social Interactions</h5>
+                                            <p class="card-text"><em>Who is attending to whom?</em><br>In addition to spoken language, communication depends on nonverbal cues such as focus or facial expressions. Egocentric data perfectly captures interactions like these due to the point of view.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 tab-wrap">
+                                        <div class="tab-image nav-tab-image">
+                                            <img src="assets/images/social.png" alt="" title="">
+                                        </div>
+                                        <div class="tab-card-content">
+                                            <h5 class="card-title">More than Conversation</h5>
+                                            <p class="card-text">Social extends the Audio-Visual Diaraization benchmark towardsunderstanding the conversations of a social group over a longer period of time for specific tasks.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 tab-wrap">
+                                        <div class="tab-image nav-tab-image">
+                                            <img src="assets/images/social.png" alt="" title="">
+                                        </div>
+                                        <div class="tab-card-content">
+                                            <h5 class="card-title">Talking and Listening</h5>
+                                            <p class="card-text">This benchmark includes two different tasks focused on when a person is <em>Looking at Me</em> and when a person is <em>Talking to Me</em>.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 tab-wrap">
+                                        <div class="tab-image nav-tab-image">
+                                            <img src="assets/images/social.png" alt="" title="">
+                                        </div>
+                                        <div class="tab-card-content">
+                                            <h5 class="card-title">Unique Interactions</h5>
+                                            <p class="card__text">The data within the Social Interaction task was collected specifically for this task in mind with multi-user scenarios such as social deduction games, eating/drinking and playing basketball.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                      
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="article">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="image-block">
+                            <div class="image">
+                                <img src="assets/images/tourism-5.jpg" alt="" title="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-xs-12 col-lg-offset-2 content-wrap">
+                        <div class="row">
+                            <div class="col-lg-10 col-xs-12 article-title-block align-center">
+                                <h3 class="title">THIS INFORMATION CAN BE USEFUL WHEN TRAVELING</h3>
+                                <p class="display-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, ea.</p>
+                                <p class="link">
+                                    <a href="#">
+                                        Read Article<span class="fa-long-arrow-alt-right fa"></span>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="consortium">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-8 col-lg-7">
+                        <div class="row">
+                            <div class="row-image">
+                                <div class="image">
+                                    <img src="assets/images/face1.jpg" alt="" title="">
+                                </div><div class="image">
+                                    <img src="assets/images/face2.jpg" alt="" title="">
+                                </div><div class="image">
+                                    <img src="assets/images/face3.jpg" alt="" title="">
+                                </div><div class="image">
+                                    <img src="assets/images/face4.jpg" alt="" title="">
+                                </div><div class="image">
+                                    <img src="assets/images/face5.jpg" alt="" title="">
+                                </div>
+                            </div>
+                            <div class="row-image">
+                                <div class="image">
+                                    <img src="assets/images/face6.jpg" alt="" title="">
+                                </div>
+                                <div class="image">
+                                    <img src="assets/images/face7.jpg" alt="" title="">
+                                </div>
+                                <div class="image">
+                                    <img src="assets/images/face8.jpg" alt="" title="">
+                                </div>
+                                <div class="image">
+                                    <img src="assets/images/face9.jpg" alt="" title="">
+                                </div>
+                                <div class="image">
+                                    <img src="assets/images/face10.jpg" alt="" title="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="consortium-text" class="col-md-4 col-lg-3">
+                       <h3 class="title"><strong>EGO4D Consortium</strong></h3>
+                       <p>EGO4D was collected by a consortium of ? universities and Facebook AI Research. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="qa">
+            <div class="container">
+                <div class="row">
+                    <div class="title-block align-center">
+                        <h3 class="title large-text">QUESTIONS / ANSWERS</h3>
+                    </div>
+                </div>
+                <div class="timelines-container">
+                    <div class="row timeline-element divider-line">
+                        <div class="col-md-6 col-lg-6">
+                            <div class="timeline-text-content">
+                                <h4 class="small-title">Where can I find more details?</h4>
+                                <p>
+                                    The dataset collection and challenges are described in this ArXiv paper (Oct 2021) 
+                                </p>
+                            </div>
+                        </div>
+                        <span class="timeline-point"></span>
+                        <div class="timeline-data-panel col-md-6 col-lg-6">
+                        </div>
+                    </div>
+                    <div class="row timeline-element divider-line">
+                        <div class="timeline-data-panel col-md-6 col-lg-6"></div>
+                        <span class="timeline-point"></span>
+                        <div class="col-md-6 col-lg-6">
+                            <div class="timeline-text-content">
+                                <h4 class="small-title">What MetaData is available?</h4>
+                                <p>
+                                    For each video, we provide information about the collecting partner/university, date of recording, recording equipment, as well as video parts when the video is made up of smaller chunks. Information about the avalability of IMU, Audio and whether videos have been redacted are also included. Refer to README for formats of metadata.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row timeline-element divider-line">
+                        <div class="col-md-6 col-lg-6">
+                            <div class="timeline-text-content">
+                                <h4 class="small-title">Does the data contain identifying information of individuals?</h4>
+                                <p>
+                                    Only when consent has been collected from participants, the data will contain faces and other identifying information. The collecting partner holds consent forms in this case. For all other videos, data has been de-identified pre-release. Original footage has been deleted and are no longer accessible. Refer to ArXiv (Sec ?) for details of our de-identification pipeline.
+                                </p>
+                            </div>
+                        </div>
+                        <span class="timeline-point"></span>
+                        <div class="timeline-data-panel col-md-6 col-lg-6"></div>
+                    </div>
+                    <div class="row timeline-element divider-line">
+                        <div class="timeline-data-panel col-md-6 col-lg-6"></div>
+                        <span class="timeline-point"></span>
+                        <div class="col-md-6 col-lg-6">
+                            <div class="timeline-text-content">
+                                <h4 class="small-title">What resolution and framerate are available?</h4>
+                                <p>
+                                    This depends on equipment. We release all footage using the native resolution, but also offer a standardised frame-rate version of 30fps for ease of use. All benchmark results use the standardised version.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row timeline-element divider-line">
+                        <div class="col-md-6 col-lg-6">
+                            <div class="timeline-text-content">
+                                <h4 class="small-title">How can I participate in the benchmarks?</h4>
+                                <p>
+                                    Training and validatioon annotations are now publicly available. Test servers will be opened early next year for the first round of benchmarks. Results are expected to be announced in CVPR 2022. Revisit this webpage for further information.
+                                </p>
+                            </div>
+                        </div>
+                        <span class="timeline-point"></span>
+                        <div class="timeline-data-panel col-md-6 col-lg-6"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="subscribe">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                        <h4 class="title form-title">DOWNLOAD EGO4D</h4>
+                    </div>
+                    <div class="col-lg-4 col-md-3 col-sm-6 col-xs-6">
+                        <p>License forms (for all partners) should be signed to access videos, metadata and annotations. Enter your email. You will receive instructions shortly.</p>
+                    </div>
+                    <div class="col-lg-5 col-md-4">
+                        <div class="subscribe__form">
+                            <form>
+                                <div class="row">
+                                    <div id="form-response" hidden="hidden" class="alert"></div>
+                                </div>
+                                <div class="dragArea row">
+                                    <div class="form-group col-md-9 col-lg-7" data-for="email">
+                                        <input type="email" id="email" name="email" placeholder="Your Email" required="required" class="subscription-form-control" id="subscription-form">
+                                        <button id="submit-btn" class="btn large-button btn-warning">Subscribe</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-9 col-lg-8 col-md-7 col-sm-12 nav-footer">
+                        <ul class="menu-footer">
+                            <li class="menu-item">
+                                <a href="index.html">About Us</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="index.html">Careers</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="index.html">News</a>
+                            </li>
+                        </ul>
+                        <ul class="menu-footer">
+                            <li class="menu-item">
+                                <a href="index.html">Hand-Object Interactions</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="index.html">Forecasting</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="index.html">Episodic Memory</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="index.html">AV Diarization</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
