@@ -55,13 +55,9 @@ header {
     z-index: 1;
 }
 
-#nav-bar a,
-.link a,
-.nav-link a,
-.menu-item a
- {
-    color: #7030a0;
-    text-decoration: none;
+a {
+    color: #7030a0 !important;
+    text-decoration: none !important;
 }
 
 .nav-link {
