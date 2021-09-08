@@ -741,6 +741,11 @@ footer {
 }
 
 @media (max-width: 1280px) {
+    #social-links {
+        align-self: center;
+        margin-top: -10px;
+    }
+
     .title {
         font-size: 2.8rem;
         line-height: 1.15;
