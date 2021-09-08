@@ -152,7 +152,8 @@ a.button-link {
     border: 1px solid #7030a0;
 }
 
-#parallax-image {
+#header-image {
+    display: flex;
     height: 550px;
     width: 100%;
     padding-top: 8rem;
@@ -162,7 +163,11 @@ a.button-link {
     color: white;
 }
 
-#parallax-title {
+#header-image .container {
+    margin: auto;
+}
+
+#header-text {
     margin-bottom: 35px;
 }
 
