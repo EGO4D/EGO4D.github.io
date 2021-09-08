@@ -774,6 +774,12 @@ footer {
     }
 }
 
+@media (max-width: 1024px) {
+    .card-image img {
+        max-width: 75px;
+    }
+}
+
 @media (min-width: 992px) {
     .container-fluid {
         padding-left: 50px !important;
@@ -834,5 +840,12 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+}
+
+@media (max-width: 765px) {
+    #challenges .container {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
     }
 }
