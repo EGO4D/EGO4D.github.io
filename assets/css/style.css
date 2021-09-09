@@ -720,6 +720,10 @@ a.button-link {
     border-bottom-left-radius: 4px;
 }
 
+#submit-btn {
+    margin-left: -5px;
+}
+
 footer {
     padding-top: 5rem;
     padding-bottom: 2rem;
