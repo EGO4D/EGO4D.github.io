@@ -411,7 +411,8 @@ a.button-link {
     z-index: 5;
 }
 
-.empty-block {
+.empty-block,
+.hidden {
     display: none;
 }
 
