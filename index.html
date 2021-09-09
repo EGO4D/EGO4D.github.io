@@ -25,29 +25,38 @@
     </head>
     <body>
         <header>
-            <nav id="nav-bar" class="nav-dropdown">
+            <nav id="nav-bar" class="navbar nav-dropdown navbar-expand-lg">
                 <div id="nav-links" class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-menu" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation">
+                        <div class="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </button>
+
                     <div id="nav-logo">
                         <img id="logo" src="assets/images/ego-4d-01.png" alt="Logo">
                     </div>
-                    <div id="nav-menu">
-                        <ul id="nav-menu-list">
-                            <li>
+                    <div id="nav-menu" class="collapse">
+                        <ul id="nav-menu-list" data-app-modern-menu="true">
+                            <li class="nav-item">
                                 <a href="index.html" class="nav-link">Home</a>
                             </li>
-                            <li>
+                            <li class="nav-item">
                                 <a href="#challenges" class="nav-link">Challenges</a>
                             </li>
-                            <li>
+                            <li class="nav-item">
                                 <a href="#benchmarks" class="nav-link">Benchmarks</a>
                             </li>
-                            <li>
+                            <li class="nav-item">
                                 <a href="#consortium" class="nav-link">Consortium</a>
                             </li>
-                            <li>
+                            <li class="nav-item">
                                 <a href="#qa" class="nav-link">Questions/Answers</a>
                             </li>
-                            <li>
+                            <li class="nav-item">
                                 <a href="#" class="nav-link">Contacts</a>
                             </li>
                         </ul>

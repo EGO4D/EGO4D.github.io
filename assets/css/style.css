@@ -47,6 +47,41 @@ header {
     height: 4.3rem;
 }
 
+.navbar-toggler {
+    display: none;
+    outline: none;
+    width: 31px;
+    height: 20px;
+    cursor: pointer;
+    transition: all .2s;
+    position: relative;
+    align-self: center;
+    background-color: #fff;
+}
+
+.hamburger span {
+    position: absolute;
+    right: 0;
+    width: 30px;
+    height: 2px;
+    border-right: 5px;
+    background-color: #7030a0;
+}
+
+.hamburger span:nth-child(1) {
+    top: 0;
+    transition: all .2s;
+}
+.hamburger span:nth-child(2),
+.hamburger span:nth-child(3) {
+    top: 8px;
+    transition: all .15s
+}
+.hamburger span:nth-child(4) {
+    top: 16px;
+    transition: all .2s;
+}
+
 #nav-links {
     display: flex;
     width: 100%;
@@ -74,7 +109,6 @@ a {
 }
 
 #nav-menu {
-    display: flex;
     flex-grow: 1;
     justify-content: space-between;
     z-index: 1;
@@ -119,15 +153,8 @@ ul {
 }
 
 #nav-menu-list {
-    display: flex;
     flex: 1;
-    flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
-}
-
-#nav-menu-list li {
-    padding: 10px;
 }
 
 #discover {
@@ -743,7 +770,8 @@ footer {
 @media (max-width: 1280px) {
     #social-links {
         align-self: center;
-        margin-top: -10px;
+        margin: 30px 0;
+        text-align: center;
     }
 
     .title {
@@ -783,9 +811,45 @@ footer {
     .card-image img {
         max-width: 75px;
     }
+
+    #nav-menu-list collapse:not(.in) .nav-link {
+        font-size: 1.12rem;
+    }
+}
+
+@media (max-width: 992px) {
+    #nav-bar {
+        padding: 13px 90px;
+    }
+
+    .navbar-toggler {
+        display: block;
+    }
 }
 
 @media (min-width: 992px) {
+    #logo {
+        flex-shrink: initial;
+        flex-basis: auto;
+        word-break: break-word;
+        margin: 0 !important;
+        padding: 0;
+    }
+
+    #nav-menu {
+        display: flex !important;
+    }
+
+    #nav-menu-list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    #nav-menu-list li {
+        padding: 10px;
+    }
+
     .container-fluid {
         padding-left: 50px !important;
         padding-right: 50px !important;
@@ -800,6 +864,33 @@ footer {
 }
 
 @media (max-width: 991px) {
+    #nav-menu {
+        position: absolute;
+        top: 100%;
+        background-color: #ffffff !important;
+        padding-bottom: 25px;
+        padding-left: 20px;
+        padding-right: 20px;
+        left: 0px;
+        right: 0px;
+        flex-direction: column;
+    }
+
+    #nav-menu-list {
+        padding: 0 100px;
+        margin: 0;
+    }
+
+    #nav-menu-list li {
+        justify-content: flex-start;
+        line-height: 21px;
+        padding: 35px 43px 35px 19px !important;
+    }
+
+    .nav-item {
+        border-bottom: 1px solid #ddebe9;
+    }
+
     #article .image:before {
         padding-top: 375px;
     }
