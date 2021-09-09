@@ -270,11 +270,11 @@ a.button-link {
     background-color: transparent;
     transition: all .3s;
     font-size: 18px;
-    transform: scaleX(1.2) scaleY(1.2);
+    opacity: 1;
 }
 
 #left-control {
-    left: 53%;
+    left: 45%;
     right: auto;
 }
 
@@ -288,7 +288,11 @@ a.button-link {
     color: #7030a0;
     bottom: 35px;
     top: auto;
-    width: 30px;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .slide {
