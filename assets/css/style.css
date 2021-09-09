@@ -812,8 +812,7 @@ footer {
 
 @media (min-width: 1199px) {
     .form-title {
-        padding: 5px 0;
-        border: none;
+        padding: 5px;
     }
 }
 
@@ -949,6 +948,12 @@ footer {
 
     .timeline-text-content {
         margin-left: 50px !important;
+    }
+
+    form {
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
     }
 
     .dragArea {
