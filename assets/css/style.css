@@ -463,6 +463,7 @@ a.button-link {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    text-align: center;
 }
 
 .nav-tabs > li.active > a {
@@ -916,6 +917,13 @@ footer {
     .slide-image-wrap {
         margin-left: 0;
         margin-bottom: 100px;
+    }
+
+    .nav-tabs {
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 47px;
     }
 
     #instructor-text {
