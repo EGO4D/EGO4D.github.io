@@ -172,10 +172,14 @@ a.button-link {
     text-decoration: none;
 }
 
+.themed-button {
+    color: #fff;
+    background-color: #7030a0;
+}
+
 .button-outline {
     background: none;
     border-color: #7030a0;
-    color: #7030a0;
     border: 1px solid #7030a0;
 }
 
@@ -620,7 +624,7 @@ a.button-link {
     position: absolute;
     content: "";
     width: .5px;
-    background-color: #f7941e;
+    background-color: #7030a0;
     left: calc(50% - 1px);
     height: calc(100% - 3rem);
     opacity: .35;
@@ -672,7 +676,7 @@ a.button-link {
     width: 10px;
     height: 10px;
     transform: translateX(-50%);
-    background-color: #f7941e;
+    background-color: #7030a0;
 }
 
 .timeline-point:before {
