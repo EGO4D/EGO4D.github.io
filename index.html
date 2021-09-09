@@ -22,32 +22,51 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
         <script src="assets/scripts/form-submission.js"></script>
+
+        <script type="text/javascript">
+            function openTabbedContent(element) {
+                var whereTo = $(element).attr('goto'),
+                    tabs = $("#benchmarks li"),
+                    links = tabs.find('a[href=\'#' + whereTo + '\']');
+                    
+                links[0].click();
+            }
+        </script>
     </head>
     <body>
         <header>
-            <nav id="nav-bar" class="nav-dropdown">
+            <nav id="nav-bar" class="navbar nav-dropdown navbar-expand-lg">
                 <div id="nav-links" class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-menu" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation">
+                        <div class="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </button>
+
                     <div id="nav-logo">
                         <img id="logo" src="assets/images/ego-4d-01.png" alt="Logo">
                     </div>
-                    <div id="nav-menu">
-                        <ul id="nav-menu-list">
-                            <li>
+                    <div id="nav-menu" class="collapse">
+                        <ul id="nav-menu-list" data-app-modern-menu="true">
+                            <li class="nav-item">
                                 <a href="index.html" class="nav-link">Home</a>
                             </li>
-                            <li>
+                            <li class="nav-item">
                                 <a href="#challenges" class="nav-link">Challenges</a>
                             </li>
-                            <li>
+                            <li class="nav-item">
                                 <a href="#benchmarks" class="nav-link">Benchmarks</a>
                             </li>
-                            <li>
+                            <li class="nav-item">
                                 <a href="#consortium" class="nav-link">Consortium</a>
                             </li>
-                            <li>
+                            <li class="nav-item">
                                 <a href="#qa" class="nav-link">Questions/Answers</a>
                             </li>
-                            <li>
+                            <li class="nav-item">
                                 <a href="#" class="nav-link">Contacts</a>
                             </li>
                         </ul>
@@ -61,19 +80,18 @@
                         </div>
                     </div>
                     <div id="discover">
-                        <a href="#" class="button-link button-outline nav-link">Discover</a>
+                        <a href="#" class="button-link themed-button button-outline nav-link">Discover</a>
                     </div>
                 </div>
             </nav>
         </header>
 
-        <section id="parallax-image">
+        <section id="header-image">
             <div class="container">
                 <div class="row justify-center">
                     <div class="col-lg-6 align-center">
-                        <h1 id="parallax-title" class="large-text">ALL TRAVEL FROM DIRECT ORGANIZERS!<br>WE INVITE YOU TO TRAVEL!&nbsp;</h1>
-                        <div>
-                            <a class="btn large-button button-link btn-warning" href="#">Discover</a>
+                        <div class="themed-button button-outline">
+                            <a class="btn large-button button-link" href="#">Discover</a>
                         </div>
                     </div>
                 </div>
@@ -88,13 +106,13 @@
                 <div class="carousel-inner">
                     <div class="item active">
                         <div class="slide">
-                            <div class="col-sm-3 col-md-6 col-lg-5 col-lg-offset-1 slide-content">
+                            <div class="col-xs-12 col-lg-4 col-lg-offset-1 slide-content">
                                 <h2 class="title">MASSIVE SCALE</h2>
                                 <p class="slide-text">
                                     Ego4D is a massive-scale Egocentric dataset containing over 2,644 hours of unscripted, daily-life videos shot from a first person perspective. To ensure its realism, the dataset was collected from 13 worldwide locations in 7 different countries by wearers of all ages and disciplines - not just grad students! Ego4D is a diverse and challenging dataset that will push the frontier of first-person vision.
                                 </p>
                             </div>
-                            <div class="col-sm-9 col-md-6 col-lg-7">
+                            <div class="col-xs-12 col-lg-7 col-lg-7">
                                 <div class="slide-image-wrap">
                                     <img class="slide-image" src="assets/images/tourism-2.jpg" alt="Placeholder image 3">
                                 </div>
@@ -104,13 +122,13 @@
 
                     <div class="item">
                         <div class="slide">
-                            <div class="col-sm-3 col-md-6 col-lg-5 col-lg-offset-1 slide-content">
+                            <div class="col-xs-12 col-lg-4 col-lg-offset-1 slide-content">
                                 <h2 class="title">5 BENCHMARKS</h2>
                                 <p class="slide-text">
                                     With its release, Ego4D contains 5 benchmark challenges which explore the unique and interesting aspects of a massive-scale first-person dataset: Episodic Memory, Hands & Objects, Forecasting, Audio-Visual Diarization, and Social Interaction. Each benchmark focuses on the 3 main types of interactions within egocentric video: <em>Places</em>, <em>Objects</em>, and <em>People</em>, with each benchmark task including its own set of unique annotations.
                                 </p>
                             </div>
-                            <div class="col-sm-9 col-md-6 col-lg-7">
+                            <div class="col-xs-12 col-lg-7 col-lg-7">
                                 <div class="slide-image-wrap">
                                     <img class="slide-image" src="assets/images/tourism-2.jpg" alt="Placeholder image 3">
                                 </div>
@@ -120,13 +138,13 @@
 
                     <div class="item">
                         <div class="slide">
-                            <div class="col-sm-3 col-md-6 col-lg-5 col-lg-offset-1 slide-content">
+                            <div class="col-xs-12 col-lg-4 col-lg-offset-1 slide-content">
                                 <h2 class="title">PRIVACY/ETHICS</h2>
                                 <p class="slide-text">
                                     From its inception, high standards of privacy and ethics were paramount for the Ego4D project. Each partner ensured that all collected video and audio met University and consortium requirements. These include (but are not limited to): Complying with laws and regulations within country of collection; Respecting the right of others; and De-identify identifiable information using robust manual and automatic processes.
                                 </p>
                             </div>
-                            <div class="col-sm-9 col-md-6 col-lg-7">
+                            <div class="col-xs-12 col-lg-7 col-lg-7">
                                 <div class="slide-image-wrap">
                                     <img class="slide-image" src="assets/images/tourism-2.jpg" alt="Placeholder image 3">
                                 </div>
@@ -152,10 +170,10 @@
         <section id="challenges">
             <div class="container">
                 <div class="row card-row">
-                    <div class="col-xs-6 col-sm-6 col-lg-3 title">
+                    <div class="col-xs-12 col-sm-6 col-lg-3 title">
                         <h2 class="title">Challenges</h2>
                     </div>
-                    <div class="col-xs-6 col-sm-6 col-lg-3 card-block">
+                    <div class="col-xs-12 col-sm-6 col-lg-3 card-block">
                         <div class="card-content">
                             <div class="card-image">
                                 <img src="assets/images/h+o.png" alt="Placeholder image 3">
@@ -165,7 +183,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-6 col-sm-6 col-lg-3 card-block">
+                    <div class="col-xs-12 col-sm-6 col-lg-3 card-block">
                         <div class="card-content">
                             <div class="card-image">
                                 <img src="assets/images/forecasting.png" alt="Placeholder image 4">
@@ -175,7 +193,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-6 col-sm-6 col-lg-3 card-block">
+                    <div class="col-xs-12 col-sm-6 col-lg-3 card-block">
                         <div class="card-content">
                             <div class="card-image">
                                 <img src="assets/images/episodic.png" alt="Placeholder image 5">
@@ -185,8 +203,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-6 col-sm-6 col-lg-3 card-block empty-block"></div>
-                    <div class="col-xs-6 col-sm-6 col-lg-3 card-block">
+                    <div class="col-xs-12 col-sm-6 col-lg-3 card-block empty-block"></div>
+                    <div class="col-xs-12 col-sm-6 col-lg-3 card-block">
                         <div class="card-content">
                             <div class="card-image">
                                 <img src="assets/images/a-vD.png" alt="Placeholder image 6">
@@ -196,7 +214,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-6 col-sm-6 col-lg-3 card-block">
+                    <div class="col-xs-12 col-sm-6 col-lg-3 card-block">
                         <div class="card-content">
                             <div class="card-image">
                                 <img src="assets/images/social.png" alt="Placeholder image 7">
@@ -220,19 +238,19 @@
                 <div class="content-row">
                     <div id="tabbed-content">
                         <ul class="nav nav-tabs">
-                            <li class="nav-link active">
+                            <li id="hoi" class="nav-link active">
                                 <a data-toggle="tab" href="#menu1">HOI</a>
                             </li>
-                            <li class="nav-link">
+                            <li id="forecasting" class="nav-link">
                                 <a data-toggle="tab" href="#menu2">Forecasting</a>
                             </li>
-                            <li class="nav-link">
+                            <li id="episodic-memory" class="nav-link">
                                 <a data-toggle="tab" href="#menu3">Episodic Memory</a>
                             </li>
-                            <li class="nav-link">
+                            <li id="av-diarization" class="nav-link">
                                 <a data-toggle="tab" href="#menu4">AV Diarization</a>
                             </li>
-                            <li class="nav-link">
+                            <li id="social" class="nav-link">
                                 <a data-toggle="tab" href="#menu5">Social</a>
                             </li>
                         </ul>
@@ -448,7 +466,7 @@
         <section id="consortium">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-md-8 col-lg-7 col-md-8">
+                    <div class="col-md-8 col-lg-7">
                         <div class="row">
                             <div class="row-image">
                                 <div class="image">
@@ -496,8 +514,8 @@
                         </div>
                     </div>
                     
-                    <div id="consortium-text" class="col-md-4 col-lg-3">
-                       <h3 class="title"><strong>EGO4D Consortium</strong></h3>
+                    <div id="consortium-text" class="col-md-4 col-lg-5">
+                       <h3 class="title">EGO4D Consortium</h3>
                        <p>EGO4D was collected by a consortium of 14 universities and Facebook AI Research. </p>
                     </div>
                 </div>
@@ -507,13 +525,13 @@
         <section id="qa">
             <div class="container">
                 <div class="row">
-                    <div class="title-block align-center">
+                    <div class="col-xs-12 align-center">
                         <h3 class="title large-text">QUESTIONS / ANSWERS</h3>
                     </div>
                 </div>
                 <div class="timelines-container">
                     <div class="row timeline-element divider-line">
-                        <div class="col-md-6 col-lg-6">
+                        <div class="col-lg-6 col-md-6 col-xs-11 col-xs-offset-1 col-md-offset-0 col-lg-offset-0">
                             <div class="timeline-text-content">
                                 <h4 class="small-title">Where can I find more details?</h4>
                                 <p>
@@ -522,13 +540,12 @@
                             </div>
                         </div>
                         <span class="timeline-point"></span>
-                        <div class="timeline-data-panel col-md-6 col-lg-6">
-                        </div>
+                        <div class="timeline-data-panel col-lg-6 col-md-6"></div>
                     </div>
                     <div class="row timeline-element divider-line">
-                        <div class="timeline-data-panel col-md-6 col-lg-6"></div>
+                        <div class="timeline-data-panel col-lg-6 col-md-6"></div>
                         <span class="timeline-point"></span>
-                        <div class="col-md-6 col-lg-6">
+                        <div class="col-lg-6 col-md-6 col-xs-11 col-xs-offset-1 col-md-offset-0 col-lg-offset-0">
                             <div class="timeline-text-content">
                                 <h4 class="small-title">What MetaData is available?</h4>
                                 <p>
@@ -538,7 +555,7 @@
                         </div>
                     </div>
                     <div class="row timeline-element divider-line">
-                        <div class="col-md-6 col-lg-6">
+                        <div class="col-lg-6 col-md-6 col-xs-11 col-xs-offset-1 col-md-offset-0 col-lg-offset-0">
                             <div class="timeline-text-content">
                                 <h4 class="small-title">Does the data contain identifying information of individuals?</h4>
                                 <p>
@@ -547,12 +564,12 @@
                             </div>
                         </div>
                         <span class="timeline-point"></span>
-                        <div class="timeline-data-panel col-md-6 col-lg-6"></div>
+                        <div class="timeline-data-panel col-lg-6 col-md-6"></div>
                     </div>
                     <div class="row timeline-element divider-line">
-                        <div class="timeline-data-panel col-md-6 col-lg-6"></div>
+                        <div class="timeline-data-panel col-lg-6 col-md-6"></div>
                         <span class="timeline-point"></span>
-                        <div class="col-md-6 col-lg-6">
+                        <div class="col-lg-6 col-md-6 col-xs-11 col-xs-offset-1 col-md-offset-0 col-lg-offset-0">
                             <div class="timeline-text-content">
                                 <h4 class="small-title">What resolution and framerate are available?</h4>
                                 <p>
@@ -562,7 +579,7 @@
                         </div>
                     </div>
                     <div class="row timeline-element divider-line">
-                        <div class="col-md-6 col-lg-6">
+                        <div class="col-lg-6 col-md-6 col-xs-11 col-xs-offset-1 col-md-offset-0 col-lg-offset-0">
                             <div class="timeline-text-content">
                                 <h4 class="small-title">How can I participate in the benchmarks?</h4>
                                 <p>
@@ -571,39 +588,13 @@
                             </div>
                         </div>
                         <span class="timeline-point"></span>
-                        <div class="timeline-data-panel col-md-6 col-lg-6"></div>
+                        <div class="timeline-data-panel col-lg-6 col-md-6"></div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="subscribe">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                        <h4 class="title form-title">DOWNLOAD EGO4D</h4>
-                    </div>
-                    <div class="col-lg-4 col-md-3 col-sm-6 col-xs-6">
-                        <p>License forms (for all partners) should be signed to access videos, metadata and annotations. Enter your email. You will receive instructions shortly.</p>
-                    </div>
-                    <div class="col-lg-5 col-md-4">
-                        <div class="subscribe__form">
-                            <form>
-                                <div class="row">
-                                    <div id="form-response" hidden="hidden" class="alert"></div>
-                                </div>
-                                <div class="dragArea row">
-                                    <div class="form-group col-md-9 col-lg-7" data-for="email">
-                                        <input type="email" id="email" name="email" placeholder="Your Email" required="required" class="subscription-form-control" id="subscription-form">
-                                        <button id="submit-btn" class="btn large-button btn-warning">Subscribe</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        
 
         <section id="people">
             <div class="container">
@@ -736,33 +727,64 @@
             </div>
         </section>
 
+        <section id="subscribe">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 col-xs-6">
+                        <h4 class="title form-title">DOWNLOAD EGO4D</h4>
+                    </div>
+                    <div class="col-lg-4 col-xs-6">
+                        <p>License forms (for all partners) should be signed to access videos, metadata and annotations. Enter your email. You will receive instructions shortly.</p>
+                    </div>
+                    <div class="col-lg-5 col-xs-12">
+                        <div>
+                            <form>
+                                <div class="row">
+                                    <div id="form-response" hidden="hidden" class="alert"></div>
+                                </div>
+                                <div class="dragArea row">
+                                    <div class="form-group col-xs-12" data-for="email">
+                                        <input type="email" id="email" name="email" placeholder="Your Email" required="required" class="subscription-form-control" id="subscription-form">
+                                        <button id="submit-btn" class="btn large-button themed-button">Subscribe</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <footer>
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-9 col-lg-8 col-md-7 col-sm-12 nav-footer">
+                    <div class="col-lg-8 col-md-7 col-sm-12 col-xs-9 nav-footer">
                         <ul class="menu-footer">
                             <li class="menu-item">
-                                <a href="index.html">About Us</a>
+                                <a href="#">About Us</a>
                             </li>
                             <li class="menu-item">
-                                <a href="index.html">Careers</a>
+                                <a href="#">Careers</a>
                             </li>
                             <li class="menu-item">
-                                <a href="index.html">News</a>
+                                <a href="#">News</a>
                             </li>
                         </ul>
                         <ul class="menu-footer">
                             <li class="menu-item">
-                                <a href="index.html">Hand-Object Interactions</a>
+                                <a href="#hoi" goto="menu1" onclick="openTabbedContent(this)">Hand-Object Interactions</a>
                             </li>
                             <li class="menu-item">
-                                <a href="index.html">Forecasting</a>
+                                <a href="#forecasting" goto="menu2" onclick="openTabbedContent(this)">Forecasting</a>
                             </li>
                             <li class="menu-item">
-                                <a href="index.html">Episodic Memory</a>
+                                <a href="#episodic-memory" goto="menu3" onclick="openTabbedContent(this)">Episodic Memory</a>
                             </li>
                             <li class="menu-item">
-                                <a href="index.html">AV Diarization</a>
+                                <a href="#av-diarization" goto="menu4" onclick="openTabbedContent(this)">AV Diarization</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#social" goto="menu5" onclick="openTabbedContent(this)">Social</a>
                             </li>
                         </ul>
                     </div>
