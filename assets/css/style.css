@@ -296,6 +296,7 @@ a.button-link {
     justify-content: center;
     align-items: flex-start;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .title,
@@ -321,7 +322,6 @@ a.button-link {
 .slide-content {
     text-align: left;
     padding-top: 50px;
-    max-width: 33%;
 }
 
 .slide-image-wrap {
@@ -417,7 +417,9 @@ a.button-link {
 }
 
 .card-image img {
-    max-width: 145px;
+    max-width: 125px;
+    max-height: 140px;
+    align-self: center;
 }
 
 .tab-image {
@@ -760,6 +762,10 @@ footer {
     border-radius: 4px;
 }
 
+#people {
+    padding-bottom: 50px;
+}
+
 @media (max-width: 1440px) {
     .title {
         font-size: 5rem;
@@ -818,6 +824,11 @@ footer {
 }
 
 @media (max-width: 992px) {
+    .slide-content {
+        padding-top: 0;
+        margin-bottom: 72px;
+    }
+
     #nav-bar {
         padding: 13px 90px;
     }
@@ -889,6 +900,11 @@ footer {
 
     .nav-item {
         border-bottom: 1px solid #ddebe9;
+    }
+
+    .slide-image-wrap {
+        margin-left: 0;
+        margin-bottom: 100px;
     }
 
     #article .image:before {
