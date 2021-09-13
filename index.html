@@ -123,9 +123,9 @@
                     <div class="item">
                         <div class="slide">
                             <div class="col-xs-12 col-lg-4 col-lg-offset-1 slide-content">
-                                <h2 class="title">5 BENCHMARKS</h2>
+                                <h2 class="title">DIVERSE</h2>
                                 <p class="slide-text">
-                                    With its release, Ego4D contains 5 benchmark challenges which explore the unique and interesting aspects of a massive-scale first-person dataset: Episodic Memory, Hands & Objects, Forecasting, Audio-Visual Diarization, and Social Interaction. Each benchmark focuses on the 3 main types of interactions within egocentric video: <em>Places</em>, <em>Objects</em>, and <em>People</em>, with each benchmark task including its own set of unique annotations.
+                                    The dataset is diverse in its geographic covereage, activities, modalities, ...
                                 </p>
                             </div>
                             <div class="col-xs-12 col-lg-7 col-lg-7">
@@ -146,7 +146,7 @@
                             </div>
                             <div class="col-xs-12 col-lg-7 col-lg-7">
                                 <div class="slide-image-wrap">
-                                    <img class="slide-image" src="assets/images/tourism-2.jpg" alt="Placeholder image 3">
+                                    <img class="slide-image" src="assets/images/anony.png" alt="Placeholder image 3">
                                 </div>
                             </div>
                         </div>
@@ -176,10 +176,10 @@
                     <div class="col-xs-12 col-sm-6 col-lg-3 card-block">
                         <div class="card-content">
                             <div class="card-image">
-                                <img src="assets/images/h+o.png" alt="Placeholder image 3">
+                                <img src="assets/images/episodic.png" alt="Placeholder image 5">
                             </div>
                             <div class="card-info">
-                                <h3 class="card-title">Hand-Object Interactions</h3>
+                                <h3 class="card-title">Episodic Memory</h3>
                             </div>
                         </div>
                     </div>
@@ -196,10 +196,10 @@
                     <div class="col-xs-12 col-sm-6 col-lg-3 card-block">
                         <div class="card-content">
                             <div class="card-image">
-                                <img src="assets/images/episodic.png" alt="Placeholder image 5">
+                                <img src="assets/images/h+o.png" alt="Placeholder image 3">
                             </div>
                             <div class="card-info">
-                                <h3 class="card-title">Episodic Memory</h3>
+                                <h3 class="card-title">Hand-Object Interactions</h3>
                             </div>
                         </div>
                     </div>
@@ -238,14 +238,15 @@
                 <div class="content-row">
                     <div id="tabbed-content">
                         <ul class="nav nav-tabs">
-                            <li id="hoi" class="nav-link active">
-                                <a data-toggle="tab" href="#menu1">HOI</a>
+                            <li id="episodic-memory" class="nav-link">
+                                <a data-toggle="tab" href="#menu1">Episodic Memory</a>
                             </li>
+
                             <li id="forecasting" class="nav-link">
                                 <a data-toggle="tab" href="#menu2">Forecasting</a>
                             </li>
-                            <li id="episodic-memory" class="nav-link">
-                                <a data-toggle="tab" href="#menu3">Episodic Memory</a>
+                            <li id="hoi" class="nav-link active">
+                                <a data-toggle="tab" href="#menu3">HOI</a>
                             </li>
                             <li id="av-diarization" class="nav-link">
                                 <a data-toggle="tab" href="#menu4">AV Diarization</a>
@@ -256,42 +257,42 @@
                         </ul>
 
                         <div class="tab-content">
-                            <div id="menu1" class="tab-pane fade in active">
+<div id="menu1" class="tab-pane fade">
                                 <div class="row">
                                     <div class="col-lg-6 tab-wrap">
                                         <div class="tab-image nav-tab-image">
-                                            <img src="assets/images/h+o.png" alt="" title="">
+                                            <img src="assets/images/episodic.png" alt="" title="">
                                         </div>
                                         <div class="tab-card-content">
-                                            <h5 class="card-title">Hand + Object Interaction</h5>
-                                            <p class="card-text"><em>What am I doing and how?</em><br> Going beyond Action Recognition, this benchmark follows when and how an object is changed during its interaction - only possible through a first person Viewpoint.</p>
+                                            <h5 class="card-title">Episodic Memory</h5>
+                                            <p class="card-text"><em>Where is my X?</em><br> Egocentric video gives a recording of a wearer's daily life, and can be used augment human memory on demand. Such a system might be able to remind a user where they left their keys, if they added salt to a recipe, or recall events they attended.</p>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 tab-wrap">
                                         <div class="tab-image nav-tab-image">
-                                            <img src="assets/images/h+o.png" alt="" title="">
+                                            <img src="assets/images/episodic.png" alt="" title="">
                                         </div>
                                         <div class="tab-card-content">
-                                            <h5 class="card-title">Changes of State</h5>
-                                            <p class="card-text">Objects can change Temporally, Spatially and Semantically - an onion might be minced. These are represented by three different tasks in the benchmark: Key Frame Detection, Active Object Detection and State-Change Classification.</p>
+                                            <h5 class="card-title">Querying Memory</h5>
+                                            <p class="card-text">There are three different tasks within this benchmark based on the input type used to query the memory: visual query (i.e. find the location given an image of keys), textual query ("how many cups of sugar did I add?"), and a moment query (find all instances of "When did I play with the dog").</p>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 tab-wrap">
                                         <div class="tab-image nav-tab-image">
-                                            <img src="assets/images/h+o.png" alt="" title="">
+                                            <img src="assets/images/episodic.png" alt="" title="">
                                         </div>
                                         <div class="tab-card-content">
-                                            <h5 class="card-title">Pre/Post Conditions</h5>
-                                            <p class="card-text">Each annotation has been labelled with prior states (i.e. the prior condition) and posterior states as well as the point of no return (PNR) in which the state change is triggered.</p>
+                                            <h5 class="card-title">Construction of Queries</h5>
+                                            <p class="card-text">For the language queries, a set of templates were designed which annotators used to write questions for the task. Examples include "what is the state of object X?" or "where is object X after event Y"? These were then re-written for variety.</p>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 tab-wrap">
                                         <div class="tab-image nav-tab-image">
-                                            <img src="assets/images/h+o.png" alt="" title="">
+                                            <img src="assets/images/episodic.png" alt="" title="">
                                         </div>
                                         <div class="tab-card-content">
-                                            <h5 class="card-title">World of Interactions</h5>
-                                            <p class="card__text">The data for this challenge has been selected from activities with a high level of hand-object interactions such as knitting, capentry and baking.</p>
+                                            <h5 class="card-title">Recalling Lives</h5>
+                                            <p class="card__text">Given the broad nature of this benchmark, there isn't a subset of activities that were focused on within this task, leading to a realistic and challenging benchmark.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -336,46 +337,47 @@
                                     </div>
                                 </div>
                             </div>
-                            <div id="menu3" class="tab-pane fade">
+                            <div id="menu3" class="tab-pane fade in active">
                                 <div class="row">
                                     <div class="col-lg-6 tab-wrap">
                                         <div class="tab-image nav-tab-image">
-                                            <img src="assets/images/episodic.png" alt="" title="">
+                                            <img src="assets/images/h+o.png" alt="" title="">
                                         </div>
                                         <div class="tab-card-content">
-                                            <h5 class="card-title">Episodic Memory</h5>
-                                            <p class="card-text"><em>Where is my X?</em><br> Egocentric video gives a recording of a wearer's daily life, and can be used augment human memory on demand. Such a system might be able to remind a user where they left their keys, if they added salt to a recipe, or recall events they attended.</p>
+                                            <h5 class="card-title">Hand + Object Interaction</h5>
+                                            <p class="card-text"><em>What am I doing and how?</em><br> Going beyond Action Recognition, this benchmark follows when and how an object is changed during its interaction - only possible through a first person Viewpoint.</p>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 tab-wrap">
                                         <div class="tab-image nav-tab-image">
-                                            <img src="assets/images/episodic.png" alt="" title="">
+                                            <img src="assets/images/h+o.png" alt="" title="">
                                         </div>
                                         <div class="tab-card-content">
-                                            <h5 class="card-title">Querying Memory</h5>
-                                            <p class="card-text">There are three different tasks within this benchmark based on the input type used to query the memory: visual query (i.e. find the location given an image of keys), textual query ("how many cups of sugar did I add?"), and a moment query (find all instances of "When did I play with the dog").</p>
+                                            <h5 class="card-title">Changes of State</h5>
+                                            <p class="card-text">Objects can change Temporally, Spatially and Semantically - an onion might be minced. These are represented by three different tasks in the benchmark: Key Frame Detection, Active Object Detection and State-Change Classification.</p>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 tab-wrap">
                                         <div class="tab-image nav-tab-image">
-                                            <img src="assets/images/episodic.png" alt="" title="">
+                                            <img src="assets/images/h+o.png" alt="" title="">
                                         </div>
                                         <div class="tab-card-content">
-                                            <h5 class="card-title">Construction of Queries</h5>
-                                            <p class="card-text">For the language queries, a set of templates were designed which annotators used to write questions for the task. Examples include "what is the state of object X?" or "where is object X after event Y"? These were then re-written for variety.</p>
+                                            <h5 class="card-title">Pre/Post Conditions</h5>
+                                            <p class="card-text">Each annotation has been labelled with prior states (i.e. the prior condition) and posterior states as well as the point of no return (PNR) in which the state change is triggered.</p>
                                         </div>
                                     </div>
                                     <div class="col-lg-6 tab-wrap">
                                         <div class="tab-image nav-tab-image">
-                                            <img src="assets/images/episodic.png" alt="" title="">
+                                            <img src="assets/images/h+o.png" alt="" title="">
                                         </div>
                                         <div class="tab-card-content">
-                                            <h5 class="card-title">Recalling Lives</h5>
-                                            <p class="card__text">Given the broad nature of this benchmark, there isn't a subset of activities that were focused on within this task, leading to a realistic and challenging benchmark.</p>
+                                            <h5 class="card-title">World of Interactions</h5>
+                                            <p class="card__text">The data for this challenge has been selected from activities with a high level of hand-object interactions such as knitting, capentry and baking.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            
                             <div id="menu4" class="tab-pane fade">
                                 <div class="row">
                                     <div class="col-lg-6 tab-wrap">
@@ -700,9 +702,9 @@
                             <li>Ruijie Tao</li>
                             <li>Yunyi Zhu</li>
                         </ul>
-                        <h4 class="card-title">University of Bristol, UK</h4>
+                        <h4 class="card-title">University of Bristol, UK <a href="https://www.bristol.ac.uk/"><i class="fas fa-link"></i></a></h4>
                         <ul>
-                            <li><a href="http://dimadamen.github.io/">Dima Damen</a> (PI)</li>
+                            <li>Dima Damen (PI) <a href="http://dimadamen.github.io/"><i class="fas fa-link"></i></a> <a href="http://twitter.com/dimadamen"><i class="fab fa-twitter"></i></a></li>
                             <li>Michael Wray</li>
                             <li>Will Price</li>
                             <li>Jonathan Munro</li>
