@@ -459,6 +459,21 @@ a.button-link {
     width: 100%;
 }
 
+
+#parallax-image {
+    height: 550px;
+    width: 100%;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background: url('../images/map-Ego4D.png') 50% 50%/cover no-repeat border-box fixed;
+    overflow: hidden;
+    color: white;
+}
+
+#parallax-title {
+    margin-bottom: 35px;
+}
+
 .nav-tabs {
     margin-bottom: 105px !important;
     display: flex;
