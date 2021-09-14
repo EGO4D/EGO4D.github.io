@@ -261,7 +261,7 @@ a.button-link {
 }
 
 .item.active, .item-next, .item-prev {
-    display: flex !important;
+    display: block !important;
 }
 
 #carousel-controls {
