@@ -172,6 +172,11 @@ a.button-link {
     text-decoration: none;
 }
 
+a.btn-translucent {
+    background-color: #7030a0;
+    color: white !important;
+}
+
 .themed-button {
     color: #fff;
     background-color: #7030a0;
@@ -341,7 +346,7 @@ a.button-link {
 .slide-image {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .slide-text {
