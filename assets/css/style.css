@@ -600,8 +600,10 @@ a.btn-translucent {
 }
 
 #consortium-text {
-    padding-left: 80px;
+    padding-left: 4vw;
     padding-right: 0;
+    margin-bottom: 32px;
+
 }
 
 .align-items-center {
@@ -628,6 +630,34 @@ a.btn-translucent {
     max-height: 245px;
 }
 
+.consortium_logos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.consortium_logos > div {
+    flex: 1;
+    height: 64px;
+    margin: 24px 0;
+    max-width: fit-content;
+}
+
+.consortium_logos > div > img {
+    max-height: 100%;
+    width: auto;
+}
+
+.md-flip-order {
+    flex-direction: row;
+}
+
+@media (max-width: 991px) {
+    .md-flip-order {
+        flex-direction: column-reverse;
+    }
+}
 #qa {
     padding: 75px 0;
 }
