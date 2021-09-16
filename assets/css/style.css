@@ -641,20 +641,22 @@ a.btn-translucent {
 .consortium_logos {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   margin-bottom: 12px;
 }
 .consortium_logos > div {
-  flex: 1;
-  height: 64px;
+  flex: 1 1 30%;
   margin: 24px 0;
-  max-width: fit-content;
+  max-width: 300px;
+  min-width: 200px;
 }
 
 .consortium_logos > div > img {
-  max-height: 100%;
-  width: auto;
+  max-height: 64px;
+  min-height: 32px;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .md-flip-order {
@@ -664,6 +666,9 @@ a.btn-translucent {
 @media (max-width: 991px) {
   .md-flip-order {
     flex-direction: column-reverse;
+  }
+  #consortium {
+    text-align: center;
   }
 }
 #qa {
