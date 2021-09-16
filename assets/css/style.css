@@ -29,6 +29,13 @@ header {
     word-wrap: normal;
 }
 
+.voffset-16 {
+  margin-top: 16px;
+}
+.voffset-32 {
+  margin-top: 32px;
+}
+
 #nav-bar {
     display: flex;
     align-items: center;
@@ -750,7 +757,6 @@ a.btn-translucent {
 .form-title {
     padding: 7px 7px 7px 0;
     margin-bottom: 0;
-    border-right: 1px solid #7030a0;
     text-align: center;
     color: #7030a0;
 }
@@ -929,7 +935,7 @@ footer {
     ul:not(.menu-footer) .menu-item {
         text-align: center;
     }
-    
+
     .widget {
         display: flex;
         flex-direction: column;
@@ -960,7 +966,7 @@ footer {
         flex-direction: row;
         align-items: center;
     }
-    
+
     #nav-menu-list li {
         padding: 10px;
     }
@@ -972,7 +978,7 @@ footer {
     .slide-content {
         margin-left: 8.3%;
     }
-    
+
     .slide {
         flex-wrap: nowrap;
     }
@@ -1013,7 +1019,7 @@ footer {
 
 @media (min-width: 1199px) {
     .form-title {
-        padding: 5px;
+    border-right: 1px solid #7030a0;
     }
 }
 
