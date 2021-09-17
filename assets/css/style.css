@@ -799,6 +799,9 @@ a.btn-translucent {
 #submit-btn {
   margin-left: -5px;
 }
+#submit-btn:hover {
+  color: white;
+}
 
 footer {
   padding-top: 5rem;
