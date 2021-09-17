@@ -258,6 +258,7 @@ a.btn-translucent {
 .carousel-inner {
   margin-bottom: 70px;
   overflow: hidden;
+  height: min(900px, max(512px, 70vh));
 }
 
 #carousel-bg {
@@ -347,19 +348,18 @@ a.btn-translucent {
 }
 
 .slide-image-wrap {
-  max-width: 100%;
-  height: 60vh;
   margin-left: 11%;
+  padding-top: 70px;
 }
 
 .slide-image {
   width: 100%;
-  height: 100%;
-  object-fit: contain;
+  max-height: 900px;
+  object-fit: cover;
 }
 
 .slide-text {
-  font-size: 1.8rem;
+  font-size: min(1.8rem, max(1em, 3vmin));
 }
 
 #challenges {
@@ -678,6 +678,9 @@ a.btn-translucent {
   }
   #right-control {
     right: calc(50% - 64px);
+  }
+  .slide-image-wrap {
+    padding-top: 0px;
   }
 }
 #qa {
