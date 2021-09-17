@@ -292,13 +292,13 @@ a.btn-translucent {
 }
 
 #left-control {
-  left: 45%;
+  left: calc(75% - 64px);
   right: auto;
 }
 
 #right-control {
   left: auto;
-  right: 40%;
+  right: calc(25% - 64px);
 }
 
 #left-control,
@@ -669,6 +669,15 @@ a.btn-translucent {
   }
   #consortium {
     text-align: center;
+  }
+  #carousel-bg {
+    display: none;
+  }
+  #left-control {
+    left: calc(50% - 64px);
+  }
+  #right-control {
+    right: calc(50% - 64px);
   }
 }
 #qa {
