@@ -22,7 +22,7 @@ $(document).ready(function() {
             var responseText = responseTextElement[0].innerText;
             
             var rerequest = false
-            if (responseText.includes("A request for this email") || responseText.includes("Document request successful!")) {
+            if (responseText.includes("Rerequest for this email") || responseText.includes("Document request successful!")) {
                 rerequest = true;
             }
                      
