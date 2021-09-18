@@ -41,7 +41,7 @@ $(document).ready(function() {
                         responseTextElement.html('<div class="mt-3 alert alert-success" role="alert">Rerequest for this email has been sent. Please ensure you are also checking your Junk mail.</div>');
                         $('#submit-btn').text('Didn\'t receive an email? Request Again.');
                     } else if (requestStatus === "Pending") {                    
-                        responseTextElement.html('<div class="mt-3 alert alert-success" role="alert">This licenses for this email have already been signed and are currently being processed. Please allow for up to 3 days from when the request was made to hear back regarding its status</div>');
+                        responseTextElement.html('<div class="mt-3 alert alert-success" role="alert">This licenses for this email have already been signed and are currently being processed. Please allow for up to 3 days from when the licenses were signed to hear back regarding your requests status</div>');
                         $('#submit-btn').text('Request Form.');
                     } else if (requestStatus === "Approved") {                    
                         responseTextElement.html('<div class="mt-3 alert alert-success" role="alert">This licenses for this email have already been approved. There is no need for another request.</div>');
