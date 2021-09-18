@@ -19,13 +19,7 @@ $(document).ready(function() {
 
         if (validateEmail(email)) {            
             responseTextElement.removeClass('hidden');
-            var responseText = responseTextElement[0].innerText;
-            
-            var rerequest = false
-            if (responseText.includes("Rerequest for this email") || responseText.includes("Document request successful!")) {
-                rerequest = true;
-            }
-                     
+                                
             var data = JSON.stringify({
                 'email': email,
                 'rerequest': rerequest
