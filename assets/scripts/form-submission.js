@@ -35,7 +35,7 @@ $(document).ready(function() {
 
             $.ajax({
                 type: 'POST',
-                url: 'https://s08dq85nfd.execute-api.eu-west-1.amazonaws.com/Development/request-document',
+                url: 'https://s08dq85nfd.execute-api.eu-west-1.amazonaws.com/RequestHandler/request-document',
                 contentType: 'application/json',
                 data: data,
                 success: function(res) {
