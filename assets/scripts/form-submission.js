@@ -3,24 +3,22 @@ function validateEmail(email) {
     return re.test(String(email).toLowerCase());
 }
   
-$(document).ready(function() {
+$(document).ready(function() {     
+    var rerequest = false;
 
     // Handle form submission.
     $("#submit-btn").click(function(e) {
 
         var email = $("#email").val(),
-            utcSeconds = Date.now() / 1000,
-            timestamp = new Date(0),
             responseTextElement = $('#form-response');
 
         e.preventDefault();
 
         $('#submit-btn').prop('disabled', true);
-        $('#submit-btn').html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>  Document requested.</button>');
+        $('#submit-btn').html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>Document requested.</button>');
 
-        if (validateEmail(email)) {        
-            var rerequest = false;
-            if ($('#submit-btn').text === 'Didn\'t receive an email? Request Again.') {
+        if (validateEmail(email)) {   
+            if (responseTextElement.html.includes(\'A request for this email'\) || responseTextElement.html.includes(\'Document request successful!'\)) {
                 rerequest = true;
             }
             
