@@ -55,6 +55,8 @@ $(document).ready(function() {
                     } else if (requestStatus === "Bounced") {                    
                         responseTextElement.html('<div class="mt-3 alert alert-danger" role="alert">We are unable to succesfully deliver to this email address. Please try again with another email address.</div>');
                         $('#submit-btn').text('Request using a new email.');
+                    } else if (requestStatus === "RequestDenied") {                    
+                        responseTextElement.html('<div class="mt-3 alert alert-danger" role="alert">Too many requests have been made for this email. If you have still not received an email, please contact uob-ego4d-info@bristol.ac.uk to resolve the issue.</div>');
                     }
                     $('#submit-btn').prop('disabled', false);
                     console.log(res);
