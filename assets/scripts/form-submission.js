@@ -18,7 +18,7 @@ $(document).ready(function() {
         $('#submit-btn').html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>Document requested.</button>');
 
         if (validateEmail(email)) {   
-            if (responseTextElement.html.includes(\'A request for this email'\) || responseTextElement.html.includes(\'Document request successful!'\)) {
+            if (responseTextElement.html.includes(/'A request for this email'/) || responseTextElement.html.includes(/'Document request successful!'/)) {
                 rerequest = true;
             }
             
