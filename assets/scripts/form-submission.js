@@ -48,15 +48,19 @@ $(document).ready(function() {
                         $('#submit-btn').text('Didn\'t receive an email? Request Again.');
                     } else if (requestStatus === "Pending") {                    
                         responseTextElement.html('<div class="mt-3 alert alert-success" role="alert">This licenses for this email have already been signed and are currently being processed. Please allow for up to 3 days from when the request was made to hear back regarding its status</div>');
+                        $('#submit-btn').text('Request Form.');
                     } else if (requestStatus === "Approved") {                    
                         responseTextElement.html('<div class="mt-3 alert alert-success" role="alert">This licenses for this email have already been approved. There is no need for another request.</div>');
+                        $('#submit-btn').text('Request Form.');
                     } else if (requestStatus === "Rejected") {                    
                         responseTextElement.html('<div class="mt-3 alert alert-danger" role="alert">This licenses for this email were recently rejected. Please allow up to 7 days since notifcation of the rejection to request again.</div>');
+                        $('#submit-btn').text('Request Form.');
                     } else if (requestStatus === "Bounced") {                    
                         responseTextElement.html('<div class="mt-3 alert alert-danger" role="alert">We are unable to succesfully deliver to this email address. Please try again with another email address.</div>');
                         $('#submit-btn').text('Request using a new email.');
                     } else if (requestStatus === "RequestDenied") {                    
                         responseTextElement.html('<div class="mt-3 alert alert-danger" role="alert">Too many requests have been made for this email. If you have still not received an email, please contact uob-ego4d-info@bristol.ac.uk to resolve the issue.</div>');
+                        $('#submit-btn').text('Request Form.');
                     }
                     $('#submit-btn').prop('disabled', false);
                     console.log(res);
