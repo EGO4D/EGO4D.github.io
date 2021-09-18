@@ -17,19 +17,21 @@ $(document).ready(function() {
         $('#submit-btn').prop('disabled', true);
         $('#submit-btn').html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>Document requested.</button>');
 
-        if (validateEmail(email)) {   
-            if (responseTextElement.html.includes(/'A request for this email'/) || responseTextElement.html.includes(/'Document request successful!'/)) {
+        if (validateEmail(email)) {            
+            responseTextElement.removeClass('hidden');
+            var responseText = responseTextElement[0].innerText;
+            
+            var rerequest = false
+            if (responseText.includes(/'A request for this email'/) || responseText.includes(/'Document request successful!'/)) {
                 rerequest = true;
             }
-            
+                     
             var data = JSON.stringify({
                 'email': email,
                 'rerequest': rerequest
             });
 
             console.log(data);
-        
-            responseTextElement.removeClass('hidden');
 
             $.ajax({
                 type: 'POST',
