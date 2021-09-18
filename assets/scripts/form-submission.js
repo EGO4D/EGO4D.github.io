@@ -34,7 +34,7 @@ $(document).ready(function() {
                 data: data,
                 success: function(res) {
                     var requestStatus = res.headers["Request-Status"];
-                    if (requestStatus === "New") {                   
+                    if (requestStatus === "New" || requestStatus === "RejectionCleared") {                   
                         responseTextElement.html('<div class="mt-3 alert alert-success" role="alert">Document request successful! Please check your email including your Junk mail.</div>');
                         $('#submit-btn').text('Didn\'t receive an email? Request Again.');
                     } else if (requestStatus === "Requested") {                   
@@ -55,7 +55,7 @@ $(document).ready(function() {
                     } else if (requestStatus === "RequestDenied") {                    
                         responseTextElement.html('<div class="mt-3 alert alert-danger" role="alert">Too many requests have been made for this email. If you have still not received a link for the licenses, please contact uob-ego4d-info@bristol.ac.uk to resolve the issue.</div>');
                         $('#submit-btn').text('Request Form.');
-                    }
+                    } 
                     $('#submit-btn').prop('disabled', false);
                     console.log(res);
                 },
