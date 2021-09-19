@@ -21,8 +21,7 @@ $(document).ready(function() {
             responseTextElement.removeClass('hidden');
                                 
             var data = JSON.stringify({
-                'email': email,
-                'rerequest': rerequest
+                'email': email
             });
 
             console.log(data);
