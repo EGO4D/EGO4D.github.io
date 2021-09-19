@@ -34,25 +34,25 @@ $(document).ready(function() {
                 data: data,
                 success: function(res) {
                     var requestStatus = res.headers["Request-Status"];
-                    if (requestStatus === "New" || requestStatus === "RejectionCleared") {                   
+                    if (requestStatus === "new") {                   
                         responseTextElement.html('<div class="mt-3 alert alert-success" role="alert">Document request successful! Please check your email including your Junk mail.</div>');
                         $('#submit-btn').text('Didn\'t receive an email? Request Again.');
-                    } else if (requestStatus === "Requested") {                   
+                    } else if (requestStatus === "requested") {                   
                         responseTextElement.html('<div class="mt-3 alert alert-success" role="alert">Rerequest for this email has been sent. Please ensure you are also checking your Junk mail.</div>');
                         $('#submit-btn').text('Didn\'t receive an email? Request Again.');
-                    } else if (requestStatus === "Pending") {                    
+                    } else if (requestStatus === "pending") {                    
                         responseTextElement.html('<div class="mt-3 alert alert-success" role="alert">The licenses for this email have already been signed and are currently being processed. Please allow for up to 3 days from when the licenses were signed to hear back regarding your requests status.</div>');
                         $('#submit-btn').text('Request Form.');
-                    } else if (requestStatus === "Approved") {                    
+                    } else if (requestStatus === "approved") {                    
                         responseTextElement.html('<div class="mt-3 alert alert-success" role="alert">The licenses for this email have already been approved. There is no need for another request.</div>');
                         $('#submit-btn').text('Request Form.');
-                    } else if (requestStatus === "Rejected") {                    
+                    } else if (requestStatus === "rejected") {                    
                         responseTextElement.html('<div class="mt-3 alert alert-danger" role="alert">The licenses for this email were recently rejected. Please allow up to 7 days since notifcation of the rejection to request again.</div>');
                         $('#submit-btn').text('Request Form.');
-                    } else if (requestStatus === "Bounced") {                    
+                    } else if (requestStatus === "nounced") {                    
                         responseTextElement.html('<div class="mt-3 alert alert-danger" role="alert">We are unable to succesfully deliver to this email address. Please try again with another email address.</div>');
                         $('#submit-btn').text('Request using a new email.');
-                    } else if (requestStatus === "RequestDenied") {                    
+                    } else if (requestStatus === "request-denied") {                    
                         responseTextElement.html('<div class="mt-3 alert alert-danger" role="alert">Too many requests have been made for this email. If you have still not received a link for the licenses, please contact uob-ego4d-info@bristol.ac.uk to resolve the issue.</div>');
                         $('#submit-btn').text('Request Form.');
                     } 
