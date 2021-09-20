@@ -40,7 +40,7 @@ $(document).ready(function() {
                         responseTextElement.html(`<div class="mt-3 alert alert-success" role="alert">${res.body}</div>`);
                         $('#submit-btn').text('Request Form.');
                     } else {                    
-                        responseTextElement.html('<div class="mt-3 alert alert-danger" role="alert">${res.body}</div>');
+                        responseTextElement.html(`<div class="mt-3 alert alert-danger" role="alert">${res.body}</div>`);
                         $('#submit-btn').text('Request Form.');
                     } 
                     $('#submit-btn').prop('disabled', false);
