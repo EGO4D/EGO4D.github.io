@@ -685,7 +685,11 @@ a.btn-translucent {
 #qa {
   padding: 75px 0;
 }
-
+@media screen and (max-width: 991px) {
+  .timelines-container {
+    margin-left: 20px;
+  }
+}
 .timeline-element {
   margin-top: 20px;
   position: relative;
