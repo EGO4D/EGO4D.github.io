@@ -14,8 +14,16 @@
     />
 
     <title>Egocentric 4D Perception (EGO4D)</title>
+    <link rel="preconnect" href="https://use.fontawesome.com" />
+    <link rel="preconnect" href="https://maxcdn.bootstrapcdn.com" />
+    <link rel="preconnect" href="https://ajax.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
 
     <link rel="stylesheet" href="assets/css/style.css" />
+
+    <link rel="preload" as="image" href="assets/images/ego-4d-01.png" />
+    <link rel="preload" as="image" href="assets/images/map-Ego4D.png" />
 
     <link rel="icon" href="./assets/images/ego4d-icon.ico" />
 
@@ -121,7 +129,7 @@
 
           <div id="nav-logo">
             <a href="#">
-            <img id="logo" src="assets/images/ego-4d-01.png" alt="Logo" />
+              <img id="logo" src="assets/images/ego-4d-01.png" alt="Logo" />
             </a>
           </div>
           <div id="nav-menu" class="collapse">
@@ -193,7 +201,7 @@
               <div class="col-xs-12 col-md-7 col-lg-7 slide-image-wrap">
                 <img
                   class="img-responsive slide-image"
-                  src="assets/images/tsne.png"
+                  src="assets/images/tsne.jpg"
                   alt="Placeholder image 3"
                 />
               </div>
@@ -217,7 +225,7 @@
               <div class="col-xs-12 col-md-7 col-lg-7 slide-image-wrap">
                 <img
                   class="img-responsive slide-image"
-                  src="assets/images/Ego4D-Collage.png"
+                  src="assets/images/Ego4D-Collage.jpg"
                   alt="Scenario Distribution in EGO4D"
                 />
               </div>
@@ -247,7 +255,7 @@
               <div class="col-xs-12 col-md-7 col-lg-7 slide-image-wrap">
                 <img
                   class="img-responsive slide-image"
-                  src="assets/images/anony.png"
+                  src="assets/images/anony.jpg"
                   alt="Placeholder image 3"
                 />
               </div>
@@ -841,8 +849,8 @@
               <div class="timeline-text-content">
                 <h4 class="small-title">When can I download the dataset?</h4>
                 <p>
-                  The dataset will be available for download on Nov 25th 2021. 
-                    The dataset collection and challenges are described in the
+                  The dataset will be available for download on Nov 25th 2021.
+                  The dataset collection and challenges are described in the
                   ArXiv paper above, and further details will be presented in a
                   live reveal session during the
                   <a href="https://eyewear-computing.org/EPIC_ICCV21/"
@@ -902,14 +910,14 @@
                   age, gender and jobs from 75% of our participants who
                   volunteered their demographics, accumulated across countries
                 </p>
-                  <div class="image">
+                <div class="image">
                   <img
                     src="assets/images/demographics.png"
                     alt="EGO4D Demographics"
                     title="EGO4D Demographics"
                     width="100%"
                   />
-                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -1337,4 +1345,51 @@
       </div>
     </section>
   </body>
+  <script>
+    // Setup nav-item on click to toggle the hamburger
+    const navbar = document.getElementById("nav-bar");
+    const hamburger_button = navbar.querySelector("button.navbar-toggler");
+    const navlist = navbar.querySelectorAll("a.nav-link").forEach((el) => {
+      el.addEventListener("click", () => {
+        if (hamburger_button.ariaExpanded === "true") {
+          hamburger_button.click();
+        }
+      });
+    });
+    const parallax = document.getElementById("parallax-image");
+    const tooltip = document.getElementById("parallax-tooltip");
+    const video = document.getElementById("parallax-video");
+    const [enable, disable] = map_hover(tooltip, video, parallax);
+
+    // Intersection observer to transition header and disable onmousemove and disable tooltip
+    let intersection_options = {
+      root: null, // viewport
+      rootMargin: "0px", // No margin
+      threshold: [0.15, 0.2],
+    };
+
+    let previousThreshold = -1;
+    let observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach((_entry) => {
+        // Initial
+        if (previousThreshold === -1) {
+          previousThreshold = _entry.intersectionRatio;
+          return;
+        }
+
+        if (_entry.intersectionRatio > previousThreshold) {
+          // Going up
+          enable();
+        } else {
+          // Going down
+          disable();
+        }
+        previousThreshold = -1;
+      });
+    }, intersection_options);
+    observer.observe(parallax);
+
+    // Setup map hover
+    enable();
+  </script>
 </html>
