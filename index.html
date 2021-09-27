@@ -32,12 +32,15 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
     />
+
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Latest compiled JavaScript for BS3 -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <script src="assets/scripts/form-submission.js"></script>
+    <script src="assets/scripts/ego_bounds.js"></script>
+    <script src="assets/scripts/map-tooltip.js"></script>
 
     <script type="text/javascript">
       function openTabbedContent(element) {
@@ -50,6 +53,52 @@
     </script>
   </head>
   <body>
+    <section id="parallax-image">
+      <div id="parallax-tooltip" class="gone">
+        <video id="parallax-video" muted>
+          Video is not supported in this browser :(
+        </video>
+        <div class="loader"></div>
+      </div>
+      <div class="container">
+        <div class="row h-100">
+          <div class="col-md-6">
+            <!-- <div>
+              <a class="btn large-button button-link btn-translucent" href="#"
+                >Watch the Trailer</a
+              >
+            </div>-->
+            <div class="parallax-description">
+              <img src="assets/images/ego-4d-01.png" alt="Logo" />
+              <p>
+                A massive-scale, diverse, egocentric dataset collected from 13
+                worldwide locations in 7 different countries, with over 2,644
+                hours of unscripted, daily-life videos shot from a first person
+                perspective.
+              </p>
+
+              <small class="text-muted"
+                ><em
+                  >Tap / Hover over map markers above to see an example</em
+                ></small
+              >
+              <div class="row">
+                <a
+                  class="btn btn-lg btn-primary btn-translucent"
+                  role="button"
+                  href="#intro"
+                >
+                  Explore&emsp;&darr;
+                </a>
+                <button class="btn btn-lg btn-default">
+                  Watch Video &nearr;
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <header>
       <nav id="nav-bar" class="navbar nav-dropdown navbar-expand-lg">
         <div id="nav-links" class="container-fluid">
@@ -109,22 +158,7 @@
         </div>
       </nav>
     </header>
-
-    <section id="parallax-image">
-      <div class="container">
-        <div class="row justify-center">
-          <div class="col-lg-6 align-center">
-           <!-- <div>
-              <a class="btn large-button button-link btn-translucent" href="#"
-                >Watch the Trailer</a
-              >
-            </div>-->
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="container-fluid">
+    <section id="intro" class="container-fluid">
       <div
         id="carousel"
         class="carousel slide pointer-event"
