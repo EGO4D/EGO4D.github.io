@@ -50,6 +50,10 @@ const videos = {
         'videos': ['assets/videos/tokyo/1.mp4'],
         'logo': 'assets/images/University_of_Tokyo_Logo-700x181.png',
     },
+    'Los Andes': {
+        'videos': ['assets/videos/losandes/1.mp4'],
+        'logo': 'assets/images/Uniandes-logo.jpeg',
+    },
     'Indiana': {
         'videos': [],
         'logo': 'assets/images/IUB.png',
@@ -61,10 +65,6 @@ const videos = {
     'MIT': {
         'videos': [],
         'logo': 'assets/images/MIT2.jpg',
-    },
-    'Los Andes': {
-        'videos': [],
-        'logo': 'assets/images/Uniandes-logo.jpeg',
     },
 }
 
