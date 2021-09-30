@@ -530,7 +530,7 @@ a.btn-translucent {
   left: 0;
   top: 65vh;
   bottom: 2rem;
-  font-size: min(1.25em, max(0.5em, 2vh));
+  font-size: min(2em, max(0.75em, 2vmin));
   display: none;
 }
 #parallax-image img {
@@ -556,8 +556,10 @@ a.btn-translucent {
   background-color: #7030a0;
   color: white;
 }
-#parallax-image .btn-lg {
-  margin: 0.5em 0.5em;
+#parallax-image .btn {
+  font-size: min(1.5em, max(0.75em, 2vmin));
+  padding: 0.4em 0.75em;
+  margin: 0.5em 0 0 15px;
 }
 @media screen and (min-width: 1025px) and (min-height: 768px) {
   header {
