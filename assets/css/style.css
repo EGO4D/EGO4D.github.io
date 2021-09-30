@@ -561,7 +561,7 @@ a.btn-translucent {
   padding: 0.4em 0.75em;
   margin: 0.5em 0 0 15px;
 }
-@media screen and (min-width: 1025px) and (min-height: 768px) {
+@media screen and (min-width: 1025px) and (min-height: 512px) {
   header {
     position: sticky;
     top: 0;

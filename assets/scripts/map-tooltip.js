@@ -218,7 +218,7 @@ function map_hover(tooltip, video, parallax) {
         [mx, my, Mx, My] = dom_markers["bbox"];
         markers = { ...dom_markers };
         delete markers["bbox"];
-        if (ph < 768 || pw < 1025) {
+        if (ph < 512 || pw < 1024) {
             parallax.onmousemove = null;
             return;
         }
