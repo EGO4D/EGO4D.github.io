@@ -85,6 +85,16 @@ function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
 
+function shuffle(max) {
+    // https://stackoverflow.com/a/12646864
+    // https://blog.codinghorror.com/the-danger-of-naivete/
+    let arr =  [...Array(max).keys()];
+    for (let i = max - 1; i > 0; i--) {
+        let n = getRandomInt(i + 1);
+        [arr[i], arr[n]] = [arr[n], arr[i]];
+    }
+    return arr;
+}
 function map_hover(tooltip, video, parallax) {
     if (!window || !window.innerWidth || !window.innerHeight) {
         return;
@@ -98,6 +108,8 @@ function map_hover(tooltip, video, parallax) {
     let iscale = 1;
     let mx, my, Mx, My, markers;
     let currentMarker = null;
+    let currentIndex = -1;
+    let permutation = [];
 
     video.oncanplay = () => {
         const video_ar = video.videoWidth / video.videoHeight;
@@ -114,7 +126,8 @@ function map_hover(tooltip, video, parallax) {
         } else {
             const { count: _count, prefix: _prefix } = videos[currentMarker];
             if (_count > 0) {
-                video.src = `${ASSET_URL}/${_prefix}/${getRandomInt(_count) + 1}.mp4`;
+                currentIndex = (currentIndex + 1) % _count;
+                video.src = `${ASSET_URL}/${_prefix}/${permutation[currentIndex] + 1}.mp4`;
             } else {
                 video.src = '';
                 tooltip.style.width = '480px'
@@ -201,7 +214,9 @@ function map_hover(tooltip, video, parallax) {
         } else {
             const { count: _count, prefix: _prefix } = videos[marker];
             if (_count > 0) {
-                video.src = `${ASSET_URL}/${_prefix}/${getRandomInt(_count) + 1}.mp4`;
+                permutation = shuffle(_count);
+                currentIndex = 0;
+                video.src = `${ASSET_URL}/${_prefix}/${permutation[currentIndex] + 1}.mp4`;
             } else {
                 video.src = '';
                 tooltip.style.width = '480px'
