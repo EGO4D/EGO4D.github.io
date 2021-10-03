@@ -66,11 +66,10 @@
         <video id="parallax-video" muted>
           Video is not supported in this browser :(
         </video>
-        <div class="loader"></div>
       </div>
-      <div class="container">
+      <div class="container-fluid">
         <div class="row h-100">
-          <div class="col-md-6">
+          <div class="col-md-6 h-100">
             <!-- <div>
               <a class="btn large-button button-link btn-translucent" href="#"
                 >Watch the Trailer</a
@@ -84,11 +83,14 @@
                 daily-life videos shot from a first person perspective.
               </p>
 
-              <small class="text-muted"
+              <small class="text-muted show-1025x512"
                 ><em
                   >Tap / Hover over map markers above to see an example</em
                 ></small
               >
+              <small class="text-muted hidden-1025x512">
+                <em> Tap to start / stop the map from moving. </em>
+              </small>
               <div class="row">
                 <a
                   class="btn btn-primary btn-translucent"
@@ -1434,13 +1436,20 @@
     let intersection_options = {
       root: null, // viewport
       rootMargin: "0px", // No margin
-      threshold: [0.15, 0.2],
+      threshold: [0.4, 0.2],
     };
 
     let previousThreshold = -1;
     let observer = new IntersectionObserver((entries, observer) => {
       entries.forEach((_entry) => {
-        // Initial
+        if (!_entry.isIntersecting) {
+          // If it is not intersecting, disable it.
+          disable();
+          previousThreshold = -1;
+          return;
+        }
+
+        // If intersecting, then it is either scrolling down or scrolling up.
         if (previousThreshold === -1) {
           previousThreshold = _entry.intersectionRatio;
           return;

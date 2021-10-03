@@ -227,6 +227,7 @@ function map_hover(tooltip, video, parallax) {
         tooltip.classList.remove("gone");
 
     };
+    let user_disabled = false;
 
     const calculateImageDims = () => {
         let par = pw / ph;
@@ -251,9 +252,17 @@ function map_hover(tooltip, video, parallax) {
         delete markers["bbox"];
         if (ph < 512 || pw < 1024) {
             parallax.onmousemove = null;
+            parallax.onclick = (e) => {
+                if (e.target !== parallax) {
+                    return;
+                }
+                user_disabled = !user_disabled;
+                parallax.classList.toggle('paused');
+            }
             return;
         }
         parallax.onmousemove = onmousemove;
+        parallax.onclick = null;
         // if (mx < 0 || Mx >= pw || my < 0 || My >= ph) {
         //     parallax.onmousemove = onmousemove;
         // } else {
@@ -273,6 +282,7 @@ function map_hover(tooltip, video, parallax) {
         }
         window.removeEventListener('resize', resizeListener, false);
         parallax.onmousemove = null;
+        parallax.classList.add('paused');
         tooltip.classList.add('gone');
         video.classList.remove('fade-in');
         video.pause();
@@ -284,6 +294,9 @@ function map_hover(tooltip, video, parallax) {
     const enable = () => {
         if (enabled) {
             return;
+        }
+        if (!user_disabled) {
+            parallax.classList.remove('paused');
         }
         window.addEventListener('resize', resizeListener, false);
         resizeListener();
