@@ -496,7 +496,6 @@ a.btn-translucent {
 #parallax-image {
   height: 100vh;
   max-height: 100vh;
-  max-height: -webkit-fill-available;
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -506,7 +505,6 @@ a.btn-translucent {
   content: "";
   height: 100vh;
   max-height: 100vh;
-  max-height: -webkit-fill-available;
   width: 2661px;
   background: url("../images/map-Ego4D.png") 50% 50% / contain repeat-x
     border-box;
@@ -529,7 +527,6 @@ a.btn-translucent {
   content: "";
   height: 100vh;
   max-height: 100vh;
-  max-height: -webkit-fill-available;
   width: 2661px;
   background: url("../images/map-Ego4D.png") 50% 50% / contain repeat-x
     border-box;
