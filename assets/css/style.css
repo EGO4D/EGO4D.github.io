@@ -504,7 +504,9 @@ a.btn-translucent {
 }
 #parallax-image.paused::before {
   content: "";
-  height: 100%;
+  height: 100vh;
+  max-height: 100vh;
+  max-height: -webkit-fill-available;
   width: 2661px;
   background: url("../images/map-Ego4D.png") 50% 50% / contain repeat-x
     border-box;
@@ -525,7 +527,9 @@ a.btn-translucent {
 }
 #parallax-image::before {
   content: "";
-  height: 100%;
+  height: 100vh;
+  max-height: 100vh;
+  max-height: -webkit-fill-available;
   width: 2661px;
   background: url("../images/map-Ego4D.png") 50% 50% / contain repeat-x
     border-box;
