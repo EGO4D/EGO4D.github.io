@@ -492,8 +492,11 @@ a.btn-translucent {
   width: 100%;
 }
 
+/* https://css-tricks.com/css-fix-for-100vh-in-mobile-webkit/ */
 #parallax-image {
   height: 100vh;
+  max-height: 100vh;
+  max-height: -webkit-fill-available;
   width: 100%;
   overflow: hidden;
   position: relative;
