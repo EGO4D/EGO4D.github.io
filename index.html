@@ -58,6 +58,59 @@
 
         links[0].click();
       }
+      // Hide the address bar
+      // https://24ways.org/2011/raising-the-bar-on-mobile/
+      // https://github.com/scottjehl/Hide-Address-Bar
+      /*
+       * Normalized hide address bar for iOS & Android
+       * (c) Scott Jehl, scottjehl.com
+       * MIT License
+       */
+      (function (win) {
+        var doc = win.document;
+
+        // If there's a hash, or addEventListener is undefined, stop here
+        if (
+          !win.navigator.standalone &&
+          !location.hash &&
+          win.addEventListener
+        ) {
+          //scroll to 1
+          win.scrollTo(0, 1);
+          var scrollTop = 1,
+            getScrollTop = function () {
+              return (
+                win.pageYOffset ||
+                (doc.compatMode === "CSS1Compat" &&
+                  doc.documentElement.scrollTop) ||
+                doc.body.scrollTop ||
+                0
+              );
+            },
+            //reset to 0 on bodyready, if needed
+            bodycheck = setInterval(function () {
+              if (doc.body) {
+                clearInterval(bodycheck);
+                scrollTop = getScrollTop();
+                win.scrollTo(0, scrollTop === 1 ? 0 : 1);
+              }
+            }, 15);
+
+          win.addEventListener(
+            "load",
+            function () {
+              setTimeout(function () {
+                //at load, if user hasn't scrolled more than 20 or so...
+                if (getScrollTop() < 20) {
+                  //reset to hide addr bar at onload
+                  win.scrollTo(0, scrollTop === 1 ? 0 : 1);
+                }
+              }, 0);
+            },
+            false
+          );
+        }
+      })(this);
     </script>
   </head>
   <body>
@@ -1417,57 +1470,6 @@
     </section>
   </body>
   <script>
-    // Hide the address bar
-    // https://24ways.org/2011/raising-the-bar-on-mobile/
-    /*
-     * Normalized hide address bar for iOS & Android
-     * (c) Scott Jehl, scottjehl.com
-     * MIT License
-     */
-    (function (win) {
-      // If there's a hash, or addEventListener is undefined, stop here
-      if (
-        !win ||
-        !win.location ||
-        win.location.hash ||
-        !win.addEventListener ||
-        !win.document
-      ) {
-        return;
-      }
-      let doc = win.document;
-
-      //scroll to 1
-      window.scrollTo(0, 1);
-      var scrollTop = 1,
-        getScrollTop = function () {
-          return (
-            win.pageYOffset ||
-            (doc.compatMode === "CSS1Compat" &&
-              doc.documentElement.scrollTop) ||
-            doc.body.scrollTop ||
-            0
-          );
-        },
-        //reset to 0 on bodyready, if needed
-        bodycheck = setInterval(function () {
-          if (doc.body) {
-            clearInterval(bodycheck);
-            scrollTop = getScrollTop();
-            win.scrollTo(0, scrollTop === 1 ? 0 : 1);
-          }
-        }, 15);
-      win.addEventListener("load", function () {
-        setTimeout(function () {
-          //at load, if user hasn't scrolled more than 20 or so...
-          if (getScrollTop() < 20) {
-            //reset to hide addr bar at onload
-            win.scrollTo(0, scrollTop === 1 ? 0 : 1);
-          }
-        }, 0);
-      });
-    })(this);
-
     // Setup nav-item on click to toggle the hamburger
     const navbar = document.getElementById("nav-bar");
     const hamburger_button = navbar.querySelector("button.navbar-toggler");
