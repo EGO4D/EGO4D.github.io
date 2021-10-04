@@ -501,6 +501,7 @@ a.btn-translucent {
   position: relative;
   background-color: transparent;
 }
+/* https://css-tricks.com/books/fundamental-css-tactics/infinite-scrolling-background-image/ */
 #parallax-image.paused::before {
   content: "";
   height: 100vh;
