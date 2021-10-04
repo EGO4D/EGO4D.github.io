@@ -108,8 +108,8 @@ function map_hover(tooltip, video, parallax) {
     let iscale = 1;
     let mx, my, Mx, My, markers;
     let currentMarker = null;
-    let currentIndex = -1;
-    let permutation = [];
+    let currentIndex = {};
+    let permutation = {};
 
     video.oncanplay = () => {
         const video_ar = video.videoWidth / video.videoHeight;
@@ -126,8 +126,12 @@ function map_hover(tooltip, video, parallax) {
         } else {
             const { count: _count, prefix: _prefix } = videos[currentMarker];
             if (_count > 0) {
-                currentIndex = (currentIndex + 1) % _count;
-                video.src = `${ASSET_URL}/${_prefix}/${permutation[currentIndex] + 1}.mp4`;
+                const _p = permutation[currentMarker];
+                const _cidx = (currentIndex[currentMarker] + 1) % _count;
+                const vidx = _p[_cidx];
+
+                video.src = `${ASSET_URL}/${_prefix}/${vidx + 1}.mp4`;
+                currentIndex[currentMarker] = _cidx;
             } else {
                 video.src = '';
                 tooltip.style.width = '480px'
@@ -214,9 +218,16 @@ function map_hover(tooltip, video, parallax) {
         } else {
             const { count: _count, prefix: _prefix } = videos[marker];
             if (_count > 0) {
-                permutation = shuffle(_count);
-                currentIndex = 0;
-                video.src = `${ASSET_URL}/${_prefix}/${permutation[currentIndex] + 1}.mp4`;
+                if (!(currentMarker in permutation)) {
+                    permutation[currentMarker] = shuffle(_count);
+                    currentIndex[currentMarker] = 0;
+                }
+                const _p = permutation[currentMarker];
+                const _cidx = (currentIndex[currentMarker] + 1) % _count;
+                const vidx = _p[_cidx];
+
+                video.src = `${ASSET_URL}/${_prefix}/${vidx + 1}.mp4`;
+                currentIndex[currentMarker] = _cidx;
             } else {
                 video.src = '';
                 tooltip.style.width = '480px'
