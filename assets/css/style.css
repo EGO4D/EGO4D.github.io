@@ -505,9 +505,8 @@ a.btn-translucent {
   content: "";
   height: 100vh;
   max-height: 100vh;
-  width: 2661px;
-  background: url("../images/map-Ego4D.png") 50% 50% / contain repeat-x
-    border-box;
+  width: calc(100vh * 5.8711);
+  background: url("../images/map.jpg") 50% 50% / contain repeat-x border-box;
   display: block;
   position: fixed;
   top: 0;
@@ -527,9 +526,8 @@ a.btn-translucent {
   content: "";
   height: 100vh;
   max-height: 100vh;
-  width: 2661px;
-  background: url("../images/map-Ego4D.png") 50% 50% / contain repeat-x
-    border-box;
+  width: calc(100vh * 5.859375);
+  background: url("../images/map.jpg") 50% 50% / contain repeat-x border-box;
   display: block;
   position: fixed;
   top: 0;
@@ -547,7 +545,7 @@ a.btn-translucent {
     transform: translate3d(0, 0, 0);
   }
   100% {
-    transform: translate3d(-887px, 0, 0);
+    transform: translate3d(calc(100vh * -1.953125), 0, 0);
   }
 }
 
