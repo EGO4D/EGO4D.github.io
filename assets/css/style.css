@@ -505,7 +505,7 @@ a.btn-translucent {
   content: "";
   height: 100vh;
   max-height: 100vh;
-  width: calc(100vh * 5.8711);
+  width: calc(100vh * 5.859375);
   background: url("../images/map.jpg") 50% 50% / contain repeat-x border-box;
   display: block;
   position: fixed;
