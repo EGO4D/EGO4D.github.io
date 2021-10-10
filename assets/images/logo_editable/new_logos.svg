@@ -18,7 +18,80 @@
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96">
   <defs
-     id="defs1277" />
+     id="defs1277">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2330">
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.04243;stroke-linejoin:round;stroke-opacity:1;stop-color:#000000"
+         id="rect2332"
+         width="153.29309"
+         height="249.09456"
+         x="-138.17371"
+         y="-170.55339"
+         transform="scale(1,-1)" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2334">
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.04243;stroke-linejoin:round;stroke-opacity:1;stop-color:#000000"
+         id="rect2336"
+         width="153.29309"
+         height="249.09456"
+         x="-110.82504"
+         y="-77.344406"
+         transform="scale(1,-1)" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2338">
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.04243;stroke-linejoin:round;stroke-opacity:1;stop-color:#000000"
+         id="rect2340"
+         width="153.29309"
+         height="249.09456"
+         x="-93.522308"
+         y="-91.297493"
+         transform="scale(1,-1)" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2342">
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.04243;stroke-linejoin:round;stroke-opacity:1;stop-color:#000000"
+         id="rect2344"
+         width="153.29309"
+         height="249.09456"
+         x="-22.353037"
+         y="-170.55339"
+         transform="scale(1,-1)" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2346">
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.04243;stroke-linejoin:round;stroke-opacity:1;stop-color:#000000"
+         id="rect2348"
+         width="153.29309"
+         height="249.09456"
+         x="-49.702557"
+         y="-77.344406"
+         transform="scale(1,-1)" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2350">
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.04243;stroke-linejoin:round;stroke-opacity:1;stop-color:#000000"
+         id="rect2352"
+         width="153.29309"
+         height="249.09456"
+         x="-67.004456"
+         y="-91.297493"
+         transform="scale(1,-1)" />
+    </clipPath>
+  </defs>
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -26,9 +99,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="352.17085"
-     inkscape:cy="251.94039"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="326.9889"
+     inkscape:cy="661.03775"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -54,6 +127,84 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
+    <g
+       id="g877-7"
+       transform="matrix(0.35277777,0,0,-0.35277777,61.872587,162.79722)"
+       style="stroke:#000000"
+       inkscape:export-filename="C:\Users\m_wra\OneDrive\Documents\GitHub\EGO4D.github.io\assets\images\social.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       clip-path="url(#clipPath2350)">
+      <path
+         d="m 0,0 c -0.797,3.465 -5.669,23.149 -25.116,34.604 -1.822,1.074 -23.544,13.376 -47.442,3.349 -5.817,-2.441 -18.325,-8.959 -25.674,-23.442 -8.657,-17.059 -4.15,-33.331 -2.791,-37.953 4.48,-15.232 14.416,-24.123 18.419,-27.349 -2.047,-6.512 -4.093,-13.023 -6.14,-19.535 0,0 13.626,-11.178 42.649,-12.294"
+         style="fill:none;stroke:#000000;stroke-width:4.252;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+         id="path879-9" />
+    </g>
+    <g
+       id="g881-9"
+       transform="matrix(0.35277777,0,0,-0.35277777,55.768861,157.87488)"
+       style="stroke:#000000"
+       inkscape:export-filename="C:\Users\m_wra\OneDrive\Documents\GitHub\EGO4D.github.io\assets\images\social.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       clip-path="url(#clipPath2346)">
+      <path
+         d="M 0,0 C 1.584,-2.245 5.73,-8.752 5.532,-17.876 5.39,-24.451 3.056,-29.369 1.674,-31.814 c 3.397,-3.577 7.215,-7.032 10.225,-10.925 0.374,-0.484 -7.065,-5.031 -7.431,-5.267 2.705,-5.791 5.279,-11.032 -4.211,-11.187 1.347,0.022 4.34,-2.895 5.644,-3.601 -1.544,-2.193 -4.2,-3.386 -6.46,-4.74 -0.132,-0.08 0.938,-8.021 0.834,-8.829 -3.934,-0.52 -8.046,-0.399 -11.997,-0.102 -8.895,0.669 -16.448,2.525 -22.325,4.465"
+         style="fill:none;stroke:#000000;stroke-width:4.252;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+         id="path883-0" />
+    </g>
+    <g
+       id="g885-3"
+       transform="matrix(0.35277777,0,0,-0.35277777,46.120558,190.75694)"
+       style="stroke:#000000"
+       inkscape:export-filename="C:\Users\m_wra\OneDrive\Documents\GitHub\EGO4D.github.io\assets\images\social.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       clip-path="url(#clipPath2342)">
+      <path
+         d="M 0,0 C 0,0 1.497,13.134 3.729,16.482"
+         style="fill:none;stroke:#000000;stroke-width:4.252;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+         id="path887-5" />
+    </g>
+    <g
+       id="g889-5"
+       transform="matrix(0.35277777,0,0,-0.35277777,71.227495,162.79722)"
+       style="stroke:#874b91;stroke-opacity:1"
+       inkscape:export-filename="C:\Users\m_wra\OneDrive\Documents\GitHub\EGO4D.github.io\assets\images\social.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       clip-path="url(#clipPath2338)">
+      <path
+         d="m 0,0 c 0.797,3.465 5.669,23.149 25.116,34.604 1.822,1.074 23.544,13.376 47.442,3.349 5.817,-2.441 18.325,-8.959 25.674,-23.442 8.657,-17.059 4.151,-33.331 2.791,-37.953 -4.48,-15.232 -14.416,-24.123 -18.419,-27.349 2.047,-6.512 4.093,-13.023 6.14,-19.535 0,0 -13.626,-11.178 -42.649,-12.294"
+         style="fill:none;stroke:#874b91;stroke-width:4.252;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+         id="path891-5" />
+    </g>
+    <g
+       id="g893-9"
+       transform="matrix(0.35277777,0,0,-0.35277777,77.331512,157.87488)"
+       style="stroke:#874b91;stroke-opacity:1"
+       inkscape:export-filename="C:\Users\m_wra\OneDrive\Documents\GitHub\EGO4D.github.io\assets\images\social.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       clip-path="url(#clipPath2334)">
+      <path
+         d="m 0,0 c -1.585,-2.245 -5.731,-8.752 -5.533,-17.876 0.142,-6.575 2.476,-11.493 3.858,-13.938 -3.397,-3.577 -7.215,-7.032 -10.225,-10.925 -0.374,-0.484 7.065,-5.031 7.431,-5.267 -2.705,-5.791 -5.279,-11.032 4.211,-11.187 -1.347,0.022 -4.34,-2.895 -5.644,-3.601 1.544,-2.193 4.201,-3.386 6.46,-4.74 0.132,-0.08 -0.938,-8.021 -0.834,-8.829 3.934,-0.52 8.047,-0.399 11.997,-0.102 8.895,0.669 16.448,2.525 22.325,4.465"
+         style="fill:none;stroke:#874b91;stroke-width:4.252;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+         id="path895-1" />
+    </g>
+    <g
+       id="g897-9"
+       transform="matrix(0.35277777,0,0,-0.35277777,86.979517,190.75694)"
+       style="stroke:#874b91;stroke-opacity:1"
+       inkscape:export-filename="C:\Users\m_wra\OneDrive\Documents\GitHub\EGO4D.github.io\assets\images\social.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       clip-path="url(#clipPath2330)">
+      <path
+         d="M 0,0 C 0,0 -1.496,13.134 -3.729,16.482"
+         style="fill:none;stroke:#874b91;stroke-width:4.252;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+         id="path899-5" />
+    </g>
     <g
        id="g945"
        transform="matrix(0.35277777,0,0,-0.35277777,33.820878,55.092051)"
