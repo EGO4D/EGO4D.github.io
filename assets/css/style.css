@@ -25,6 +25,8 @@ h3 {
 
 section {
   padding-top: 70px;
+  background-color: white;
+  background-clip: border-box;
 }
 
 header {
@@ -32,11 +34,18 @@ header {
   position: relative;
   background: #fff;
   word-wrap: normal;
-  position: fixed;
+  position: sticky;
   top: 0;
-  right: 0;
   left: 0;
+  right: 0;
   z-index: 10;
+}
+
+.show-1025x512 {
+  display: none !important;
+}
+.hidden-1025x512 {
+  display: block !important;
 }
 
 .voffset-16 {
@@ -483,15 +492,62 @@ a.btn-translucent {
   width: 100%;
 }
 
+/* https://css-tricks.com/css-fix-for-100vh-in-mobile-webkit/ */
 #parallax-image {
-  height: 550px;
+  height: 100vh;
+  max-height: 100vh;
   width: 100%;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-  background: url("../images/map-Ego4D.png") 50% 50% / cover no-repeat
-    border-box fixed;
   overflow: hidden;
   position: relative;
+  background-color: transparent;
+}
+/* https://css-tricks.com/books/fundamental-css-tactics/infinite-scrolling-background-image/ */
+#parallax-image.paused::before {
+  content: "";
+  height: 100vh;
+  max-height: 100vh;
+  width: calc(100vh * 5.859375);
+  background: url("../images/map.jpg") 50% 50% / contain repeat-x border-box;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  animation: slide 20s linear infinite;
+  -webkit-animation: slide 20s linear infinite;
+  -moz-animation: slide 20s linear infinite;
+  -o-animation: slide 20s linear infinite;
+  backface-visibility: hidden;
+  animation-play-state: paused;
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+}
+#parallax-image::before {
+  content: "";
+  height: 100vh;
+  max-height: 100vh;
+  width: calc(100vh * 5.859375);
+  background: url("../images/map.jpg") 50% 50% / contain repeat-x border-box;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  animation: slide 20s linear infinite;
+  -webkit-animation: slide 20s linear infinite;
+  -moz-animation: slide 20s linear infinite;
+  -o-animation: slide 20s linear infinite;
+  backface-visibility: hidden;
+}
+
+@keyframes slide {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(calc(100vh * -1.953125), 0, 0);
+  }
 }
 
 #parallax-tooltip {
@@ -525,14 +581,21 @@ a.btn-translucent {
   -moz-transition: opacity 0.25s 0.5s;
 }
 
-#parallax-image > .container {
+#parallax-image > .container-fluid {
   position: absolute;
   left: 0;
+  right: 0;
   top: 65vh;
-  bottom: 2rem;
-  font-size: min(1.25em, max(0.5em, 2vh));
-  display: none;
+  bottom: 0;
+  font-size: min(2em, max(0.75em, 2vmin));
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95) 75%,
+      rgba(255, 255, 255, 0) 100%
+    )
+    border-box;
 }
+
 #parallax-image img {
   height: 8vh;
 }
@@ -547,7 +610,7 @@ a.btn-translucent {
   flex: 0 1 auto;
 }
 .parallax-description > p {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 .parallax-description > .row {
   flex: 0 0 auto;
@@ -556,26 +619,30 @@ a.btn-translucent {
   background-color: #7030a0;
   color: white;
 }
-#parallax-image .btn-lg {
-  margin: 0.5em 0.5em;
+#parallax-image .btn {
+  font-size: min(1.5em, max(0.75em, 2vmin));
+  padding: 0.75em 0.75em;
+  margin: 0.5em -4px 0 16px;
 }
-@media screen and (min-width: 1025px) and (min-height: 768px) {
-  header {
-    position: sticky;
-    top: 0;
-  }
+@media screen and (min-width: 1025px) and (min-height: 512px) {
   #parallax-image {
-    height: 100vh;
-    background: linear-gradient(
-          0deg,
-          rgba(255, 255, 255, 0.95) 25%,
-          rgba(255, 255, 255, 0) 40%
-        )
-        border-box,
-      url("../images/map-Ego4D.png") 50% 50% / cover no-repeat border-box fixed;
+    background: url("../images/map-Ego4D.png") 50% 50% / cover no-repeat
+      border-box fixed;
   }
-  #parallax-image > .container {
-    display: block;
+  #parallax-image::before {
+    display: none !important;
+  }
+
+  #parallax-image.paused::before {
+    display: none !important;
+  }
+
+  .show-1025x512 {
+    display: block !important;
+  }
+
+  .hidden-1025x512 {
+    display: none !important;
   }
 }
 

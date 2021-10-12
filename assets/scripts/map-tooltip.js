@@ -3,71 +3,98 @@ const w = 1652;
 const h = 1024;
 const ar = w / h;
 
+const ASSET_URL = 'https://assets.ego4d-data.org/videos';
 const videos = {
     'Bristol': {
-        'videos': ['assets/videos/bristol/1.mp4'],
+        'prefix': 'bristol',
+        'count': 9,
         'logo': 'assets/images/bristol-min.png',
     },
     'Fb': {
-        'videos': ['assets/videos/fair/1.mp4'],
+        'prefix': 'fair',
+        'count': 8,
         'logo': 'assets/images/fair_logo.png',
     },
     'Minnesota': {
-        'videos': ['assets/videos/minnesota/1.mp4'],
+        'prefix': 'minnesota',
+        'count': 8,
         'logo': 'assets/images/UMN.png',
     },
     'Georgia tech': {
-        'videos': ['assets/videos/georgiatech/1.mp4'],
+        'prefix': 'georgiatech',
+        'count': 4,
         'logo': 'assets/images/GT.png',
     },
     'NUS': {
-        'videos': ['assets/videos/nus/1.mp4'],
+        'prefix': 'nus',
+        'count': 8,
         'logo': 'assets/images/NUS.jpeg',
     },
-
     'CMU': {
-        'videos': ['assets/videos/cmu/1.mp4'],
+        'prefix': 'cmu',
+        'count': 8,
         'logo': 'assets/images/cmu-wordmark-stacked-r.png',
     },
-
     'Catania': {
-        'videos': ['assets/videos/catania/1.mp4'],
+        'prefix': 'catania',
+        'count': 10,
         'logo': 'assets/images/catania-min.png',
     },
     'CMU Africa': {
-        'videos': ['assets/videos/cmuafrica/1.mp4'],
+        'prefix': 'cmuafrica',
+        'count': 8,
         'logo': 'assets/images/CMU-Africa.png',
     },
     'King Abdullah': {
-        'videos': ['assets/videos/kaust/1.mp4'],
+        'prefix': 'kaust',
+        'count': 8,
         'logo': 'assets/images/KAUST_logo_for_Digital_Media_Large-01.png',
     },
     'IIIT Hyd': {
-        'videos': ['assets/videos/iiith/1.mp4'],
+        'prefix': 'iiith',
+        'count': 10,
         'logo': 'assets/images/iiit-new.png',
     },
     'Tokyo': {
-        'videos': ['assets/videos/tokyo/1.mp4'],
+        'prefix': 'tokyo',
+        'count': 8,
         'logo': 'assets/images/University_of_Tokyo_Logo-700x181.png',
     },
+    'Los Andes': {
+        'prefix': 'losandes',
+        'count': 9,
+        'logo': 'assets/images/Uniandes-logo.jpeg',
+    },
     'Indiana': {
-        'videos': [],
+        'prefix': 'indiana',
+        'count': 0,
         'logo': 'assets/images/IUB.png',
     },
     'Pennsylvania': {
-        'videos': [],
+        'prefix': 'upenn',
+        'count': 0,
         'logo': 'assets/images/U-Penn.png',
     },
     'MIT': {
-        'videos': [],
+        'prefix': 'mit',
+        'count': 0,
         'logo': 'assets/images/MIT2.jpg',
     },
-    'Los Andes': {
-        'videos': [],
-        'logo': 'assets/images/Uniandes-logo.jpeg',
-    },
+}
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
 }
 
+function shuffle(max) {
+    // https://stackoverflow.com/a/12646864
+    // https://blog.codinghorror.com/the-danger-of-naivete/
+    let arr =  [...Array(max).keys()];
+    for (let i = max - 1; i > 0; i--) {
+        let n = getRandomInt(i + 1);
+        [arr[i], arr[n]] = [arr[n], arr[i]];
+    }
+    return arr;
+}
 function map_hover(tooltip, video, parallax) {
     if (!window || !window.innerWidth || !window.innerHeight) {
         return;
@@ -81,7 +108,8 @@ function map_hover(tooltip, video, parallax) {
     let iscale = 1;
     let mx, my, Mx, My, markers;
     let currentMarker = null;
-    let currentIndex = 0;
+    let currentIndex = {};
+    let permutation = {};
 
     video.oncanplay = () => {
         const video_ar = video.videoWidth / video.videoHeight;
@@ -91,14 +119,19 @@ function map_hover(tooltip, video, parallax) {
     }
     video.onended = () => {
         video.classList.remove('fade-in');
-        currentIndex = (currentIndex + 1) % 10;
+
         if (!(currentMarker in videos)) {
             video.src = '';
             tooltip.style.width = '480px'
         } else {
-            const vfile = videos[currentMarker]['videos'];
-            if (vfile.length > 0) {
-                video.src = vfile[currentIndex % vfile.length];
+            const { count: _count, prefix: _prefix } = videos[currentMarker];
+            if (_count > 0) {
+                const _p = permutation[currentMarker];
+                const _cidx = (currentIndex[currentMarker] + 1) % _count;
+                const vidx = _p[_cidx];
+
+                video.src = `${ASSET_URL}/${_prefix}/${vidx + 1}.mp4`;
+                currentIndex[currentMarker] = _cidx;
             } else {
                 video.src = '';
                 tooltip.style.width = '480px'
@@ -178,24 +211,34 @@ function map_hover(tooltip, video, parallax) {
 
 
         video.pause();
-        if (marker in videos) {
-            const vfile = videos[marker]['videos'];
-            if (vfile.length > 0) {
-                video.src = vfile[currentIndex % vfile.length];
+
+        if (!(marker in videos)) {
+            video.src = '';
+            tooltip.style.width = '480px'
+        } else {
+            const { count: _count, prefix: _prefix } = videos[marker];
+            if (_count > 0) {
+                if (!(currentMarker in permutation)) {
+                    permutation[currentMarker] = shuffle(_count);
+                    currentIndex[currentMarker] = 0;
+                }
+                const _p = permutation[currentMarker];
+                const _cidx = (currentIndex[currentMarker] + 1) % _count;
+                const vidx = _p[_cidx];
+
+                video.src = `${ASSET_URL}/${_prefix}/${vidx + 1}.mp4`;
+                currentIndex[currentMarker] = _cidx;
             } else {
                 video.src = '';
                 tooltip.style.width = '480px'
-
             }
-        } else {
-            video.src = ''
-            tooltip.style.width = '480px'
         }
         video.load();
         tooltip.style.background = `white url(${videos[marker]['logo']}) 50% 50%/contain no-repeat`;
         tooltip.classList.remove("gone");
 
     };
+    let user_disabled = false;
 
     const calculateImageDims = () => {
         let par = pw / ph;
@@ -218,11 +261,19 @@ function map_hover(tooltip, video, parallax) {
         [mx, my, Mx, My] = dom_markers["bbox"];
         markers = { ...dom_markers };
         delete markers["bbox"];
-        if (ph < 768 || pw < 1025) {
+        if (ph < 512 || pw < 1024) {
             parallax.onmousemove = null;
+            parallax.onclick = (e) => {
+                if (e.target !== parallax) {
+                    return;
+                }
+                user_disabled = !user_disabled;
+                parallax.classList.toggle('paused');
+            }
             return;
         }
         parallax.onmousemove = onmousemove;
+        parallax.onclick = null;
         // if (mx < 0 || Mx >= pw || my < 0 || My >= ph) {
         //     parallax.onmousemove = onmousemove;
         // } else {
@@ -242,6 +293,7 @@ function map_hover(tooltip, video, parallax) {
         }
         window.removeEventListener('resize', resizeListener, false);
         parallax.onmousemove = null;
+        parallax.classList.add('paused');
         tooltip.classList.add('gone');
         video.classList.remove('fade-in');
         video.pause();
@@ -253,6 +305,9 @@ function map_hover(tooltip, video, parallax) {
     const enable = () => {
         if (enabled) {
             return;
+        }
+        if (!user_disabled) {
+            parallax.classList.remove('paused');
         }
         window.addEventListener('resize', resizeListener, false);
         resizeListener();
