@@ -10,11 +10,6 @@ const videos = {
         'count': 9,
         'logo': 'assets/images/bristol-min.png',
     },
-    'Fb': {
-        'prefix': 'fair',
-        'count': 8,
-        'logo': 'assets/images/fair_logo.png',
-    },
     'Minnesota': {
         'prefix': 'minnesota',
         'count': 8,
