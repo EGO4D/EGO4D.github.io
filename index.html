@@ -19,7 +19,7 @@
     <link rel="preconnect" href="https://ajax.googleapis.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="preconnect" href="https://assets.ego4d-data.org"/>
+    <link rel="preconnect" href="https://assets.ego4d-data.org" />
 
     <link rel="stylesheet" href="assets/css/style.css" />
 
@@ -143,14 +143,15 @@
             <div class="parallax-description">
               <img src="assets/images/ego-4d-01.png" alt="Logo" />
               <p>
-                A massive-scale, egocentric dataset collected across 13
-                worldwide locations, with over 2,644 hours of unscripted,
-                daily-life videos shot from a first person perspective.
+                A massive-scale, egocentric dataset and benchmark suite
+                collected across 74 worldwide locations and 9 countries, with
+                over 3,025 hours of daily-life activity video.
               </p>
 
               <small class="text-muted show-1025x512"
                 ><em
-                  >Tap / Hover over map markers above to see an example</em
+                  >Tap / Hover over map markers above and wait for sample video
+                  to load</em
                 ></small
               >
               <small class="text-muted hidden-1025x512">
@@ -165,14 +166,23 @@
                   Explore&emsp;&darr;
                 </a>
                 <a
+                    class="btn btn-default"
+                    href="./fig1.html"
+                    target="_blank"
+                    role="button"
+                    rel="noopener noreferrer"
+                  >
+                    Explore Sample &nearr;
+                  </a>
+               <a
                   class="btn btn-default"
-                  href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                  href="https://drive.google.com/file/d/1oknfQIH9w1rXy6I1j5eUE6Cqh96UwZ4L/view?usp=sharing"
                   target="_blank"
                   role="button"
                   rel="noopener noreferrer"
                 >
                   Watch Video &nearr;
-                </a>
+                </a> 
               </div>
             </div>
           </div>
@@ -207,10 +217,10 @@
           <div id="nav-menu" class="collapse">
             <ul id="nav-menu-list" data-app-modern-menu="true">
               <li class="nav-item">
-                <a href="#challenges" class="nav-link">Challenges</a>
+                <a href="#benchmarks" class="nav-link">Benchmarks</a>
               </li>
               <li class="nav-item">
-                <a href="#benchmarks" class="nav-link">Benchmarks</a>
+                <a href="#challenges" class="nav-link">Challenges</a>
               </li>
               <li class="nav-item">
                 <a href="#consortium" class="nav-link">Consortium</a>
@@ -220,6 +230,9 @@
               </li>
               <li class="nav-item">
                 <a href="#people" class="nav-link">Team</a>
+              </li>
+              <li class="nav-item">
+                <a href="#download" class="nav-link">Download</a>
               </li>
             </ul>
             <div id="social-links">
@@ -232,12 +245,21 @@
                 <i class="fab fa-github"></i>
               </a>
               <a
-                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                href="https://drive.google.com/file/d/1oknfQIH9w1rXy6I1j5eUE6Cqh96UwZ4L/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="icon-wrap"
               >
                 <i class="fab fa-youtube"></i>
+              </a>
+
+              <a
+                href="mailto:info@ego4d-data.org"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="icon-wrap"
+              >
+                <i class="fab fas fa-envelope"></i>
               </a>
             </div>
           </div>
@@ -266,21 +288,35 @@
                   slide-content
                 "
               >
-                <h2 class="title">MASSIVE SCALE</h2>
+                <h2 class="title">
+                  MASSIVE SCALE
+                  <a
+                    class="btn btn-default"
+                    href="./fig1.html"
+                    target="_blank"
+                    role="button"
+                  >
+                    Explore Sample &nearr;
+                  </a>
+                </h2>
                 <p class="slide-text">
-                  Ego4D is a massive-scale Egocentric dataset containing over
-                  2,644 hours of unscripted, daily-life videos shot from a first
-                  person perspective. To ensure its realism, the dataset was
-                  collected from 13 worldwide locations in 7 different countries
-                  by wearers of all ages and disciplines. Ego4D is a diverse and
-                  challenging dataset that will push the frontier of
-                  first-person vision.
+                  Ego4D is a massive-scale Egocentric dataset of unprecedented
+                  diversity. It consists of 3,025 hours of video collected by
+                  <b>855 unique participants</b> from
+                  <b>74 worldwide locations</b> in 9 different countries. <br />
+                  The project brings together 88 researchers, in an
+                  international consortium, to dramatically increases the scale
+                  of egocentric data publicly available by an order of
+                  magnitude, making it more than 20x greater than any other data
+                  set in terms of hours of footage. <br />
+                  Ego4D aims to catalyse the next era of research in
+                  first-person visual perception.
                 </p>
               </div>
               <div class="col-xs-12 col-md-7 col-lg-7 slide-image-wrap">
                 <img
                   class="img-responsive slide-image"
-                  src="assets/images/tsne.jpg"
+                  src="assets/images/massive.png"
                   alt="Placeholder image 3"
                 />
               </div>
@@ -297,8 +333,26 @@
               >
                 <h2 class="title">DIVERSE</h2>
                 <p class="slide-text">
-                  The dataset is diverse in its geographic coverage,
-                  activities, modalities, ...
+                  The dataset is diverse in its geographic coverage, scenarios,
+                  participants and captured modalities. We consulted a survey
+                  from the
+                  <a
+                    href="https://www.bls.gov/news.release/atus.nr0.htm"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >U.S. Bureau of Labor Statistics</a
+                  >
+                  that captures how people spend the bulk of their time.<br />
+
+                  Data was captured using seven different off-the-shelf
+                  head-mounted cameras: GoPro, Vuzix Blade, Pupil Labs, ZShades,
+                  OR- DRO EP6, iVue Rincon 1080, and Weeview.<br />
+
+                  In addition to video, portions of Ego4D offer other data
+                  modalities: 3D scans, audio, gaze, stereo, multiple
+                  synchronized wearable cameras, and textual narrations.<br />
+
+                  <a href="https://scontent-man2-1.xx.fbcdn.net/v/t39.8562-6/10000000_847983305881306_7509059106343724260_n.pdf?_nc_cat=104&ccb=1-5&_nc_sid=ae5e01&_nc_ohc=oG22Dq6JhsIAX_7Cb51&_nc_ht=scontent-man2-1.xx&oh=b70a03b9a5d8a58c26586729c08d3a54&oe=616D0510">Check our ArXiv paper for details </a>.
                 </p>
               </div>
               <div class="col-xs-12 col-md-7 col-lg-7 slide-image-wrap">
@@ -321,14 +375,25 @@
               >
                 <h2 class="title">PRIVACY/ETHICS</h2>
                 <p class="slide-text">
-                  From its inception, high standards of privacy and ethics were
-                  paramount for the Ego4D project. Each partner ensured that all
-                  collected video and audio met University and consortium
-                  requirements. These include (but are not limited to):
-                  Complying with laws and regulations within country of
-                  collection; Respecting the right of others; and De-identify
-                  identifiable information using robust manual and automatic
-                  processes.
+                  From the onset, privacy and ethics standards were critical to
+                  this data collection effort. Each partner was responsible for
+                  developing a policy. While specifics vary per site, common
+                  guidelines have been followed.<br />
+
+                  Please refer to our
+                  <a
+                    href="./pdfs/Ego4D-Privacy-and-ethics-consortium-statement.pdf" target="_blank"
+                    >statement by members of the consortium on issuess of
+                    privacy and ethics</a
+                  >
+                  for further details.<br />
+
+                  Should any researcher, participant or data user encounter
+                  clips they have been insufficiently redacted, or for any other
+                  privacy concerns, please contact us immediately at
+                  <a href="mailto:privacy@ego4d-data.org"
+                    >privacy@ego4d-data.org</a
+                  >.
                 </p>
               </div>
               <div class="col-xs-12 col-md-7 col-lg-7 slide-image-wrap">
@@ -360,73 +425,6 @@
       </div>
     </section>
 
-    <section id="challenges">
-      <div class="container">
-        <div class="row card-row">
-          <div class="col-xs-12 col-sm-6 col-lg-3 title">
-            <h2 class="title">Challenges</h2>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-lg-3 card-block">
-            <div class="card-content">
-              <div class="card-image">
-                <img
-                  src="assets/images/episodic.png"
-                  alt="Placeholder image 5"
-                />
-              </div>
-              <div class="card-info">
-                <h3 class="card-title">Episodic Memory</h3>
-              </div>
-            </div>
-          </div>
-		  <div class="col-xs-12 col-sm-6 col-lg-3 card-block">
-            <div class="card-content">
-              <div class="card-image">
-                <img src="assets/images/h+o.png" alt="Placeholder image 3" />
-              </div>
-              <div class="card-info">
-                <h3 class="card-title">Hand-Object Interactions</h3>
-              </div>
-            </div>
-          </div>
-		  <div class="col-xs-12 col-sm-6 col-lg-3 card-block">
-            <div class="card-content">
-              <div class="card-image">
-                <img src="assets/images/a-vD.png" alt="Placeholder image 6" />
-              </div>
-              <div class="card-info">
-                <h3 class="card-title">AV Diarization</h3>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-lg-3 card-block empty-block"></div>
-		  <div class="col-xs-12 col-sm-6 col-lg-3 card-block">
-            <div class="card-content">
-              <div class="card-image">
-                <img src="assets/images/social.png" alt="Placeholder image 7" />
-              </div>
-              <div class="card-info">
-                <h3 class="card-title">Social</h3>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-6 col-lg-3 card-block">
-            <div class="card-content">
-              <div class="card-image">
-                <img
-                  src="assets/images/forecasting.png"
-                  alt="Placeholder image 4"
-                />
-              </div>
-              <div class="card-info">
-                <h3 class="card-title">Forecasting</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section id="benchmarks">
       <div class="container">
         <div class="row">
@@ -440,13 +438,13 @@
               <li id="episodic-memory" class="nav-link">
                 <a data-toggle="tab" href="#menu1">Episodic Memory</a>
               </li>
-			  <li id="hoi" class="nav-link active">
+              <li id="hoi" class="nav-link active">
                 <a data-toggle="tab" href="#menu3">HOI</a>
               </li>
-			  <li id="av-diarization" class="nav-link">
+              <li id="av-diarization" class="nav-link">
                 <a data-toggle="tab" href="#menu4">AV Diarization</a>
               </li>
-			  <li id="social" class="nav-link">
+              <li id="social" class="nav-link">
                 <a data-toggle="tab" href="#menu5">Social</a>
               </li>
               <li id="forecasting" class="nav-link">
@@ -531,8 +529,9 @@
                         <em>How do objects change during interactions?</em
                         ><br />
                         Going beyond Action Recognition, this benchmark follows
-                        when and how an object is changed during its interaction
-                        - only possible through a first person Viewpoint.
+                        when, where and how an object is changed during its
+                        interaction - only possible through a first person
+                        Viewpoint.
                       </p>
                     </div>
                   </div>
@@ -581,7 +580,7 @@
                   </div>
                 </div>
               </div>
-			  <div id="menu5" class="tab-pane fade">
+              <div id="menu5" class="tab-pane fade">
                 <div class="row">
                   <div class="col-lg-6 tab-wrap">
                     <div class="tab-image nav-tab-image">
@@ -590,11 +589,11 @@
                     <div class="tab-card-content">
                       <h5 class="card-title">Social Interactions</h5>
                       <p class="card-text">
-                        <em>Who is attending to whom?</em><br />In addition to
-                        spoken language, communication depends on nonverbal cues
-                        such as focus or facial expressions. Egocentric data
-                        perfectly captures interactions like these due to the
-                        point of view.
+                        <em>Who is attending to whom?</em><br />An egocentric
+                        video provides a unique lens for studying social
+                        interactions because it captures utterances and
+                        nonverbal cues from each participant’s unique view and
+                        enables embodied approaches to social understanding.
                       </p>
                     </div>
                   </div>
@@ -640,7 +639,7 @@
                   </div>
                 </div>
               </div>
-			  <div id="menu4" class="tab-pane fade">
+              <div id="menu4" class="tab-pane fade">
                 <div class="row">
                   <div class="col-lg-6 tab-wrap">
                     <div class="tab-image nav-tab-image">
@@ -651,9 +650,8 @@
                       <p class="card-text">
                         <em>Who said what, and when?</em><br />
                         Conversations are egocentric in nature, and a
-                        human-in-the-loop AI requires skills such as detecting
-                        speakers and recognition in order to communicate
-                        effectively.
+                        human-in-the-loop AI requires skills such as localizing
+                        a speaker and transcribing speech content
                       </p>
                     </div>
                   </div>
@@ -665,9 +663,9 @@
                       <h5 class="card-title">Looking for Conversation</h5>
                       <p class="card-text">
                         This benchmark contains 2 different tasks focused on
-                        visual data: detection of the speaker and recognition of
-                        the speaker. Note that identities are anonymized to
-                        match consortium guidelines.
+                        visual data: localizing and tracking of the speakers in
+                        the visual field of view. Note that identities are
+                        anonymized to match consortium guidelines.
                       </p>
                     </div>
                   </div>
@@ -700,7 +698,7 @@
                   </div>
                 </div>
               </div>
-			  <div id="menu2" class="tab-pane fade">
+              <div id="menu2" class="tab-pane fade">
                 <div class="row">
                   <div class="col-lg-6 tab-wrap">
                     <div class="tab-image nav-tab-image">
@@ -713,7 +711,6 @@
                     <div class="tab-card-content">
                       <h5 class="card-title">Forecasting</h5>
                       <p class="card-text">
-                        <em>What will I do next?</em><br />
                         Predicting the future is a critical skill for AI systems
                         to provide timely assistance for users. With a myriad of
                         long-form, unscripted videos, Ego4D provides an
@@ -779,6 +776,111 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="challenges">
+      <div class="container">
+        <div class="row card-row">
+          <div class="col-xs-12 col-sm-6 col-lg-3 title">
+            <h2 class="title">Challenges</h2>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-lg-3 card-block">
+            <a
+              href="https://github.com/EGO4D/episodic-memory"
+              class="block"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="card-content">
+                <div class="card-image">
+                  <img
+                    src="assets/images/episodic.png"
+                    alt="Placeholder image 5"
+                  />
+                </div>
+                <div class="card-info">
+                  <h3 class="card-title">Episodic Memory</h3>
+                </div>
+              </div></a
+            >
+          </div>
+          <div class="col-xs-12 col-sm-6 col-lg-3 card-block">
+            <a
+              href="https://github.com/EGO4D/hands-and-objects"
+              class="block"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="card-content">
+                <div class="card-image">
+                  <img src="assets/images/h+o.png" alt="Placeholder image 3" />
+                </div>
+                <div class="card-info">
+                  <h3 class="card-title">Hand-Object Interactions</h3>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-lg-3 card-block">
+            <a
+              href="https://github.com/EGO4D/audio-visual"
+              class="block"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="card-content">
+                <div class="card-image">
+                  <img src="assets/images/a-vD.png" alt="Placeholder image 6" />
+                </div>
+                <div class="card-info">
+                  <h3 class="card-title">AV Diarization</h3>
+                </div>
+              </div></a
+            >
+          </div>
+          <div class="col-xs-12 col-sm-6 col-lg-3 card-block empty-block"></div>
+          <div class="col-xs-12 col-sm-6 col-lg-3 card-block">
+            <a
+              href="https://github.com/EGO4D/social-interactions"
+              class="block"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="card-content">
+                <div class="card-image">
+                  <img
+                    src="assets/images/social.png"
+                    alt="Placeholder image 7"
+                  />
+                </div>
+                <div class="card-info">
+                  <h3 class="card-title">Social</h3>
+                </div>
+              </div></a
+            >
+          </div>
+          <div class="col-xs-12 col-sm-6 col-lg-3 card-block">
+            <a
+              href="https://github.com/EGO4D/forecasting"
+              class="block"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="card-content">
+                <div class="card-image">
+                  <img
+                    src="assets/images/forecasting.png"
+                    alt="Placeholder image 4"
+                  />
+                </div>
+                <div class="card-info">
+                  <h3 class="card-title">Forecasting</h3>
+                </div>
+              </div></a
+            >
           </div>
         </div>
       </div>
@@ -852,7 +954,9 @@
           <div id="consortium-text" class="col-md-3 col-lg-4 col-xs-12">
             <h3 class="title">EGO4D Consortium</h3>
             <p>
-              A consortium of 14 universities lead Ego4D in partnership with Facebook AI.
+              This initiative is led by an international consortium of 13
+              universities in partnership with Facebook AI, that collaborated to
+              advance egocentric perception.
             </p>
           </div>
         </div>
@@ -885,15 +989,23 @@
                 </h4>
                 <p>
                   If using the dataset, annotations or inspiration from this
-                  work, cite ArXiv paper:
+                    work, <a href="https://scontent-man2-1.xx.fbcdn.net/v/t39.8562-6/10000000_847983305881306_7509059106343724260_n.pdf?_nc_cat=104&ccb=1-5&_nc_sid=ae5e01&_nc_ohc=oG22Dq6JhsIAX_7Cb51&_nc_ht=scontent-man2-1.xx&oh=b70a03b9a5d8a58c26586729c08d3a54&oe=616D0510">cite ArXiv paper</a>:<br /><br />
+                  <b>
+                    K Grauman et al. Around the World in 3,000 Hours of
+                    Egocentric Video. arXiv preprint arXiv:???, 2021.
+                    <a href="./Bibtex/Ego4D-ArXiv.bib" target="_blank"
+                      >BibTex (.bib)</a
+                    ></b
+                  >
                 </p>
-                <pre class="bibtex"><code>@ARTICLE{EGO4D2021,
+                <img src="./assets/images/paperOverview.png" width="100%" />
+                <!-- <pre class="bibtex"><code>@ARTICLE{EGO4D2021,
    title={Ego4D: Around the World in 3K Hours of Egocentric Video},
    author={Grauman, Kristen et al},
            journal   = {CoRR},
            year      = {2021},
            ee        = {http://arxiv.org/abs/??},
-} </code></pre>
+} </code></pre>-->
               </div>
             </div>
             <span class="timeline-point"></span>
@@ -924,11 +1036,14 @@
               <div class="timeline-text-content">
                 <h4 class="small-title">When can I download the dataset?</h4>
                 <p>
-                  The dataset will be available for download on Nov 25th 2021.
-                  The dataset collection and challenges are described in the
-                  ArXiv paper above, and further details will be presented in a
-                  live reveal session during the
-                  <a href="https://eyewear-computing.org/EPIC_ICCV21/"
+                  The dataset will be available for download before the end of
+                  November 2021. The dataset collection and challenges are
+                    described in the <a href="https://scontent-man2-1.xx.fbcdn.net/v/t39.8562-6/10000000_847983305881306_7509059106343724260_n.pdf?_nc_cat=104&ccb=1-5&_nc_sid=ae5e01&_nc_ohc=oG22Dq6JhsIAX_7Cb51&_nc_ht=scontent-man2-1.xx&oh=b70a03b9a5d8a58c26586729c08d3a54&oe=616D0510">ArXiv paper</a>, and further details will be
+                  presented in a live reveal session during the
+                  <a
+                    href="https://eyewear-computing.org/EPIC_ICCV21/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     >9th Egocentric Perception, Interaction and Computing (EPIC)
                     workshop alongside ICCV 2021</a
                   >
@@ -980,10 +1095,11 @@
               <div class="timeline-text-content">
                 <h4 class="small-title">Who collected this data?</h4>
                 <p>
-                  The data was collected through informed consent from diverse
-                  participants in 9 countries. We showcase a distribution of
-                  age, gender and jobs from 75% of our participants who
-                  volunteered their demographics, accumulated across countries
+                  The data was collected from 855 participants. We showcase a
+                  distribution of age, gender and jobs from 69% of our
+                  participants who volunteered to self-identify their
+                  demographics — age, gender, countries of residence, and
+                  occupations.
                 </p>
                 <div class="image">
                   <img
@@ -1015,10 +1131,14 @@
                   The collecting partner holds consent forms and/or release
                   forms for all videos. Only when consent has been collected
                   from participants, the data will contain faces and other
-                  identifying information. For all other videos, data has been
-                  de-identified pre-release. Original footage has been deleted
-                  and are no longer accessible. Refer to ArXiv (Sec 3.4) for
-                  details of our privacy and de-identification pipeline.
+                  identifying information. For the majority of videos, data has
+                  been de-identified pre-release. Refer to our
+                  <a
+                    href="./pdfs/Ego4D-Privacy-and-ethics-consortium-statement.pdf"
+                    >privacy statement</a
+                  >
+                    and <a href="https://scontent-man2-1.xx.fbcdn.net/v/t39.8562-6/10000000_847983305881306_7509059106343724260_n.pdf?_nc_cat=104&ccb=1-5&_nc_sid=ae5e01&_nc_ohc=oG22Dq6JhsIAX_7Cb51&_nc_ht=scontent-man2-1.xx&oh=b70a03b9a5d8a58c26586729c08d3a54&oe=616D0510">ArXiv (Sec 3.4 and appendix C) </a> for details of our privacy
+                  and de-identification pipeline.
                 </p>
               </div>
             </div>
@@ -1040,13 +1160,70 @@
             >
               <div class="timeline-text-content">
                 <h4 class="small-title">
-                  What resolution and frame rate are available?
+                  What coverage of scenarios do you have?
                 </h4>
                 <p>
-                  This depends on equipment. We release all footage using the
-                  native resolution, but also offer a standardised frame-rate
-                  version of 30fps for ease of use. All benchmark results use
-                  the standardised version.
+                 A sample visualisation of our scenarios is below. Outer circle shows the 14 most common scenarios (70% of the data). Wordle shows scenarios in the remaining 30%. Inner circle is color coded by the contributing partner (see map marker above).
+                 
+                </p>
+                  <div class="image">
+                  <img
+                    src="assets/images/Scenarios.jpg"
+                    alt="EGO4D Scenarios"
+                    title="EGO4D Scenarios"
+                    width="100%"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row timeline-element divider-line">
+            <div
+              class="
+                col-lg-6
+                col-md-6
+                col-xs-11
+                col-xs-offset-1
+                col-md-offset-0
+                col-lg-offset-0
+              "
+            >
+              <div class="timeline-text-content">
+                <h4 class="small-title">
+                  Do you offer pre-extracted features?
+                </h4>
+                <p>
+                  Yes. We provide precomputed SlowFast video features for the
+                  full dataset.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row timeline-element divider-line">
+            <div class="timeline-data-panel col-lg-6 col-md-6"></div>
+            <span class="timeline-point"></span>
+            <div
+              class="
+                col-lg-6
+                col-md-6
+                col-xs-11
+                col-xs-offset-1
+                col-md-offset-0
+                col-lg-offset-0
+              "
+            >
+              <div class="timeline-text-content">
+                <h4 class="small-title">
+                  What equipment, resolution and frame rate are available?
+                </h4>
+                <p>
+                  This depends on equipment. To avoid models overfitting to a
+                  single capture device, seven different head-mounted cameras
+                  were deployed across the dataset: GoPro, Vuzix Blade, Pupil
+                  Labs, ZShades, ORDRO EP6, iVue Rincon 1080, and Weeview. We
+                  release all footage using the native resolution, but also
+                  offer a standardised frame-rate version of 30fps for ease of
+                  use. All benchmark results use the standardised version.
                 </p>
               </div>
             </div>
@@ -1067,11 +1244,11 @@
                   How can I participate in the benchmarks?
                 </h4>
                 <p>
-                  Training and validation annotations are now publicly
-                  available. Test servers will be opened early next year for the
+                  Training and validation annotations will be publicly
+                  available end of November. Test servers will be opened early next year for the
                   first round of benchmarks. Results are expected to be
-                  announced in CVPR 2022. Revisit this webpage for further
-                  information.
+                  announced alongside CVPR 2022. Revisit this webpage for
+                  further information.
                 </p>
               </div>
             </div>
@@ -1091,56 +1268,91 @@
           <div class="col-lg-4">
             <h4 class="card-title">
               Carnegie Mellon University, Pittsburgh, U.S.
-              <a href="https://www.cmu.edu"><i class="fas fa-link"></i></a>
+              <a
+                href="https://www.cmu.edu"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fas fa-link"></i
+              ></a>
             </h4>
             <ul>
               <li>
                 Kris Kitani (PI)
-                <a href="https://www.cs.cmu.edu/~kkitani/">
+                <a
+                  href="https://www.cs.cmu.edu/~kkitani/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <i class="fas fa-link"></i>
                 </a>
-                <a href="https://twitter.com/kkitani">
+                <a
+                  href="https://twitter.com/kkitani"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <i class="fab fa-twitter"></i>
                 </a>
               </li>
               <li>
                 Xingyu Liu
-                <a href="https://xingyul.github.io/">
+                <a
+                  href="https://xingyul.github.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <i class="fas fa-link"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/xing-yu-liu/">
+                <a
+                  href="https://www.linkedin.com/in/xing-yu-liu/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <i class="fab fa-linkedin"></i>
                 </a>
               </li>
               <li>
                 Qichen Fu
-                <a href="https://fuqichen1998.github.io/">
+                <a
+                  href="https://fuqichen1998.github.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <i class="fas fa-link"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/qichen-fu/">
+                <a
+                  href="https://www.linkedin.com/in/qichen-fu/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <i class="fab fa-linkedin"></i>
                 </a>
               </li>
               <li>Sean Crane</li>
               <li>
                 Xuhua Huang
-                <a href="https://xuhuaking.github.io/">
+                <a
+                  href="https://xuhuaking.github.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <i class="fas fa-link"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/xuhua-huang/">
+                <a
+                  href="https://www.linkedin.com/in/xuhua-huang/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <i class="fab fa-linkedin"></i>
                 </a>
               </li>
               <li>
                 Xindi Wu
-                <a href="https://xindiwu.github.io/">
+                <a
+                  href="https://xindiwu.github.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <i class="fas fa-link"></i>
-                </a>
-              </li>
-              <li>
-                Vivek Roy
-                <a href="https://www.linkedin.com/in/thezealousfool/">
-                  <i class="fab fa-linkedin"></i>
                 </a>
               </li>
             </ul>
@@ -1150,53 +1362,144 @@
             <ul>
               <li>
                 Abrham Gebreselasie
-                <a href="https://www.linkedin.com/in/abrham-k-gebreselasie/">
+                <a
+                  href="https://www.linkedin.com/in/abrham-k-gebreselasie/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <i class="fab fa-linkedin"></i>
                 </a>
               </li>
             </ul>
             <h4 class="card-title">
               King Abdullah University of Science and Technology, KSA
-              <a href="https://www.kaust.edu.sa/"
+              <a
+                href="https://www.kaust.edu.sa/"
+                target="_blank"
+                rel="noopener noreferrer"
                 ><i class="fas fa-link"></i
               ></a>
             </h4>
             <ul>
               <li>
                 Bernard Ghanem (PI)
-                <a href="https://www.bernardghanem.com">
+                <a
+                  href="https://www.bernardghanem.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <i class="fas fa-link"></i>
                 </a>
-                <a href="https://twitter.com/BernardSGhanem">
+                <a
+                  href="https://twitter.com/BernardSGhanem"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <i class="fab fa-twitter"></i>
                 </a>
               </li>
               <li>
                 Chen Zhao
-                <a href="https://chenzhao.netlify.app/">
+                <a
+                  href="https://chenzhao.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <i class="fas fa-link"></i>
                 </a>
-                <a href="https://twitter.com/CathyChenZhao">
+                <a
+                  href="https://twitter.com/CathyChenZhao"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <i class="fab fa-twitter"></i>
                 </a>
               </li>
               <li>
                 Mengmeng Xu
-                <a href="https://frostinassiky.github.io">
+                <a
+                  href="https://frostinassiky.github.io"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <i class="fas fa-link"></i>
                 </a>
-                <a href="https://twitter.com/FrostXuMengmeng">
+                <a
+                  href="https://twitter.com/FrostXuMengmeng"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <i class="fab fa-twitter"></i>
                 </a>
               </li>
               <li>
                 Merey Ramazanova
-                <a href="https://meryusha.github.io">
+                <a
+                  href="https://meryusha.github.io"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <i class="fas fa-link"></i>
                 </a>
-                <a href="https://twitter.com/MereyRamazanova">
+                <a
+                  href="https://twitter.com/MereyRamazanova"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <i class="fab fa-twitter"></i>
                 </a>
+              </li>
+            </ul>
+            <h4 class="card-title">University of Minnesota, U.S.</h4>
+            <ul>
+              <li>Hyun Soo Park (PI)</li>
+              <li>Jayant Sharma</li>
+              <li>Tien Do</li>
+              <li>Zachary Chavis</li>
+            </ul>
+            <h4 class="card-title">
+              International Institute of Information Technology, Hyderabad,
+              India
+              <a
+                href="https://www.iiit.ac.in"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fas fa-link"></i
+              ></a>
+            </h4>
+            <ul>
+              <li>
+                C. V. Jawahar (PI)
+                <a
+                  href="https://faculty.iiit.ac.in/~jawahar/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fas fa-link"></i
+                ></a>
+              </li>
+              <li>
+                Raghava Modhugu
+                <a
+                  href="https://www.linkedin.com/in/raghavamodhugu"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </li>
+              <li>
+                Siddhant Bansal
+                <a
+                  href="https://sid2697.github.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fas fa-link"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/siddhant-bansal/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
               </li>
             </ul>
             <h4 class="card-title">Indiana University Bloomington, U.S.</h4>
@@ -1209,69 +1512,56 @@
             <ul>
               <li>Jianbo Shi (PI)</li>
             </ul>
+          </div>
+          <div class="col-lg-4">
             <h4 class="card-title">
-              Universidad de los Andes, Colombia
-              <a href="https://www.uniandes.edu.co/en/"
+              University of Catania, Italy
+              <a
+                href="https://www.unict.it/"
+                target="_blank"
+                rel="noopener noreferrer"
                 ><i class="fas fa-link"></i
               ></a>
             </h4>
             <ul>
               <li>
-                Pablo Arbelaez (PI)
-                <a href="https://cinfonia.uniandes.edu.co">
-                  <i class="fas fa-link"></i>
-                </a>
-              </li>
-              <li>
-                Cristina Gonzalez
-                <a href="https://cigonzalez.github.io">
-                  <i class="fas fa-link"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/cristina-gonzález-5982831a0/">
-                  <i class="fab fa-linkedin"></i>
-                </a>
-              </li>
-              <li>
-                Paola Ruiz Puentes
-                <a href="https://paolaruizp.github.io">
-                  <i class="fas fa-link"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/paola-ruiz-puentes-12b1821b2/">
-                  <i class="fab fa-linkedin"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-4">
-            <h4 class="card-title">
-              University of Catania, Italy
-              <a href="https://www.unict.it/"><i class="fas fa-link"></i></a>
-            </h4>
-            <ul>
-              <li>
                 Giovanni Maria Farinella (PI)
-                <a href="https://www.dmi.unict.it/farinella/"
+                <a
+                  href="https://www.dmi.unict.it/farinella/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   ><i class="fas fa-link"></i
                 ></a>
                 <a
                   href="https://it.linkedin.com/in/giovanni-maria-farinella-b4362626"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   ><i class="fab fa-linkedin"></i
                 ></a>
-                <a href="https://twitter.com/GMFarinella"
+                <a
+                  href="https://twitter.com/GMFarinella"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   ><i class="fab fa-twitter"></i
                 ></a>
               </li>
               <li>
                 Antonino Furnari
-                <a href="http://www.antoninofurnari.it/"
+                <a
+                  href="http://www.antoninofurnari.it/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   ><i class="fas fa-link"></i
                 ></a>
-                <a href="https://twitter.com/anfurnari"
+                <a
+                  href="https://twitter.com/anfurnari"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   ><i class="fab fa-twitter"></i
                 ></a>
               </li>
             </ul>
-            <h4 class="card-title">University of Tokyo, U.S.</h4>
+            <h4 class="card-title">University of Tokyo, Japan</h4>
             <ul>
               <li>Yoichi Sato (PI)</li>
               <li>Takuma Yagi</li>
@@ -1280,129 +1570,176 @@
               <li>Yusuke Sugano</li>
               <li>Zhenqiang Li</li>
             </ul>
-            <h4 class="card-title">University of Minnesota, U.S.</h4>
-            <ul>
-              <li>Hyun Soo Park (PI)</li>
-              <li>Jayant Sharma</li>
-              <li>Tien Do</li>
-              <li>Zachary Chavis</li>
-            </ul>
-            <h4 class="card-title">Georgia Institute of Technology, U.S.</h4>
-            <ul>
-              <li>Jim Rehg (PI)</li>
-              <li>Fiona Ryan</li>
-            </ul>
+
             <h4 class="card-title">Facebook AI Research, International</h4>
             <ul>
               <li>
                 Kristen Grauman (PI)
-                <a href=“https://www.cs.utexas.edu/users/grauman/”>
-                  <i class=“fas fa-link”></i>
+                <a
+                  href="https://www.cs.utexas.edu/users/grauman/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fas fa-link"></i>
                 </a>
               </li>
               <li>Jitendra Malik (PI)</li>
-              <li>Aaron Adcock</li>
-              <li>Ruohan Gao</li>
+              <li>Dhruv Batra</li>
+              <li>Eugene Byrne</li>
+              <li>Vincent Cartillier</li>
+              <li>Morrie Doulaty</li>
+              <li>Akshay Erapalli</li>
+              <li>Christian Fuegen</li>
               <li>
                 Rohit Girdhar
-                <a href="http://rohitgirdhar.github.io//">
+                <a
+                  href="http://rohitgirdhar.github.io//"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <i class="fas fa-link"></i>
                 </a>
-                <a href="https://twitter.com/_rohitgirdhar_">
+                <a
+                  href="https://twitter.com/_rohitgirdhar_"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <i class="fab fa-twitter"></i>
                 </a>
               </li>
               <li>Jackson Hamburger</li>
-              <li>
-                Tal Hassner
-                <a href="https://talhassner.github.io/home/">
-                  <i class="fas fa-link"></i>
-                </a>
-                <a href="https://twitter.com/THassner">
-                  <i class="fab fa-twitter"></i>
-                </a>
-              </li>
-              <li>James Hillis</li>
-              <li>Vamsi Krishna Ithapu</li>
+              <li>James Hillis, FRL</li>
+              <li>Vamsi Krishna Ithapu, FRL</li>
               <li>Hao Jiang</li>
               <li>Hanbyul Joo</li>
+              <li>Jachym Kolar</li>
               <li>Satwik Kottur</li>
-              <li>Sanjana Krishnan</li>
-              <li>Yanghao Li</li>
+              <li>Anurag Kumar, FRL</li>
+              <li>Federico Landini</li>
+              <li>Chao Li, FRL</li>
+              <li>Miguel Martin</li>
               <li>Tullie Murrell</li>
               <li>
                 Tushar Nagarajan
-                <a href="https://tushar-n.github.io/">
+                <a
+                  href="https://tushar-n.github.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <i class="fas fa-link"></i>
                 </a>
               </li>
               <li>
                 Christoph Feichtenhofer
-                <a href="https://feichtenhofer.github.io/">
+                <a
+                  href="https://feichtenhofer.github.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <i class="fas fa-link"></i>
                 </a>
               </li>
               <li>
                 Karttikeya Mangalam
-                <a href="https://karttikeya.github.io/">
+                <a
+                  href="https://karttikeya.github.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <i class="fas fa-link"></i>
                 </a>
               </li>
-              <li>Maja Pantic</li>
+              <li>Richard Newcombe, FRL</li>
               <li>
                 Santhosh Kumar Ramakrishnan
-                <a href="https://srama2512.github.io/">
+                <a
+                  href="https://srama2512.github.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <i class="fas fa-link"></i>
                 </a>
-                <a href=“https://www.linkedin.com/in/srama2512/”>
-                  <i class=“fab fa-linkedin”></i>
+                <a
+                  href="https://www.linkedin.com/in/srama2512/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-linkedin"></i>
                 </a>
               </li>
+              <li>Lida Sari, FRL</li>
+              <li>Kiran Somasundaram, FRL</li>
               <li>Lorenzo Torresani</li>
+              <li>Minh Vo, FRL</li>
               <li>Andrew Westbury</li>
+              <li>Mingfei Yan, FRL</li>
             </ul>
           </div>
           <div class="col-lg-4">
             <h4 class="card-title">
               University of Bristol, UK
-              <a href="https://www.bristol.ac.uk/"
+              <a
+                href="https://www.bristol.ac.uk/"
+                target="_blank"
+                rel="noopener noreferrer"
                 ><i class="fas fa-link"></i
               ></a>
             </h4>
             <ul>
               <li>
                 Dima Damen (PI)
-                <a href="http://dimadamen.github.io/"
+                <a
+                  href="http://dimadamen.github.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   ><i class="fas fa-link"></i
                 ></a>
-                <a href="https://www.linkedin.com/in/dimadamen/"
+                <a
+                  href="https://www.linkedin.com/in/dimadamen/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   ><i class="fab fa-linkedin"></i
                 ></a>
-                <a href="http://twitter.com/dimadamen"
+                <a
+                  href="http://twitter.com/dimadamen"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   ><i class="fab fa-twitter"></i
                 ></a>
               </li>
               <li>
                 Michael Wray
-                <a href="https://mwray.github.io/"
+                <a
+                  href="https://mwray.github.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   ><i class="fas fa-link"></i
                 ></a>
               </li>
               <li>
                 Will Price
-                <a href="https://www.willprice.dev/research/"
+                <a
+                  href="https://www.willprice.dev/research/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   ><i class="fas fa-link"></i
                 ></a>
               </li>
               <li>
                 Jonathan Munro
-                <a href="https://jonmun.github.io/"
+                <a
+                  href="https://jonmun.github.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   ><i class="fas fa-link"></i
                 ></a>
               </li>
               <li>
                 Adriano Fragomeni
-                <a href="https://adrianofragomeni.github.io/"
+                <a
+                  href="https://adrianofragomeni.github.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   ><i class="fas fa-link"></i
                 ></a>
               </li>
@@ -1413,7 +1750,10 @@
             <ul>
               <li>
                 Mike Zheng Shou (PI)
-                <a href="https://sites.google.com/view/showlab"
+                <a
+                  href="https://sites.google.com/view/showlab"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   ><i class="fas fa-link"></i
                 ></a>
               </li>
@@ -1422,46 +1762,119 @@
               <li>Ruijie Tao</li>
               <li>Yunyi Zhu</li>
             </ul>
-
+            <h4 class="card-title">Georgia Institute of Technology, U.S.</h4>
+            <ul>
+              <li>Jim Rehg (PI)
+                <a
+                  href="https://rehg.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fas fa-link"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/jimrehg/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </li>
+              <li>Miao Liu
+                <a
+                  href="https://aptx4869lm.github.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fas fa-link"></i
+                ></a>
+              </li>              
+              <li>Fiona Ryan
+                <a
+                  href="https://fkryan.github.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fas fa-link"></i
+                ></a>
+              </li>
+              <li>Audrey Southerland
+                <a
+                  href="https://www.linkedin.com/in/audrey-southerland/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </li>    
+              <li>Wenqi Jia
+                <a
+                  href="https://www.linkedin.com/in/wenqijia/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </li>           
+<!--               <li>Leda Sari</li> -->
+            </ul>
+            <h4 class="card-title">
+              Universidad de los Andes, Colombia
+              <a
+                href="https://www.uniandes.edu.co/en/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fas fa-link"></i
+              ></a>
+            </h4>
+            <ul>
+              <li>
+                Pablo Arbelaez (PI)
+                <a
+                  href="https://cinfonia.uniandes.edu.co"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fas fa-link"></i>
+                </a>
+              </li>
+              <li>
+                Cristina Gonzalez
+                <a
+                  href="https://cigonzalez.github.io"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fas fa-link"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/cristina-gonzález-5982831a0/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </li>
+              <li>
+                Paola Ruiz Puentes
+                <a
+                  href="https://paolaruizp.github.io"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fas fa-link"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/paola-ruiz-puentes-12b1821b2/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
             <h4 class="card-title">
               Massachusetts Institute of Technology, U.S.
             </h4>
             <ul>
               <li>Aude Oliva (PI)</li>
               <li>Antonio Torralba (PI)</li>
-              <li>SouYoung Jin</li>
-              <li>Alex Lascelles</li>
-              <li>Mathew Monfort</li>
             </ul>
-            <h4 class="card-title">
-              International Institute of Information Technology, Hyderabad, India
-              <a href="https://www.iiit.ac.in"
-                ><i class="fas fa-link"></i
-              ></a>
-            </h4>
-            <ul>
-              <li>
-                C. V. Jawahar (PI)
-                <a href="https://faculty.iiit.ac.in/~jawahar/"
-                  ><i class="fas fa-link"></i
-                ></a>
-              </li>
-              <li>
-                Raghava Modhugu
-                <a href="https://www.linkedin.com/in/raghavamodhugu"
-                  ><i class="fab fa-linkedin"></i
-                ></a>
-              </li>
-              <li>
-                Siddhant Bansal
-                <a href="https://sid2697.github.io/"
-                  ><i class="fas fa-link"></i
-                ></a>
-                <a href="https://www.linkedin.com/in/siddhant-bansal/"
-                  ><i class="fab fa-linkedin"></i
-                ></a>
-              </li>
-            </ul>
+
             <h4 class="card-title">Others</h4>
             <ul>
               <li>Ilija Radosavovic, UC Berkeley</li>
@@ -1471,7 +1884,7 @@
       </div>
     </section>
 
-    <section id="subscribe">
+    <section id="download">
       <div class="container">
         <div class="row align-items-center">
           <div
@@ -1481,14 +1894,20 @@
           </div>
           <div class="col-lg-3 col-md-4 col-xs-12 voffset-16">
             <p>
+              <b>
+                The dataset will be available for download before the end of
+                November.</b
+              ><br /><br />
               License forms (for all partners) should be signed to access
-              videos, metadata and annotations. Enter your email. You will
-              receive instructions shortly.
+              videos, metadata and annotations. Revisit this webpage for
+              details.
+              <!--       Enter your email. You will
+              receive instructions shortly.-->
             </p>
           </div>
           <div class="col-xs-12 col-lg-6 col-lg-offset-3 voffset-32">
             <div>
-              <form>
+              <!--  <form>
                 <div class="dragArea row">
                   <div class="form-group col-xs-12" data-for="email">
                     <input
@@ -1508,7 +1927,29 @@
                     </button>
                   </div>
                 </div>
-              </form>
+              </form>-->
+              <div id="form-response" class="alert hidden"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Contact">
+      <div class="container">
+        <div class="row align-items-center">
+          <div
+            class="col-md-offset-2 col-lg-offset-3 col-lg-3 col-md-4 col-xs-12"
+          >
+            <h4 class="title form-title">CONTACT EGO4D</h4>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-12 voffset-16">
+            <p>
+              Email us at:
+              <a href="mailto:info@ego4d-data.org">info@ego4d-data.org</a>
+            </p>
+          </div>
+          <div class="col-xs-12 col-lg-6 col-lg-offset-3 voffset-32">
+            <div>
               <div id="form-response" class="alert hidden"></div>
             </div>
           </div>

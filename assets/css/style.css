@@ -130,6 +130,11 @@ a {
   text-decoration: none !important;
 }
 
+a.block {
+  display: block;
+  width: 100%;
+}
+
 .nav-link {
   position: relative;
   line-height: 1;
