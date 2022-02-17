@@ -145,7 +145,7 @@
               <p>
                 A massive-scale, egocentric dataset and benchmark suite
                 collected across 74 worldwide locations and 9 countries, with
-                over 3,025 hours of daily-life activity video.
+                over <b>3,670</b> hours of daily-life activity video.
               </p>
 
               <small class="text-muted show-1025x512"
@@ -183,15 +183,14 @@
                 >
                   Watch Video &nearr;
                 </a> 
-               <a
-                  class="btn btn-default"
-                  href="https://youtu.be/2dau0W0NVQY"
-                  target="_blank"
+                 <a
+                  class="btn btn-primary btn-translucent"
                   role="button"
-                  rel="noopener noreferrer"
+                  target="_blank"
+                  href="https://ego4d-data.org/docs/start-here/"
                 >
-                  Watch Reveal Session &nearr;
-                </a> 
+                  Start Here &nearr;
+                </a>
               </div>
             </div>
           </div>
@@ -225,6 +224,9 @@
           </div>
           <div id="nav-menu" class="collapse">
             <ul id="nav-menu-list" data-app-modern-menu="true">
+              <li class="nav-item">
+                <a href="https://ego4d-data.org/docs/start-here/" class="nav-link" target="_blank">Start Here</a>
+              </li>    
               <li class="nav-item">
                 <a href="#benchmarks" class="nav-link">Benchmarks</a>
               </li>
@@ -310,8 +312,8 @@
                 </h2>
                 <p class="slide-text">
                   Ego4D is a massive-scale Egocentric dataset of unprecedented
-                  diversity. It consists of 3,025 hours of video collected by
-                  <b>855 unique participants</b> from
+                  diversity. It consists of 3,670 hours of video collected by
+                  <b>923 unique participants</b> from
                   <b>74 worldwide locations</b> in 9 different countries. <br />
                   The project brings together 88 researchers, in an
                   international consortium, to dramatically increases the scale
@@ -361,7 +363,7 @@
                   modalities: 3D scans, audio, gaze, stereo, multiple
                   synchronized wearable cameras, and textual narrations.<br />
 
-                  <a href="https://arxiv.org/abs/2110.07058" target="_blank">Check our ArXiv paper for details </a>.
+                  <a href="https://arxiv.org/abs/2110.07058" target="_blank">Check our ArXiv paper for details <b>(ArXiv will be updated before end of Feb)</b> </a>.
                 </p>
               </div>
               <div class="col-xs-12 col-md-7 col-lg-7 slide-image-wrap">
@@ -1006,6 +1008,7 @@
                       >BibTex (.bib)</a
                     ></b
                   >
+                    <b>(ArXiv will be updated before end of Feb)</b> 
                 </p>
                 <a href="https://arxiv.org/abs/2110.07058" target="_blank">
                 <img src="./assets/images/paperOverview.png" width="100%" /></a>
@@ -1044,20 +1047,11 @@
               "
             >
               <div class="timeline-text-content">
-                <h4 class="small-title">When can I download the dataset?</h4>
+                <h4 class="small-title">How can I download the dataset?</h4>
                 <p>
-                  We are working hard towards a public release <i>soon</i>. We sincerely apologise for unexpected delays due to the size and innovative nature of our collection and annotation pipeline. We have thus further pushed our public release to the second half of <b>Feb 2022</b>. The dataset collection and challenges are
-                    described in the <a href="https://arxiv.org/abs/2110.07058" target="_blank">ArXiv paper</a>, and further details have been
-                  presented in a <a href="https://www.youtube.com/watch?v=2dau0W0NVQY">live reveal session</a> during the
-                  <a
-                    href="https://eyewear-computing.org/EPIC_ICCV21/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >9th Egocentric Perception, Interaction and Computing (EPIC)
-                    workshop alongside ICCV 2021</a
-                  >
-                  on Sunday 17 October. A recording will be made available
-                  shortly after.
+                  Ego4D is now publicly avaiable. Obtaining the dataset or any annotations requires you first review our license agreement and accept the terms. <a target="_blank" href="https://ego4ddataset.com/">Go here to review and execute this agreement</a>, and you will be emailed a set of AWS access credentials when your license agreement is approved, which will take 48hrs.
+You can review a draft of the licenses before signing <a href="./pdfs/Ego4D-Licenses-Draft.pdf">here</a>
+ In the meantime, you can check out data overview and sample notebooks <a target="_blank" href="https://ego4d-data.org/docs/start-here/">here</a> to get familiar with the dataset, and can download the CLI and dataloaders to get setup in advance.
                 </p>
               </div>
             </div>
@@ -1080,8 +1074,7 @@
                   partner/university, date of recording, recording equipment, as
                   well as video parts when the video is made up of smaller
                   chunks. Information about the availability of IMU, Audio and
-                  whether videos have been redacted are also included. Refer to
-                  README for formats of metadata.
+                  whether videos have been redacted are also included. <a href="https://ego4d-data.org/docs/data-overview/" target="_blank">An overview of metadata and annotations can be found here</a>.
                 </p>
               </div>
             </div>
@@ -1104,8 +1097,8 @@
               <div class="timeline-text-content">
                 <h4 class="small-title">Who collected this data?</h4>
                 <p>
-                  The data was collected from 855 participants. We showcase a
-                  distribution of age, gender and jobs from 69% of our
+                  The data was collected from 923 participants. We showcase a
+                  distribution of age, gender and jobs from around 70% of our
                   participants who volunteered to self-identify their
                   demographics — age, gender, countries of residence, and
                   occupations.
@@ -1202,8 +1195,8 @@
                   Do you offer pre-extracted features?
                 </h4>
                 <p>
-                  Yes. We provide precomputed SlowFast video features for the
-                  full dataset.
+                  Yes. We provide precomputed Action video features for the
+                  full dataset, and plan other features. <a href="https://ego4d-data.org/docs/data/features/" target="_blank">You can find details and download these features from here</a>.
                 </p>
               </div>
             </div>
@@ -1253,7 +1246,7 @@
                   How can I participate in the benchmarks?
                 </h4>
                 <p>
-                  We are working hard towards a public release <i>soon</i>. We sincerely apologise for unexpected delays due to the size and innovative nature of our collection and annotation pipeline. We have thus further pushed our public release to the second half of <b>Feb 2022</b>. Test servers will be opened in March 2022 for the
+                  The leaderboards will be opened in the first week of March 2022 for the
                   first round of benchmarks. Results will be
                   announced at <a href="http://ego4d-data.org/Workshop/">the Joint 1st Ego4D Workshop (in conjunction with 10th EPIC Workshop) alongside CVPR 2022</a>. Revisit this webpage for
                   further information.
@@ -1656,6 +1649,20 @@
                 </a>
               </li>
               <li>Jackson Hamburger</li>
+              <li>Tal Hassner<a
+                  href="https://talhassner.github.io/home/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fas fa-link"></i>
+                </a>
+                <a
+                  href="https://twitter.com/THassner"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-twitter"></i>
+                  </a></li>
               <li>James Hillis, FRL</li>
               <li>Vamsi Krishna Ithapu, FRL</li>
               <li>Hao Jiang</li>
@@ -1941,10 +1948,27 @@
           </div>
           <div class="col-lg-3 col-md-4 col-xs-12 voffset-16">
             <p>
-              We are working hard towards a public release <i>soon</i>. We sincerely apologise for unexpected delays due to the size and innovative nature of our collection and annotation pipeline. We have thus further pushed our public release to the second half of <b>Feb 2022</b>. <br /><br />
-              License forms (for all partners) should be signed to access
-              videos, metadata and annotations. Revisit this webpage for
-              details.
+              <b>The dataset was released 17 Feb 2022 and is now publicly available</b><br /><br />
+              License forms should be signed to access
+              videos, metadata and annotations. <br/>
+                <a
+                  class="btn btn-primary btn-translucent"
+                  role="button"
+                  target="_blank"
+                  href="https://ego4ddataset.com"
+                >
+                  Sign Ego4D Licenses &nearr;
+                </a>
+                <br/>
+                Starting code and README files are avaiable <br/>
+                <a
+                  class="btn btn-primary btn-translucent"
+                  role="button"
+                  target="_blank"
+                  href="https://ego4d-data.org/docs/start-here/"
+                >
+                  Start Here &nearr;
+                </a>
               <!--       Enter your email. You will
               receive instructions shortly.-->
             </p>
